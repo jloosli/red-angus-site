@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default " en-US" }}">
+{{- partial "head.html" . -}}
+<body>
+<div class="wrapper">
+  {{- partial "preloader.html" . -}}
+  {{- partial "header/index.html" . -}}
+<!--  {{- partial "header/nav.html" . -}}-->
+  {{- block "main" . }}{{- end }}
+  {{- partial "footer.html" . -}}
+</div>
+</body>
+</html>

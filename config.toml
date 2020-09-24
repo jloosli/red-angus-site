@@ -1,0 +1,79 @@
+baseURL = "https://loosliredangus.com/"
+languageCode = "en-us"
+title = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
+description = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
+
+############################## navigation ###############################
+[menu]
+
+    # main menu
+    [[menu.main]]
+        name = "Home"
+        URL = "/"
+        weight = 1
+
+    [[menu.main]]
+        name = "Sale Bulls"
+        URL = "sales/2020-annual-production-sale/2020-sale-bulls/"
+        weight = 2
+
+    [[menu.main]]
+        name = "Sale Heifers"
+        URL = "sales/2020-annual-production-sale/2020-sale-heifers/"
+        weight = 3
+
+    [[menu.main]]
+        name = "Herd Bulls"
+        URL = "herd-bulls"
+        weight = 4
+
+    [[menu.main]]
+        name = "Sales"
+        URL = "sales"
+        weight = 5
+
+    [[menu.main]]
+        name = "Watch and Bid Live"
+        URL = "watch-and-bid-live"
+        weight = 6
+
+    [[menu.main]]
+        name = "Contact Us"
+        URL = "contact-us"
+        weight = 7
+
+# footer menu
+[[menu.footer]]
+name = "About"
+URL = "about"
+weight = 1
+
+[[menu.footer]]
+name = "Post"
+URL = "blog"
+weight = 2
+
+[[menu.footer]]
+name = "Contact"
+URL = "contact"
+weight = 3
+
+
+[params]
+    [[params.contacts]]
+        name = "Brian Loosli"
+        address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
+    [[params.contacts]]
+        name = "Sale Barn"
+        address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
+
+    [params.widgets]
+        [[params.widgets.home]]
+            title = "Sale Bulls"
+            image = "/images/cattle/Lot-1.jpg"
+        [[params.widgets.home]]
+            title = "Sale Heifers"
+            image = "/images/cattle/females-resized.jpg"
+        [[params.widgets.home]]
+            title = "Herd Bulls"
+            image = "/images/cattle/new-frontier-600x430.jpg"

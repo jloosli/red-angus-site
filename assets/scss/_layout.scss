@@ -1,0 +1,42 @@
+.wrapper {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-areas:
+    "preloader preloader preloader"
+    ". header ."
+    ". content ."
+    ". footer .";
+  transition: .2s ease;
+  grid-template-columns: auto minmax(0, 1200px) auto;
+}
+
+//@include tablet {
+//  .wrapper {
+//    max-width: 1200px;
+//    margin: 0.5rem auto;
+//    padding: 0 1rem;
+//
+//    grid-template-columns: minmax(0, 1fr) 3fr;
+//    grid-template-areas:
+//      "preloader preloader"
+//      "header header"
+//      "content content"
+//      "footer footer";
+//  }
+//}
+
+.preloader {
+  grid-area: preloader;
+}
+
+.header {
+  grid-area: header;
+}
+
+.content {
+  grid-area: content;
+}
+
+.footer {
+  grid-area: footer;
+}

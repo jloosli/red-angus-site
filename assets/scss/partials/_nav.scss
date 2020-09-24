@@ -1,0 +1,27 @@
+.nav-header {
+  //display: none;
+  //@include tablet {
+    display: flex;
+    text-align: center;
+    ul {
+      display: flex;
+      list-style-type: none;
+      justify-content: space-between;
+      align-items: center;
+      margin: 0;
+      padding: 0;
+      gap: 1em;
+      li {
+        padding: 0;
+      }
+    }
+    a {
+      color: $body-color;
+      padding: 2em 0;
+      display: block;
+    }
+    font-weight: 500;
+    font-size: 1.2em;
+
+  //}
+}

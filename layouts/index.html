@@ -1,0 +1,22 @@
+{{ define "main" }}
+<section class="content landing">
+  <div class="hero cloud">
+    <div class="call-to-action">
+      <h1>Thanks for coming!</h1>
+      <h2>See you in the spring of 2021</h2>
+      <a class="btn btn-primary">2020 Sale Catalog</a>
+    </div>
+    <div class="media">
+      youtube embed
+    </div>
+  </div>
+  <div class="widgets">
+    {{ range $.Site.Params.widgets.home }}
+    <div class="widget cloud">
+      <h3 class="title">{{ .title }}</h3>
+      <img src="{{ .image | absURL }}" alt="{{ .title}}"/>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ end }}
