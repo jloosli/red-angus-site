@@ -1,0 +1,9 @@
+@import '../../dependencies/swiper/swiper';
+@import '../../dependencies/swiper/components/navigation/navigation';
+@import '../../dependencies/swiper/components/scrollbar/scrollbar';
+@import '../../dependencies/swiper/components/pagination/pagination';
+
+.swiper-container {
+  width: 100%;
+  height: auto;
+}

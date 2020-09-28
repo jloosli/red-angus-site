@@ -7,7 +7,29 @@
       <a class="btn btn-primary" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
     </div>
     <div class="media">
-      youtube embed
+      <!-- Slider main container -->
+      <div class="swiper-container">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <img src="http://localhost:1313/images/cattle/females-resized.jpg" alt="Sale Heifers" width="100%"></div>
+          <div class="swiper-slide">
+            <img src="http://localhost:1313/images/cattle/Lot-1.jpg" alt="Sale Bulls"></div>
+          <div class="swiper-slide">
+            <img src="http://localhost:1313/images/cattle/new-frontier-600x430.jpg" alt="Herd Bulls">
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+
+        <!-- If we need navigation buttons -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+
+        <!-- If we need scrollbar -->
+        <div class="swiper-scrollbar"></div>
+      </div>
     </div>
   </div>
   <div class="widgets">
