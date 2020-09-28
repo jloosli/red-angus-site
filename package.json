@@ -1,0 +1,17 @@
+{
+  "name": "red-angus-site",
+  "version": "1.0.0",
+  "description": "Loosli Red Angus website",
+  "main": "index.js",
+  "author": "Jared Loosli <jloosli@gmail.com>",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "./bash-scripts/start.sh"
+  },
+  "devDependencies": {
+    "modern-normalize": "^1.0.0",
+    "nps": "^5.10.0",
+    "nps-utils": "^1.7.0"
+  }
+}
