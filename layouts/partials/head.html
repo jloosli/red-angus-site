@@ -13,13 +13,6 @@
   <link rel="stylesheet" href="{{ .URL | absURL }} ">
   {{ end }}
 
-<!--  {{ "&lt;!&ndash; Main Stylesheet &ndash;&gt;" | safeHTML }}-->
-<!--  {{ $styles := resources.Get "scss/styles.scss" | toCSS | minify }}-->
-<!--  <link rel="stylesheet" href="{{ $styles.Permalink }}" media="screen">-->
   {{ partial "css" . }}
-
-  {{ "<!--Favicon-->" | safeHTML }}
-  <link rel="shortcut icon" href="{{ `favicons/nrc_logo_notext.webp` | absURL }} " type="image/webp">
-  <link rel="icon" href="{{ `favicons/nrc_logo_notext.webp` | absURL }} " type="image/webp">
 
 </head>

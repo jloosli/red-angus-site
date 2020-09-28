@@ -21,6 +21,7 @@ if [ ! -d "assets/dependencies" ]
 
     # Swiper see https://swiperjs.com/
     # Image swiper
+    cp -f node_modules/swiper assets/dependencies
 
 
     # Colors: https://github.com/mrmrs/colors
