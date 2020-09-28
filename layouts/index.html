@@ -2,9 +2,9 @@
 <section class="content landing">
   <div class="hero cloud">
     <div class="call-to-action">
-      <h1>Thanks for coming!</h1>
-      <h2>See you in the spring of 2021</h2>
-      <a class="btn btn-primary">2020 Sale Catalog</a>
+      <h1>{{ .Params.Title }}</h1>
+      <h2>{{ .Params.subtitle }}</h2>
+      <a class="btn btn-primary" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
     </div>
     <div class="media">
       youtube embed

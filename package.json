@@ -12,6 +12,7 @@
   "devDependencies": {
     "modern-normalize": "^1.0.0",
     "nps": "^5.10.0",
-    "nps-utils": "^1.7.0"
+    "nps-utils": "^1.7.0",
+    "swiper": "^6.3.2"
   }
 }

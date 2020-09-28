@@ -40,11 +40,12 @@ img {
   max-width: 100%;
 }
 
-a,
-a:hover,
-a:focus {
-  text-decoration: none;
-  color: $primary-color;
+a:not(.btn) {
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $primary-color;
+  }
 }
 
 a.text-primary:hover {
@@ -60,10 +61,6 @@ select {
   &:focus {
     outline: 0;
   }
-}
-
-a:hover {
-  color: $primary-color;
 }
 
 hr {

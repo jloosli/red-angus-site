@@ -1,5 +1,5 @@
 {
   "scripts" : [
-    "js/script.js"
+    "js/script.ts"
   ]
 }

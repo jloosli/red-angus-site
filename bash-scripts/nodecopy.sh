@@ -19,6 +19,10 @@ if [ ! -d "assets/dependencies" ]
     # modern-normalize is imported by ./assets/scss/base/_reset.scss
     cp -f node_modules/modern-normalize/modern-normalize.css assets/dependencies/_modern-normalize.scss
 
+    # Swiper see https://swiperjs.com/
+    # Image swiper
+
+
     # Colors: https://github.com/mrmrs/colors
 #    cp -f node_modules/colors.css/src/colors.css assets/dependencies/_colors.scss
 #    cp -f node_modules/colors.css/src/_variables.css assets/dependencies/_variables.scss
