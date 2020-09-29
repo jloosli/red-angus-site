@@ -12,10 +12,11 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
-          {{ range first 10 (readDir "static/images/cattle/2020/bulls/2020-bulls") }}
+          {{ range (readDir "static/images/cattle/2020/bulls/2020-bulls") }}
           {{ if eq (path.Ext .Name) ".jpg" }}
           <div class="swiper-slide">
             <img
+                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
                 data-src="{{ path.Join "images/cattle/2020/bulls/2020-bulls" .Name | absURL }}"
             alt="{{ .Name }}"
             class="swiper-lazy"
@@ -26,15 +27,10 @@
           {{ end }}
 
         </div>
-        <!-- If we need pagination -->
-        <div class="swiper-pagination"></div>
-
         <!-- If we need navigation buttons -->
         <div class="swiper-button-prev"></div>
         <div class="swiper-button-next"></div>
 
-        <!-- If we need scrollbar -->
-        <div class="swiper-scrollbar"></div>
       </div>
     </div>
   </div>
