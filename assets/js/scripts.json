@@ -1,5 +1,5 @@
 {
   "scripts" : [
-    "js/script.ts"
+    "js/index.ts"
   ]
 }
