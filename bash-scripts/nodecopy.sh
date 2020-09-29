@@ -23,6 +23,9 @@ if [ ! -d "assets/dependencies" ]
     # Image swiper
     cp -fr node_modules/swiper assets/dependencies
 
+    # Hamburgers see https://jonsuh.com/hamburgers/
+    cp -f node_modules/hamburgers/dist/hamburgers.min.css assets/dependencies/_hamburgers.scss
+
 
     # Colors: https://github.com/mrmrs/colors
 #    cp -f node_modules/colors.css/src/colors.css assets/dependencies/_colors.scss
