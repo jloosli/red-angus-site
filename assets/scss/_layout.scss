@@ -4,6 +4,7 @@
   grid-template-areas:
     "preloader preloader preloader"
     ". header ."
+    ". breadcrumb . "
     ". content ."
     ". footer .";
   transition: .2s ease;
@@ -31,6 +32,10 @@
 
 .header {
   grid-area: header;
+}
+
+.breadcrumb {
+  grid-area: breadcrumb;
 }
 
 .content {

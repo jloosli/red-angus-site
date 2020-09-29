@@ -1,9 +1,8 @@
 {{ define "main" }}
-<section class="content landing">
+<main class="content landing">
   <div class="hero cloud">
     <div class="call-to-action">
-      <h1>{{ .Params.Title }}</h1>
-      <h2>{{ .Params.subtitle }}</h2>
+      {{ .Content }}
       <a class="btn btn-primary" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
     </div>
     <div class="media">
@@ -42,5 +41,9 @@
     </div>
     {{ end }}
   </div>
-</section>
+</main>
+{{ end }}
+
+{{ define "breadcrumb" }}
+<!--No Breadcrumb on home-->
 {{ end }}
