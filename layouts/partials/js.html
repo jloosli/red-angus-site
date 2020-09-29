@@ -8,11 +8,11 @@
 {{ if .Site.IsServer }}
 
 {{ $js := .Scratch.Get "jslibs" | resources.Concat "/js/bundle.ts" | js.Build }}
-<script src="{{ $js.Permalink }}"></script>
+<script src="{{ $js.Permalink }}" async></script>
 
 {{ else }}
 
 {{ $js := .Scratch.Get "jslibs" | resources.Concat "/js/bundle.js" | resources.Minify | fingerprint }}
-<script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" ></script>
+<script src="{{ $js.Permalink }}" async integrity="{{ $js.Data.Integrity }}" ></script>
 
 {{ end }}
