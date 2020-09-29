@@ -1,17 +1,14 @@
 // core version + navigation, pagination modules:
-import Swiper, { Navigation, Pagination, Autoplay } from 'swiper';
+import Swiper, { Navigation,  Autoplay, Lazy } from 'swiper';
 
 // configure Swiper to use modules
-Swiper.use([Navigation, Pagination, Autoplay]);
+Swiper.use([Navigation, Autoplay, Lazy]);
 
-var mySwiper = new Swiper('.swiper-container', {
+const mySwiper = new Swiper('.swiper-container', {
   // Optional parameters
   loop: true,
-
-  // If we need pagination
-  pagination: {
-    el: '.swiper-pagination',
-  },
+  lazy: true,
+  preloadImages: true,
 
   // Navigation arrows
   navigation: {
@@ -23,7 +20,12 @@ var mySwiper = new Swiper('.swiper-container', {
   scrollbar: {
     el: '.swiper-scrollbar',
   },
-  autoplay: {
-    disableOnInteraction: false
+  autoplay: true,
+  on: {
+    init: function () {
+      this.update();
+    }
   }
 })
+
+window['mySwiper'] = mySwiper;

@@ -77,3 +77,7 @@ weight = 3
         [[params.widgets.home]]
             title = "Herd Bulls"
             image = "/images/cattle/new-frontier-600x430.jpg"
+
+    [params.plugins]
+#        [[params.plugins.css]]
+#            url = "https://unpkg.com/swiper/swiper-bundle.min.css"

@@ -1,9 +1,18 @@
 @import '../../dependencies/swiper/swiper';
 @import '../../dependencies/swiper/components/navigation/navigation';
 @import '../../dependencies/swiper/components/scrollbar/scrollbar';
-@import '../../dependencies/swiper/components/pagination/pagination';
+@import '../../dependencies/swiper/components/lazy/lazy';
 
 .swiper-container {
   width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
   height: auto;
 }
+
+.swiper-button-next, .swiper-button-prev {
+  color: $primary-color;
+}
+

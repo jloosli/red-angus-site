@@ -12,13 +12,19 @@
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
+          {{ range first 10 (readDir "static/images/cattle/2020/bulls/2020-bulls") }}
+          {{ if eq (path.Ext .Name) ".jpg" }}
           <div class="swiper-slide">
-            <img src="http://localhost:1313/images/cattle/females-resized.jpg" alt="Sale Heifers" width="100%"></div>
-          <div class="swiper-slide">
-            <img src="http://localhost:1313/images/cattle/Lot-1.jpg" alt="Sale Bulls"></div>
-          <div class="swiper-slide">
-            <img src="http://localhost:1313/images/cattle/new-frontier-600x430.jpg" alt="Herd Bulls">
+            <img
+                data-src="{{ path.Join "images/cattle/2020/bulls/2020-bulls" .Name | absURL }}"
+            alt="{{ .Name }}"
+            class="swiper-lazy"
+            >
+            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
           </div>
+          {{ end }}
+          {{ end }}
+
         </div>
         <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
