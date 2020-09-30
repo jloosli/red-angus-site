@@ -8,7 +8,7 @@ Params:
 
 Creates a DataTable on the page. Call it with: {{/*
 
-  {{< dataTable id="bulls-1984" url="data/sales/1984/bulls.json" includejs="true" >}}
+  {{< dataTable id="bulls-1984" data_path="sales.1994.bulls" includejs="true" >}}
 
 */}}
 -->
@@ -29,7 +29,7 @@ Creates a DataTable on the page. Call it with: {{/*
   <thead>
   <tr>
     {{- range $data.headings -}}
-    <td>{{ . }}</td>
+    <th>{{ . }}</th>
     {{- end -}}
   </tr>
   </thead>
@@ -50,10 +50,17 @@ Creates a DataTable on the page. Call it with: {{/*
 
 </table>
 <script>
+  const options = {{- $data.options -}};
   $(document).ready(function () {
-    $('#{{- $id -}}').DataTable({
+    const defaults = {
       scrollX: true,
-      paging: false
+      paging: false,
+      fixedHeader: true,
+      fixedColumns: 1
+    };
+    $('#{{- $id -}}').DataTable({
+      ...defaults,
+      ...options
     });
   })
 </script>
