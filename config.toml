@@ -84,3 +84,7 @@ weight = 3
     [params.plugins]
 #        [[params.plugins.css]]
 #            url = "https://unpkg.com/swiper/swiper-bundle.min.css"
+
+[markup.goldmark.renderer]
+    unsafe= true
+enableInlineShortcodes = true

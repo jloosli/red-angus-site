@@ -1,0 +1,60 @@
+<!-- Datatable integration
+
+Params:
+  id: css #id of datatable
+  data_path: url of data
+  includejs: add js to page
+  class: Any additional classes to add to the datatable
+
+Creates a DataTable on the page. Call it with: {{/*
+
+  {{< dataTable id="bulls-1984" url="data/sales/1984/bulls.json" includejs="true" >}}
+
+*/}}
+-->
+{{ if default "true" ($.Get "includejs") }}
+<link rel="stylesheet" type="text/css"
+      href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.22/b-1.6.4/b-colvis-1.6.4/b-html5-1.6.4/fc-3.3.1/fh-3.1.7/r-2.2.6/datatables.min.css"/>
+<script type="text/javascript"
+        src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.22/b-1.6.4/b-colvis-1.6.4/b-html5-1.6.4/fc-3.3.1/fh-3.1.7/r-2.2.6/datatables.min.js"></script>
+{{ end }}
+
+{{ with $.Get "data_path" }}
+{{ $path := . }}
+{{ $id := default "data-table" ($.Get "id") }}
+{{ $class := $.Get "class" }}
+{{ $data := index $.Site.Data (split $path ".") }}
+<table id="{{ $id }}" class="display cell-border hover compact {{ $class }}">
+
+  <thead>
+  <tr>
+    {{- range $data.headings -}}
+    <td>{{ . }}</td>
+    {{- end -}}
+  </tr>
+  </thead>
+  <tbody>
+  {{- range $row := $data.data -}}
+  <tr>
+    {{- range $data.headings -}}
+    {{ $val := index $row . | markdownify }}
+    {{ if hasPrefix (lower .) "reg" }}
+    <td>{{- partial "components/regLink" $val -}}</td>
+    {{ else }}
+    <td>{{- $val -}}</td>
+    {{- end -}}
+    {{- end -}}
+  </tr>
+  {{- end -}}
+  </tbody>
+
+</table>
+<script>
+  $(document).ready(function () {
+    $('#{{- $id -}}').DataTable({
+      scrollX: true,
+      paging: false
+    });
+  })
+</script>
+{{ end }}

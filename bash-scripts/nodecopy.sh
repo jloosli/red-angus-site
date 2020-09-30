@@ -26,7 +26,6 @@ if [ ! -d "assets/dependencies" ]
     # Hamburgers see https://jonsuh.com/hamburgers/
     cp -f node_modules/hamburgers/dist/hamburgers.min.css assets/dependencies/_hamburgers.scss
 
-
     # Colors: https://github.com/mrmrs/colors
 #    cp -f node_modules/colors.css/src/colors.css assets/dependencies/_colors.scss
 #    cp -f node_modules/colors.css/src/_variables.css assets/dependencies/_variables.scss
