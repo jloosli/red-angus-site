@@ -15,12 +15,12 @@ disableKinds = ["taxonomy", "term"]
 
     [[menu.main]]
         name = "Sale Bulls"
-        URL = "sales/2020-annual-production-sale/2020-sale-bulls/"
+        URL = "sales/2020/bulls/"
         weight = 2
 
     [[menu.main]]
         name = "Sale Heifers"
-        URL = "sales/2020-annual-production-sale/2020-sale-heifers/"
+        URL = "sales/2020/heifers/"
         weight = 3
 
     [[menu.main]]
@@ -62,6 +62,7 @@ weight = 3
 
 [params]
     logo = "/images/Loosli-Red-Angus-Logo.svg"
+    home_slideshow_path = "2020.bulls_images"
 # Contacts address with go through the markdown parser, so email links will get generated
     [[params.contacts]]
         name = "Brian Loosli"

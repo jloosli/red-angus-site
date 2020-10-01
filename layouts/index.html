@@ -6,31 +6,7 @@
       <a class="btn btn-primary" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
     </div>
     <div class="media">
-      <!-- Slider main container -->
-      <div class="swiper-container">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-          <!-- Slides -->
-          {{ range (readDir "static/images/cattle/2020/bulls/2020-bulls") }}
-          {{ if eq (path.Ext .Name) ".jpg" }}
-          <div class="swiper-slide">
-            <img
-                src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-                data-src="{{ path.Join "images/cattle/2020/bulls/2020-bulls" .Name | absURL }}"
-            alt="{{ .Name }}"
-            class="swiper-lazy"
-            >
-            <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-          </div>
-          {{ end }}
-          {{ end }}
-
-        </div>
-        <!-- If we need navigation buttons -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
-
-      </div>
+      {{ partial "components/slideshow" (dict "data_path" site.Params.home_slideshow_path ) }}
     </div>
   </div>
   <div class="widgets">

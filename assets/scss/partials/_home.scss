@@ -6,11 +6,13 @@
     " widgets ";
   gap: 1rem;
 
+
   .hero {
     grid-area: hero;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 1rem;
+    align-items: center;
 
     .call-to-action {
       text-align: center;

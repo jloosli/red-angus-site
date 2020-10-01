@@ -32,6 +32,9 @@ $border-color: #ACB9C4;
 $black: #000;
 $white: #fff;
 $gray: #f4fcff;
+:root {
+  --primary-color: #{$primary-color};
+}
 
 // Font Variables
 $primary-font: 'Roboto', sans-serif;
