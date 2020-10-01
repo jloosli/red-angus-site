@@ -33,10 +33,10 @@ disableKinds = ["taxonomy", "term"]
         URL = "sales"
         weight = 5
 
-    [[menu.main]]
-        name = "Watch and Bid Live"
-        URL = "watch-and-bid-live"
-        weight = 6
+#    [[menu.main]]
+#        name = "Watch and Bid Live"
+#        URL = "watch-and-bid-live"
+#        weight = 6
 
     [[menu.main]]
         name = "Contact Us"
