@@ -17,6 +17,12 @@ Creates a DataTable on the page. Call it with: {{/*
       href="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.22/b-1.6.4/b-colvis-1.6.4/b-html5-1.6.4/fc-3.3.1/fh-3.1.7/r-2.2.6/datatables.min.css"/>
 <script type="text/javascript"
         src="https://cdn.datatables.net/v/dt/jq-3.3.1/dt-1.10.22/b-1.6.4/b-colvis-1.6.4/b-html5-1.6.4/fc-3.3.1/fh-3.1.7/r-2.2.6/datatables.min.js"></script>
+<style>
+  table.dataTable thead th {
+      background-color: var(--primary-color);
+      color: var(--body-color);
+  }
+</style>
 {{ end }}
 
 {{ with $.Get "data_path" }}
@@ -56,7 +62,9 @@ Creates a DataTable on the page. Call it with: {{/*
       scrollX: true,
       paging: false,
       fixedHeader: true,
-      fixedColumns: 1
+      fixedColumns: {
+        leftColumns: 1
+      }
     };
     $('#{{- $id -}}').DataTable({
       ...defaults,

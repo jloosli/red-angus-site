@@ -1,6 +1,6 @@
 {{ define "main" }}
 <main class="content section cloud">
-  {{ .Content }}
+  <h1>{{ .Title }}</h1>
   <ul class="contents">
     <!-- Sort by title, then by weight -->
     {{ range (sort .Pages.ByTitle.Reverse "Weight" )}}
@@ -11,6 +11,7 @@
     </li>
     {{ end }}
   </ul>
+  {{ .Content }}
   {{ template "_internal/pagination.html" . }}
 </main>
 {{ end }}

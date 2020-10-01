@@ -1,5 +1,4 @@
 +++
-title="2020 annual production sale"
+title="2020 Annual Production Sale"
 +++
-# 2020 Annual Production Sale
 
