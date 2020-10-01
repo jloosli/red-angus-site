@@ -88,6 +88,68 @@ weight = 3
         name = "Katie Ochsner"
         contact = ["Red Angus Association", "(307) 575-6802"]
 
+    [[params.airports]]
+        name = "Idaho Falls Regional Airport"
+        identifier = "IDA"
+        details = ["50 miles south of the ranch"]
+    [[params.airports]]
+        name = "Pocatello Regional Airport"
+        identifier = "PIH"
+        details = ["100 miles south of the ranch"]
+    [[params.airports]]
+        name = "Jackson Hole Airport"
+        identifier = "JAC"
+        details = ["81 miles east of the ranch"]
+    [[params.airports]]
+        name = "St. Anthony, ID"
+        identifier = ""
+        details = ["12 miles south of ranch.", "4966 elevation, 4500′ x 50′ runway, Unicom 122.9"]
+    [[params.airports]]
+        name = "Rexburg, ID"
+        identifier = ""
+        details = ["25 miles south of ranch.", "4858 elevation, 4200′ x 75′ runway, Unicom 122.8"]
+
+    [[params.motels]]
+        name="AmericInn"
+        url="https://www.americinn.com/hotels/id/rexburg"
+        details = [
+            "1098 Golden Beauty Drive",
+            "Rexburg, ID 83440",
+            "208-356-5333"
+        ]
+    [[params.motels]]
+        name="Super 8 Motel"
+        url="https://www.wyndhamhotels.com/super-8/rexburg-idaho/super-8-rexburg/overview"
+        details = [
+            "215 W Main St",
+            "Rexburg, ID 83440",
+            "208-356-8888",
+        ]
+    [[params.motels]]
+        name="Marriott Spring Hill Suites"
+        url="http://www.marriott.com/hotels/travel/idarx-springhill-suites-rexburg/"
+        details = [
+            "1177 S Hwy 191",
+            "Rexburg, ID 83440",
+            "208 356-3003",
+]
+    [[params.motels]]
+        name="Hampton Inn & Suites"
+        url="https://hamptoninn3.hilton.com/en/hotels/idaho/hampton-inn-and-suites-rexburg-IDARXHX/index.html"
+        details = [
+            "1195 South Yellowstone Hwy",
+            "Rexburg, ID 83440",
+            "208-497-0424",
+        ]
+    [[params.motels]]
+        name="Henry’s Fork Inn"
+        url="http://www.henrysforkinn.com/"
+        details = [
+            "115 S. Bridge St.",
+            "St. Anthony, ID 83445",
+            "208-624-3711",
+            ]
+
     [params.widgets]
         [[params.widgets.home]]
             title = "Sale Bulls"
