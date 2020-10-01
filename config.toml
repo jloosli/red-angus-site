@@ -63,13 +63,30 @@ weight = 3
 [params]
     logo = "/images/Loosli-Red-Angus-Logo.svg"
     home_slideshow_path = "2020.bulls_images"
+    google_maps_key = "AIzaSyD80IS57_0KNnxpc1OYrXFVhVitLur35Ls"
 # Contacts address with go through the markdown parser, so email links will get generated
     [[params.contacts]]
         name = "Brian Loosli"
         address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
     [[params.contacts]]
         name = "Sale Barn"
-        address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
+        address = ["3310 US 20", "Ashton, ID 83420", "(208) 652-7878", "22 miles north of Rexburg, ID"]
+
+    [[params.sale_reps]]
+        name = "Curt Cox"
+        contact = ["WY Livestock Round-Up", "(307) 234-2700 (Office)","(307) 630-4604 (Cell)"]
+    [[params.sale_reps]]
+        name = "Pete Crow"
+        contact = ["Western Livestock Journal", "(303) 810-8831"]
+    [[params.sale_reps]]
+        name = "Mark Frisbie"
+        contact = ["Western Ag Reporter", "(208) 890-4517"]
+    [[params.sale_reps]]
+        name = "Devin Murrin"
+        contact = ["Western Livestock Journal", "(406) 696-1502"]
+    [[params.sale_reps]]
+        name = "Katie Ochsner"
+        contact = ["Red Angus Association", "(307) 575-6802"]
 
     [params.widgets]
         [[params.widgets.home]]

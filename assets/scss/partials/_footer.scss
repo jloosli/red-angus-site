@@ -1,0 +1,54 @@
+.footer {
+  background-color: $lapis-lazuli;
+  color: white;
+  display: grid;
+  padding: 3rem 0;
+  grid-template-columns: auto minmax(0, 1200px) auto;
+
+  h3,h4 {
+    color: white;
+    text-align: center;
+  }
+
+  .footer-content {
+    grid-column-start: 2;
+  }
+
+  .footer-components {
+    display: grid;
+    grid-template:
+      "footer-contacts"
+       " footer-contact-form"
+       " footer-map"
+       / 1fr;
+    @include tablet {
+      grid-template:
+      " footer-contacts footer-contact-form "
+      " footer-map footer-contact-form" /
+    1fr 1fr;
+      align-items: end;
+    }
+
+
+    .contacts {
+      grid-area: footer-contacts;
+      display: flex;
+      flex-flow: row wrap;
+      gap: 1rem;
+      justify-content: space-around;
+      align-items: start;
+    }
+
+    .map {
+      grid-area: footer-map;
+    }
+
+    .contact-form {
+      grid-area: footer-contact-form;
+    }
+  }
+
+  form {
+    color: $text-color-dark;
+  }
+}

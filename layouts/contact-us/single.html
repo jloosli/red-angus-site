@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="content contact-us cloud">
+  <h1>{{ .Title}}</h1>
+  <div class="contact-pods">
+    <div class="contacts">
+      <h2>Contacts</h2>
+      {{ partial "header/contacts" . }}
+    </div>
+    <div class="sale-representatives">
+      <h2>Sale Representatives</h2>
+      {{ partial "components/sale_reps" . }}
+    </div>
+  </div>
+</main>
+
+{{ end }}
