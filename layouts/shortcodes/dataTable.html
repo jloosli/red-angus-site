@@ -46,7 +46,7 @@ Creates a DataTable on the page. Call it with: {{/*
     {{ $val := index $row . | markdownify }}
     {{ if hasPrefix (lower .) "reg" }}
     <td>{{- partial "components/regLink" $val -}}</td>
-    {{ else }}
+    {{- else -}}
     <td>{{- $val -}}</td>
     {{- end -}}
     {{- end -}}
