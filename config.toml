@@ -141,6 +141,7 @@ weight = 3
             "Rexburg, ID 83440",
             "208-497-0424",
         ]
+
     [[params.motels]]
         name="Henry’s Fork Inn"
         url="http://www.henrysforkinn.com/"
