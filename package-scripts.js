@@ -113,7 +113,7 @@ module.exports = {
       default: "nps copy.fav copy.images",
 
       // Copy Favicons
-      fav: "cp ./assets/favicons/* ./static; [ -f ./static/README.md ]; rimraf ./static/README.md",
+      fav: "cp ./assets/favicons/* ./static; # [ -f ./static/README.md ]; rimraf ./static/README.md",
 
       // Copy Images
       images: "cp -r ./assets/images ./static",
