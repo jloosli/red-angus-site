@@ -10,11 +10,10 @@ jobs:
     steps:
       - name: Check out
         uses: actions/checkout@v2
-        with:
-          fetch-depth: 0
-          submodules: true
-      - name: Set up static
+
+      - name: Set up node and copy files
         run: npm run start
+
       - name: Build and Publish Site
         uses: chabad360/hugo-gh-pages@master
         with:
