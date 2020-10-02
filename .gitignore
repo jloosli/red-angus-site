@@ -1,6 +1,7 @@
 .idea
 /assets/dependencies
-/static
+/static/**
+!/static
 node_modules
 resources/_gen/**
 .DS_Store
