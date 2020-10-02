@@ -1,4 +1,5 @@
 # Loosli Red Angus Website
+![Hugo](https://github.com/jloosli/red-angus-site/workflows/Hugo/badge.svg)
 
 ## Datatables
 

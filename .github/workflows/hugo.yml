@@ -13,6 +13,8 @@ jobs:
         with:
           fetch-depth: 0
           submodules: true
+      - name: Set up static
+        run: npm run start
       - name: Build and Publish Site
         uses: chabad360/hugo-gh-pages@master
         with:
