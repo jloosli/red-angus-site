@@ -16,9 +16,6 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: Clean node
-        run: yarn run end
-
       - name: Set up node and copy files
         run: yarn run start
 
