@@ -16,9 +16,6 @@ jobs:
         with:
           node-version: '12.x'
 
-      - name: Add global postcss
-        run: npm i -g postcss postcss-cli autoprefixer
-
       - name: Set up node and copy files
         run: yarn run start
 
