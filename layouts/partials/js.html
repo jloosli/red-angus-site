@@ -12,7 +12,7 @@
 
 {{ else }}
 
-{{ $js := .Scratch.Get "jslibs" | resources.Concat "/js/bundle.js" | resources.Minify | fingerprint }}
+{{ $js := .Scratch.Get "jslibs" | resources.Concat "/js/bundle.js" | js.Build | resources.Minify | fingerprint }}
 <script src="{{ $js.Permalink }}" integrity="{{ $js.Data.Integrity }}" ></script>
 
 {{ end }}
