@@ -1,3 +1,4 @@
+$baseURL: "{{ .Site.BaseURL }}";
 @import 'reset';
 @import 'variables';
 @import 'plugins';

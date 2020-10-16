@@ -1,6 +1,6 @@
 body {
   background-color: $background-color;
-  background-image: url("/images/tetons_1920.jpg");
+  background-image: url("#{$baseURL}/images/tetons_1920.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
