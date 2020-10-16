@@ -154,13 +154,13 @@ weight = 3
     [params.widgets]
         [[params.widgets.home]]
             title = "Sale Bulls"
-            image = "/images/cattle/Lot-1.jpg"
+            image = "images/cattle/Lot-1.jpg"
         [[params.widgets.home]]
             title = "Sale Heifers"
-            image = "/images/cattle/females-resized.jpg"
+            image = "images/cattle/females-resized.jpg"
         [[params.widgets.home]]
             title = "Herd Bulls"
-            image = "/images/cattle/new-frontier-600x430.jpg"
+            image = "images/cattle/new-frontier-600x430.jpg"
 
     [params.plugins]
 #        [[params.plugins.css]]
