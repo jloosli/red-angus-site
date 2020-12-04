@@ -5,6 +5,7 @@ $sandy-brown: #f19953ff;
 $copper: #c47335ff;
 $van-dyke-brown: #56351eff;
 
+
 /* SCSS HSL */
 $lapis-lazuli: hsla(212, 62%, 40%, 1);
 $mint-cream: hsla(174, 38%, 95%, 1);
@@ -27,7 +28,7 @@ $text-color: #666666;
 $text-color-dark: $primary-color;
 $text-color-light: #959595;
 $body-color: $mint-cream;
-$background-color: #73a5d1;
+$background-color: rgba(130, 183, 229, .5);
 $border-color: #ACB9C4;
 $black: #000;
 $white: #fff;
