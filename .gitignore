@@ -1,8 +1,8 @@
 .idea
 /assets/dependencies
-/static/**
-!/static
 node_modules
+static/images/**
 resources/_gen/**
 .DS_Store
 public/
+assets/jsconfig.json
