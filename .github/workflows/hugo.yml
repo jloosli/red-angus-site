@@ -35,4 +35,3 @@ jobs:
         uses: chabad360/hugo-gh-pages@master
         with:
           githubToken: ${{ secrets.BUILD_TOKEN }}
-          args: --gc --minify --cleanDestinationDir --baseURL=https://jloosli.github.io/red-angus-site/
