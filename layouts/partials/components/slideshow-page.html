@@ -1,0 +1,65 @@
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<style>
+    :root {
+        --swiper-navigation-color: var(--primary-color);
+    }
+    .swiper-slide {
+        display: grid;
+        place-items: center;
+    }
+</style>
+{{ with . }}
+<!-- Slider main container -->
+<div class="swiper-container">
+  <!-- Additional required wrapper -->
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    {{ range . }}
+    {{ $image := .Resize "800x" }}
+    {{ $filename := $image.RelPermalink }}
+    <div class="swiper-slide">
+      <img
+          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+          data-src="{{  $filename }}"
+          alt="{{ $filename }}"
+          class="swiper-lazy"
+      >
+      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
+      {{ with $image.Exif }}
+      Date: {{ .Date }}
+      Lat/Long: {{ .Lat}}/{{ .Long }}
+      Tags:
+      {{ range $k, $v := .Tags }}
+      TAG: {{ $k }}: {{ $v }}
+      {{ end }}
+      {{ end }}
+
+    </div>
+    {{ end }}
+
+  </div>
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+</div>
+
+<script>
+  const mySwiper = new Swiper('.swiper-container', {
+    // Optional parameters
+    loop: true,
+    lazy: {
+      loadPrevNext: true,
+    },
+    preloadImages: false,
+
+    // Navigation arrows
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: true,
+  });
+</script>
+{{ end }}

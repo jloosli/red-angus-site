@@ -15,12 +15,12 @@ weight = 1
 
 [[menu.main]]
 name = "Sale Bulls"
-URL = "sales/2020/bulls/"
+URL = "sales/2021/bulls/"
 weight = 2
 
 [[menu.main]]
 name = "Sale Heifers"
-URL = "sales/2020/heifers/"
+URL = "sales/2021/heifers/"
 weight = 3
 
 [[menu.main]]
@@ -155,11 +155,11 @@ details = [
 [[params.widgets.home]]
 title = "Sale Bulls"
 image = "images/cattle/Lot-1.jpg"
-link = "sales/2020/bulls/"
+link = "sales/2021/bulls/"
 [[params.widgets.home]]
 title = "Sale Heifers"
 image = "images/cattle/females-resized.jpg"
-link = "sales/2020/heifers/"
+link = "sales/2021/heifers/"
 [[params.widgets.home]]
 title = "Herd Bulls"
 image = "images/cattle/new-frontier-600x430.jpg"

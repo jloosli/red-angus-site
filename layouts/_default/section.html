@@ -11,6 +11,12 @@
     </li>
     {{ end }}
   </ul>
+  {{ with .Resources.GetMatch "*.csv" }}
+  {{ partial "components/dataTable" . }}
+  {{ end }}
+  {{ with .Resources.ByType "image" }}
+  {{ partial "components/slideshow-page" . }}
+  {{ end }}
   {{ .Content }}
   {{ template "_internal/pagination.html" . }}
 </main>

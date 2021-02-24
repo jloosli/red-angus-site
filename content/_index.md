@@ -1,8 +1,7 @@
 +++
 title = "Home"
-subtitle = "See you in the spring of 2021!"
-cta_text = "2020 Sale Catalog"
-cta_link = "#"
+cta_text = "2021 Sale Catalog"
+cta_link = "/sales/2021/catalog/"
 embed= ""
 +++
 # Annual Production Sale March 9th
