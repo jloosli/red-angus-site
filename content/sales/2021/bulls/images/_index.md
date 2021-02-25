@@ -1,3 +1,100 @@
-+++
-title="2021 Bulls Images"
-+++
+---
+title: 2021 Bulls Images
+resources:
+- src: 001_IMG_0578.jpg
+  title: Lot 1
+- src: 002_IMG_9369.jpg
+  title: Lot 2
+- src: 003_IMG_9801.jpg
+  title: Lot 3
+- src: 005_IMG_0635.jpg
+  title: Lot 5
+- src: 008_IMG_9786.jpg
+  title: Lot 8
+- src: 010_IMG_0026.jpg
+  title: Lot 10
+- src: 011_IMG_9334.jpg
+  title: Lot 11
+- src: 012_IMG_0278.jpg
+  title: Lot 12
+- src: 013_IMG_0642.jpg
+  title: Lot 13
+- src: 014_IMG_9697.jpg
+  title: Lot 14
+- src: 016_IMG_0435_1.jpg
+  title: Lot 16
+- src: 017_IMG_0859.jpg
+  title: Lot 17
+- src: 018_IMG_9391.jpg
+  title: Lot 18
+- src: 019_IMG_9943.jpg
+  title: Lot 19
+- src: 022_IMG_0659.jpg
+  title: Lot 22
+- src: 028_IMG_0813.jpg
+  title: Lot 28
+- src: 030_IMG_0546.jpg
+  title: Lot 30
+- src: 034_IMG_9893_1.jpg
+  title: Lot 34
+- src: 035_IMG_9600.jpg
+  title: Lot 35
+- src: 038_IMG_9856.jpg
+  title: Lot 38
+- src: 040_IMG_0109.jpg
+  title: Lot 40
+- src: 041_IMG_0410.jpg
+  title: Lot 41
+- src: 042_IMG_9343.jpg
+  title: Lot 42
+- src: 047_IMG_9327.jpg
+  title: Lot 47
+- src: 048_IMG_0295.jpg
+  title: Lot 48
+- src: 050_IMG_0603.jpg
+  title: Lot 50
+- src: 052_IMG_9755.jpg
+  title: Lot 52
+- src: 060_IMG_9461.jpg
+  title: Lot 60
+- src: 061_IMG_0002.jpg
+  title: Lot 61
+- src: 062_IMG_0500.jpg
+  title: Lot 62
+- src: 063_IMG_0092.jpg
+  title: Lot 63
+- src: 064_IMG_9502.jpg
+  title: Lot 64
+- src: 066_IMG_9624.jpg
+  title: Lot 66
+- src: 073_IMG_0457.jpg
+  title: Lot 73
+- src: 074_IMG_0134.jpg
+  title: Lot 74
+- src: 075_IMG_9836.jpg
+  title: Lot 75
+- src: 080_IMG_9526.jpg
+  title: Lot 80
+- src: 081_IMG_0418.jpg
+  title: Lot 81
+- src: 0100_IMG_0057.jpg
+  title: Lot 100
+- src: 0114_IMG_0120.jpg
+  title: Lot 114
+- src: 0124_IMG_9716.jpg
+  title: Lot 124
+- src: 0137_IMG_0715.jpg
+  title: Lot 137
+- src: 0138_IMG_9587.jpg
+  title: Lot 138
+- src: 0162_IMG_0376.jpg
+  title: Lot 162
+- src: 0175_IMG_9687.jpg
+  title: Lot 175
+- src: 0177_IMG_0208.jpg
+  title: Lot 177
+- src: 0183_IMG_9421.jpg
+  title: Lot 183
+- src: 0184_IMG_0327.jpg
+  title: Lot 184
+---

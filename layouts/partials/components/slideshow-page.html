@@ -4,10 +4,26 @@
     :root {
         --swiper-navigation-color: var(--primary-color);
     }
+
     .swiper-slide {
         display: grid;
         place-items: center;
+        position: relative;
     }
+    .slide-text {
+        background: rgba(86, 53, 30, 0.6);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: calc((100% - 800px) / 2 );
+        margin: 0 auto;
+        width: 800px;
+        min-height: 50px;
+        text-align: center;
+        padding: 0.25em;
+        font-size: 1.5em;
+    }
+
 </style>
 {{ with . }}
 <!-- Slider main container -->
@@ -20,21 +36,13 @@
     {{ $filename := $image.RelPermalink }}
     <div class="swiper-slide">
       <img
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          data-src="{{  $filename }}"
-          alt="{{ $filename }}"
-          class="swiper-lazy"
+        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
+        data-src="{{  $filename }}"
+        alt="{{ $filename }}"
+        class="swiper-lazy"
       >
       <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-      {{ with $image.Exif }}
-      Date: {{ .Date }}
-      Lat/Long: {{ .Lat}}/{{ .Long }}
-      Tags:
-      {{ range $k, $v := .Tags }}
-      TAG: {{ $k }}: {{ $v }}
-      {{ end }}
-      {{ end }}
-
+      <div class="slide-text">{{ $image.Title }}</div>
     </div>
     {{ end }}
 
@@ -46,20 +54,20 @@
 </div>
 
 <script>
-  const mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    lazy: {
-      loadPrevNext: true,
-    },
-    preloadImages: false,
+    const mySwiper = new Swiper('.swiper-container', {
+        // Optional parameters
+        loop: true,
+        lazy: {
+            loadPrevNext: true,
+        },
+        preloadImages: false,
 
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    autoplay: true,
-  });
+        // Navigation arrows
+        navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+        },
+        autoplay: true,
+    });
 </script>
 {{ end }}
