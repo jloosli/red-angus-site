@@ -155,7 +155,7 @@ details = [
 [params.widgets]
 [[params.widgets.home]]
 title = "Sale Bulls"
-image = "images/cattle/Lot-1.jpg"
+image = "sales/2021/bulls/images/001_IMG_0578.jpg"
 link = "sales/2021/bulls/"
 [[params.widgets.home]]
 title = "Sale Heifers"
