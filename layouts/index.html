@@ -6,7 +6,9 @@
       <a class="btn btn-primary" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
     </div>
     <div class="media">
-      {{ partial "components/slideshow" (dict "data_path" site.Params.home_slideshow_path ) }}
+      {{ $slideshow_page := .Site.GetPage "/sales/2021/bulls/images" }}
+      {{ $resource := $slideshow_page.Resources.ByType "image"  }}
+      {{ partial "components/slideshow-page" $resource }}
     </div>
   </div>
   <div class="widgets">
