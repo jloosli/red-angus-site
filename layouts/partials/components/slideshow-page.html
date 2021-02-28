@@ -33,7 +33,7 @@
   <div class="swiper-wrapper">
     <!-- Slides -->
     {{ range . }}
-    {{ $image := .Resize "800x" }}
+    {{ $image := .Resize "1200x" }}
     {{ $filename := $image.RelPermalink }}
     <div class="swiper-slide">
       <img

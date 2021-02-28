@@ -3,7 +3,7 @@ $lapis-lazuli: #2660a4ff;
 $mint-cream: #edf7f6ff;
 $sandy-brown: #f19953ff;
 $copper: #c47335ff;
-$van-dyke-brown: #56351eff;
+//$van-dyke-brown: #56351eff;
 
 
 /* SCSS HSL */
@@ -11,14 +11,14 @@ $lapis-lazuli: hsla(212, 62%, 40%, 1);
 $mint-cream: hsla(174, 38%, 95%, 1);
 $sandy-brown: hsla(27, 85%, 64%, 1);
 $copper: hsla(26, 57%, 49%, 1);
-$van-dyke-brown: hsla(25, 48%, 23%, 1);
+//$van-dyke-brown: hsla(25, 48%, 23%, 1);
 
 /* SCSS RGB */
 $lapis-lazuli: rgba(38, 96, 164, 1);
 $mint-cream: rgba(237, 247, 246, 1);
 $sandy-brown: rgba(241, 153, 83, 1);
 $copper: rgba(196, 115, 53, 1);
-$van-dyke-brown: rgba(86, 53, 30, 1);
+$van-dyke-brown: rgb(86, 53, 30);
 
 // Color Variables
 $primary-color: $van-dyke-brown;
