@@ -32,7 +32,7 @@
   <!-- Additional required wrapper -->
   <div class="swiper-wrapper">
     <!-- Slides -->
-    {{ range . }}
+    {{ range sort . "Name" }}
     {{ $image := .Resize "1200x" }}
     {{ $filename := $image.RelPermalink }}
     <div class="swiper-slide">

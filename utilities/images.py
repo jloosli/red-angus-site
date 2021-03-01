@@ -23,6 +23,7 @@ for f in onlyfiles:
         if temp['tag'] in row['Name']:
             # temp['epd'] = row.copy()
             temp['lot'] = row['LOT #']
+            temp['name'] = int(row['LOT #'])
             temp['title'] = "Lot {}: {}".format(row['LOT #'], row['Name'])
     resources.append(temp)
 
