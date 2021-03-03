@@ -49,7 +49,7 @@ and EPDs of our powerful genetics.
 
 We want to invite you to our ranch in Ashton, Idaho, on Tuesday, March 9, 2021 to have a delicious
 lunch on us and be a part of this great sale. As mentioned, you can also watch and bid online through
-LiveAuctions.TV.
+[LiveAuctions.TV](https://liveauctions.tv/auction/752/detail).
 
 Thank you,
 
