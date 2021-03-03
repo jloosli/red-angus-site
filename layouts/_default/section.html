@@ -11,6 +11,9 @@
     </li>
     {{ end }}
   </ul>
+  {{ with .Resources.GetMatch "*.xlsx" }}
+  {{ partial "components/excel-download" . }}
+  {{ end }}
   {{ with .Resources.GetMatch "*.csv" }}
   {{ partial "components/dataTable" . }}
   {{ end }}
