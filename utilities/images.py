@@ -24,7 +24,7 @@ for f in onlyfiles:
             # temp['epd'] = row.copy()
             temp['lot'] = row['LOT #']
             temp['name'] = int(row['LOT #'])
-            temp['title'] = "Lot {}: {}".format(row['LOT #'], row['Name'])
+            temp['title'] = "Lot {}: {}".format(row['LOT #'], row['Name']).title()
     resources.append(temp)
 
 print(yaml.dump(resources))
