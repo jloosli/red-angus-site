@@ -3,6 +3,7 @@ languageCode = "en-us"
 title = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
 description = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
 disableKinds = ["taxonomy", "term"]
+googleAnalytics = "UA-38806192-1"
 
 ############################## navigation ###############################
 [menu]
@@ -165,10 +166,6 @@ link = "sales/2021/heifers/"
 title = "Herd Bulls"
 image = "images/cattle/new-frontier-600x430.jpg"
 link = "herd-bulls"
-
-[params.plugins]
-#        [[params.plugins.css]]
-#            url = "https://unpkg.com/swiper/swiper-bundle.min.css"
 
 [markup.goldmark.renderer]
 unsafe = true
