@@ -1,0 +1,1639 @@
+---
+-
+   Reg_num: 3768727
+   Reg Type: R
+   Prefix: WSA
+   Animal_ID: E016
+   Name: ANDRAS BOURNE SILVER E016
+   Sex: B
+   Birth_Date: 02-13-2017
+   ProS: 110
+   ProS_pct: 58
+   HerdBuilder: 77
+   HerdBuilder_pct: 51
+   GridMaster: 32
+   GridMaster_pct: 59
+   CED: 8
+   CED_Acc: 55
+   CED_pct: 92
+   BW: 0.8
+   BW_Acc: 70
+   BW_pct: 88
+   WW: 85
+   WW_Acc: 66
+   WW_pct: 2
+   YW: 137
+   YW_Acc: 67
+   YW_pct: 3
+   ADG: 0.32
+   ADG_Acc: 67
+   ADG_pct: 6
+   DMI: 2.15
+   DMI_Acc: 37
+   DMI_pct: 95
+   Milk: 34
+   Milk_Acc: 25
+   Milk_pct: 3
+   ME: 4
+   ME_Acc: 65
+   ME_pct: 74
+   HPG: 15
+   HPG_Acc: 27
+   HPG_pct: 14
+   CEM: 4
+   CEM_Acc: 30
+   CEM_pct: 90
+   Stay: 14
+   Stay_Acc: 28
+   Stay_pct: 64
+   Marb: 0.31
+   Marb_Acc: 51
+   Marb_pct: 68
+   YG: 0.22
+   YG_Acc: 39
+   YG_pct: 97
+   CW: 36
+   CW_Acc: 53
+   CW_pct: 12
+   RE: 0.07
+   RE_Acc: 50
+   RE_pct: 52
+   BF: 0.05
+   BF_Acc: 37
+   BF_pct: 96
+   name: ANDRAS BOURNE SILVER E016
+   sex_a: B
+   bday4: 02-13-2017
+   id: E016
+   pfx: WSA
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 84
+   bw_a: 85
+   bw_r: 108
+   ww_a: 840
+   ww_r: 110
+   yw_a: 1368
+   yw_r: 109
+   adg: 3.29
+   adg_r: 106
+   wda: 3.69
+   wda_r: 108
+   hip:
+   frm:
+   scr: 42.94
+   scr_a: 42.94
+   mppa:
+   dmppa: 107
+   us_mb_a: 5.44
+   us_mb_r: 108
+   us_rea_a: 12.98
+   us_rea_r: 101
+   us_bf_a: 0.49
+   us_bf_r: 116
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData: GGP
+   ProS: 110
+   ProS_pct: 58
+   herdbuilder: 77
+   herdbuilder_pr: 51
+   gridmaster: 32
+   gridmaster_pr: 59
+   epd_ced: 8
+   epd_ced_acc: 55
+   epd_ced_pr: 92
+   epd_bw: 0.8
+   epd_bw_acc: 70
+   epd_bw_pr: 88
+   epd_ww: 85
+   epd_ww_acc: 66
+   epd_ww_pr: 2
+   epd_yw: 137
+   epd_yw_acc: 67
+   epd_yw_pr: 3
+   epd_adg: 0.32
+   epd_adg_acc: 67
+   epd_adg_pr: 6
+   epd_dmi: 2.15
+   epd_dmi_acc: 37
+   epd_dmi_pr: 95
+   epd_milk: 34
+   epd_milk_acc: 25
+   epd_milk_pr: 3
+   epd_me: 4
+   epd_me_acc: 65
+   epd_me_pr: 74
+   epd_hpg: 15
+   epd_hpg_acc: 27
+   epd_hpg_pr: 14
+   epd_cem: 4
+   epd_cem_acc: 30
+   epd_cem_pr: 90
+   epd_stay: 14
+   epd_stay_acc: 28
+   epd_stay_pr: 64
+   epd_marb: 0.31
+   epd_marb_acc: 51
+   epd_marb_pr: 68
+   epd_yg: 0.22
+   epd_yg_acc: 39
+   epd_yg_pr: 97
+   epd_cw: 36
+   epd_cw_acc: 53
+   epd_cw_pr: 12
+   epd_rea: 0.07
+   epd_rea_acc: 50
+   epd_rea_pr: 52
+   epd_fat: 0.05
+   epd_fat_acc: 37
+   epd_fat_pr: 96
+   sire_reg#: 1627789
+   sire_name: 5L BOURNE 117-48A
+   dam_reg#: 1600057
+   dam_bdate: 12-01-2012
+   dam_name: ANDRAS LUCINDA 2123
+   ss_reg: 1450210
+   ss_name: 5L ADVANTAGE 3267-221Y
+   sd_reg: 1187248
+   sd_name: 5L ROXIE 854-117
+   ds_reg: 1238416
+   ds_name: WHITE OAKS COPPER 873
+   dd_reg: 1022557
+   dd_name: ANDRAS LUCINDA 514
+   sss_reg: 1260155
+   sss_name: BUF CRK THE RIGHT KIND U199
+   ssd_reg: 1187800
+   ssd_name: 5L ADINA 195-3267
+   sds_reg: 1047725
+   sds_name: 5L SIGNATURE 5615
+   sdd_reg: 612767
+   sdd_name: XXX ROXIE 854 MR
+   dss_reg: 968783
+   dss_name: HLH OUTER LIMIT 851 4073
+   dsd_reg: 1107587
+   dsd_name: WOF MISS COPPERTOP 674
+   dds_reg: 896420
+   dds_name: ANDRAS TRAVELER 297
+   ddd_reg: 851633
+   ddd_name: ANDRAS LUCINDA 360
+   owner_name: ANDRAS STOCK FARM
+   
+-
+   Reg_num: 3992632
+   Reg Type: R
+   Prefix: FRI
+   Animal_ID: 8218
+   Name: FEDDES FRONTLINE C16-8218
+   Sex: B
+   Birth_Date: 01-26-2018
+   ProS: 114
+   ProS_pct: 52
+   HerdBuilder: 69
+   HerdBuilder_pct: 67
+   GridMaster: 45
+   GridMaster_pct: 37
+   CED: 17
+   CED_Acc: 50
+   CED_pct: 10
+   BW: -4.1
+   BW_Acc: 62
+   BW_pct: 15
+   WW: 53
+   WW_Acc: 57
+   WW_pct: 75
+   YW: 95
+   YW_Acc: 58
+   YW_pct: 54
+   ADG: 0.26
+   ADG_Acc: 58
+   ADG_pct: 28
+   DMI: 1.43
+   DMI_Acc: 23
+   DMI_pct: 50
+   Milk: 29
+   Milk_Acc: 18
+   Milk_pct: 17
+   ME: 5
+   ME_Acc: 61
+   ME_pct: 80
+   HPG: 11
+   HPG_Acc: 21
+   HPG_pct: 53
+   CEM: 9
+   CEM_Acc: 27
+   CEM_pct: 16
+   Stay: 14
+   Stay_Acc: 27
+   Stay_pct: 60
+   Marb: 0.22
+   Marb_Acc: 44
+   Marb_pct: 85
+   YG: -0.01
+   YG_Acc: 36
+   YG_pct: 18
+   CW: 24
+   CW_Acc: 47
+   CW_pct: 37
+   RE: 0.15
+   RE_Acc: 47
+   RE_pct: 37
+   BF: -0.01
+   BF_Acc: 32
+   BF_pct: 7
+   name: FEDDES FRONTLINE C16-8218
+   sex_a: B
+   bday4: 01-26-2018
+   id: 8218
+   pfx: FRI
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 66
+   bw_a: 70
+   bw_r: 87
+   ww_a: 696
+   ww_r: 102
+   yw_a: 1132
+   yw_r: 102
+   adg: 2.71
+   adg_r: 99
+   wda: 2.99
+   wda_r: 98
+   hip:
+   frm:
+   scr:
+   scr_a:
+   mppa:
+   dmppa: 93
+   us_mb_a: 3.15
+   us_mb_r: 83
+   us_rea_a: 13.18
+   us_rea_r: 103
+   us_bf_a: 0.19
+   us_bf_r: 79
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData: GGP
+   ProS: 114
+   ProS_pct: 52
+   herdbuilder: 69
+   herdbuilder_pr: 67
+   gridmaster: 45
+   gridmaster_pr: 37
+   epd_ced: 17
+   epd_ced_acc: 50
+   epd_ced_pr: 10
+   epd_bw: -4.1
+   epd_bw_acc: 62
+   epd_bw_pr: 15
+   epd_ww: 53
+   epd_ww_acc: 57
+   epd_ww_pr: 75
+   epd_yw: 95
+   epd_yw_acc: 58
+   epd_yw_pr: 54
+   epd_adg: 0.26
+   epd_adg_acc: 58
+   epd_adg_pr: 28
+   epd_dmi: 1.43
+   epd_dmi_acc: 23
+   epd_dmi_pr: 50
+   epd_milk: 29
+   epd_milk_acc: 18
+   epd_milk_pr: 17
+   epd_me: 5
+   epd_me_acc: 61
+   epd_me_pr: 80
+   epd_hpg: 11
+   epd_hpg_acc: 21
+   epd_hpg_pr: 53
+   epd_cem: 9
+   epd_cem_acc: 27
+   epd_cem_pr: 16
+   epd_stay: 14
+   epd_stay_acc: 27
+   epd_stay_pr: 60
+   epd_marb: 0.22
+   epd_marb_acc: 44
+   epd_marb_pr: 85
+   epd_yg: -0.01
+   epd_yg_acc: 36
+   epd_yg_pr: 18
+   epd_cw: 24
+   epd_cw_acc: 47
+   epd_cw_pr: 37
+   epd_rea: 0.15
+   epd_rea_acc: 47
+   epd_rea_pr: 37
+   epd_fat: -0.01
+   epd_fat_acc: 32
+   epd_fat_pr: 7
+   sire_reg#: 3549925
+   sire_name: LASO FRONT ROW X37D
+   dam_reg#: 3469615
+   dam_bdate: 01-22-2015
+   dam_name: FEDDES LARKABU X21-C16
+   ss_reg: 1725576
+   ss_name: 5L OUT IN FRONT 1701-457B
+   sd_reg: 1048957
+   sd_name: LASO LEANNA BC114R
+   ds_reg: 1445368
+   ds_name: LSF SAGA 1040Y
+   dd_reg: 1368609
+   dd_name: FEDDES LARKABU X21
+   sss_reg: 1426142
+   sss_name: C-T THE QUEST 1103
+   ssd_reg: 1449612
+   ssd_name: 5L FIREFLY 3109-1701
+   sds_reg: 492175
+   sds_name: BASIN HOBO 79E
+   sdd_reg: 918583
+   sdd_name: LASO LEANNA BC 114
+   dss_reg: 1042135
+   dss_name: BECKTON EPIC R397 K
+   dsd_reg: 1305733
+   dsd_name: LSF MINOLA T7172 W9041
+   dds_reg: 1025891
+   dds_name: FEDDES BIG SKY R9
+   ddd_reg: 1235064
+   ddd_name: FEDDES LARKABU 827
+   owner_name:
+   
+-
+   Reg_num: 3992838
+   Reg Type: R
+   Prefix: FRI
+   Animal_ID: 8233
+   Name: FEDDES STILLWATER B70-8233
+   Sex: B
+   Birth_Date: 02-01-2018
+   ProS: 179
+   ProS_pct: 2
+   HerdBuilder: 84
+   HerdBuilder_pct: 38
+   GridMaster: 96
+   GridMaster_pct: 1
+   CED: 12
+   CED_Acc: 53
+   CED_pct: 53
+   BW: 1.1
+   BW_Acc: 67
+   BW_pct: 90
+   WW: 68
+   WW_Acc: 62
+   WW_pct: 25
+   YW: 117
+   YW_Acc: 64
+   YW_pct: 16
+   ADG: 0.3
+   ADG_Acc: 64
+   ADG_pct: 11
+   DMI: 1.84
+   DMI_Acc: 24
+   DMI_pct: 83
+   Milk: 32
+   Milk_Acc: 20
+   Milk_pct: 6
+   ME: 1
+   ME_Acc: 64
+   ME_pct: 54
+   HPG: 10
+   HPG_Acc: 21
+   HPG_pct: 73
+   CEM: 6
+   CEM_Acc: 28
+   CEM_pct: 62
+   Stay: 17
+   Stay_Acc: 27
+   Stay_pct: 32
+   Marb: 1.06
+   Marb_Acc: 46
+   Marb_pct: 1
+   YG: 0.17
+   YG_Acc: 39
+   YG_pct: 90
+   CW: 40
+   CW_Acc: 50
+   CW_pct: 8
+   RE: 0.23
+   RE_Acc: 49
+   RE_pct: 25
+   BF: 0.05
+   BF_Acc: 38
+   BF_pct: 92
+   name: FEDDES STILLWATER B70-8233
+   sex_a: B
+   bday4: 02-01-2018
+   id: 8233
+   pfx: FRI
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 78
+   bw_a: 80
+   bw_r: 100
+   ww_a: 731
+   ww_r: 106
+   yw_a: 1245
+   yw_r: 108
+   adg: 3.2
+   adg_r: 111
+   wda: 3.36
+   wda_r: 107
+   hip:
+   frm:
+   scr:
+   scr_a:
+   mppa:
+   dmppa: 106
+   us_mb_a: 6.69
+   us_mb_r: 177
+   us_rea_a: 12.17
+   us_rea_r: 96
+   us_bf_a: 0.31
+   us_bf_r: 119
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData: GGP
+   ProS: 179
+   ProS_pct: 2
+   herdbuilder: 84
+   herdbuilder_pr: 38
+   gridmaster: 96
+   gridmaster_pr: 1
+   epd_ced: 12
+   epd_ced_acc: 53
+   epd_ced_pr: 53
+   epd_bw: 1.1
+   epd_bw_acc: 67
+   epd_bw_pr: 90
+   epd_ww: 68
+   epd_ww_acc: 62
+   epd_ww_pr: 25
+   epd_yw: 117
+   epd_yw_acc: 64
+   epd_yw_pr: 16
+   epd_adg: 0.3
+   epd_adg_acc: 64
+   epd_adg_pr: 11
+   epd_dmi: 1.84
+   epd_dmi_acc: 24
+   epd_dmi_pr: 83
+   epd_milk: 32
+   epd_milk_acc: 20
+   epd_milk_pr: 6
+   epd_me: 1
+   epd_me_acc: 64
+   epd_me_pr: 54
+   epd_hpg: 10
+   epd_hpg_acc: 21
+   epd_hpg_pr: 73
+   epd_cem: 6
+   epd_cem_acc: 28
+   epd_cem_pr: 62
+   epd_stay: 17
+   epd_stay_acc: 27
+   epd_stay_pr: 32
+   epd_marb: 1.06
+   epd_marb_acc: 46
+   epd_marb_pr: 1
+   epd_yg: 0.17
+   epd_yg_acc: 39
+   epd_yg_pr: 90
+   epd_cw: 40
+   epd_cw_acc: 50
+   epd_cw_pr: 8
+   epd_rea: 0.23
+   epd_rea_acc: 49
+   epd_rea_pr: 25
+   epd_fat: 0.05
+   epd_fat_acc: 38
+   epd_fat_pr: 92
+   sire_reg#: 3539689
+   sire_name: FEDDES BRUNSWICK D202
+   dam_reg#: 1687224
+   dam_bdate: 02-27-2014
+   dam_name: FEDDES SLEEK 8116 B70
+   ss_reg: 1687147
+   ss_name: FEDDES SILVER BOW B226
+   sd_reg: 1368609
+   sd_name: FEDDES LARKABU X21
+   ds_reg: 1432777
+   ds_name: LOOSLI RIGHT KIND 107
+   dd_reg: 1235165
+   dd_name: FEDDES SLEEK 8116
+   sss_reg: 1441805
+   sss_name: BROWN JYJ REDEMPTION Y1334
+   ssd_reg: 1423157
+   ssd_name: FEDDES LAKINA Y17
+   sds_reg: 1025891
+   sds_name: FEDDES BIG SKY R9
+   sdd_reg: 1235064
+   sdd_name: FEDDES LARKABU 827
+   dss_reg: 1260155
+   dss_name: BUF CRK THE RIGHT KIND U199
+   dsd_reg: 1319890
+   dsd_name: MISS LL DESIGN 949
+   dds_reg: 1025891
+   dds_name: FEDDES BIG SKY R9
+   ddd_reg: 1025915
+   ddd_name: FEDDES SLEEK R33
+   owner_name:
+   
+-
+   Reg_num: 4047064
+   Reg Type: R
+   Prefix: PIE
+   Animal_ID: 835
+   Name: PIE FORTUNE 835
+   Sex: B
+   Birth_Date: 01-25-2018
+   ProS: 119
+   ProS_pct: 44
+   HerdBuilder: 73
+   HerdBuilder_pct: 59
+   GridMaster: 46
+   GridMaster_pct: 35
+   CED: 11
+   CED_Acc: 52
+   CED_pct: 66
+   BW: -2.7
+   BW_Acc: 64
+   BW_pct: 33
+   WW: 66
+   WW_Acc: 61
+   WW_pct: 32
+   YW: 124
+   YW_Acc: 62
+   YW_pct: 9
+   ADG: 0.36
+   ADG_Acc: 62
+   ADG_pct: 2
+   DMI: 2.36
+   DMI_Acc: 19
+   DMI_pct: 98
+   Milk: 36
+   Milk_Acc: 18
+   Milk_pct: 2
+   ME: 2
+   ME_Acc: 63
+   ME_pct: 59
+   HPG: 15
+   HPG_Acc: 25
+   HPG_pct: 10
+   CEM: 8
+   CEM_Acc: 25
+   CEM_pct: 34
+   Stay: 12
+   Stay_Acc: 22
+   Stay_pct: 86
+   Marb: 0.21
+   Marb_Acc: 46
+   Marb_pct: 86
+   YG: 0.01
+   YG_Acc: 36
+   YG_pct: 24
+   CW: 30
+   CW_Acc: 48
+   CW_pct: 23
+   RE: 0.59
+   RE_Acc: 43
+   RE_pct: 4
+   BF: 0.04
+   BF_Acc: 36
+   BF_pct: 89
+   name: PIE FORTUNE 835
+   sex_a: B
+   bday4: 01-25-2018
+   id: 835
+   pfx: PIE
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 75
+   bw_a: 83
+   bw_r: 99
+   ww_a: 674
+   ww_r: 97
+   yw_a: 1296
+   yw_r: 107
+   adg: 3.88
+   adg_r: 122
+   wda: 3.26
+   wda_r: 104
+   hip:
+   frm:
+   scr:
+   scr_a:
+   mppa:
+   dmppa: 100
+   us_mb_a: 3.83
+   us_mb_r: 97
+   us_rea_a: 15.87
+   us_rea_r: 110
+   us_bf_a: 0.53
+   us_bf_r: 133
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData: GGP
+   ProS: 119
+   ProS_pct: 44
+   herdbuilder: 73
+   herdbuilder_pr: 59
+   gridmaster: 46
+   gridmaster_pr: 35
+   epd_ced: 11
+   epd_ced_acc: 52
+   epd_ced_pr: 66
+   epd_bw: -2.7
+   epd_bw_acc: 64
+   epd_bw_pr: 33
+   epd_ww: 66
+   epd_ww_acc: 61
+   epd_ww_pr: 32
+   epd_yw: 124
+   epd_yw_acc: 62
+   epd_yw_pr: 9
+   epd_adg: 0.36
+   epd_adg_acc: 62
+   epd_adg_pr: 2
+   epd_dmi: 2.36
+   epd_dmi_acc: 19
+   epd_dmi_pr: 98
+   epd_milk: 36
+   epd_milk_acc: 18
+   epd_milk_pr: 2
+   epd_me: 2
+   epd_me_acc: 63
+   epd_me_pr: 59
+   epd_hpg: 15
+   epd_hpg_acc: 25
+   epd_hpg_pr: 10
+   epd_cem: 8
+   epd_cem_acc: 25
+   epd_cem_pr: 34
+   epd_stay: 12
+   epd_stay_acc: 22
+   epd_stay_pr: 86
+   epd_marb: 0.21
+   epd_marb_acc: 46
+   epd_marb_pr: 86
+   epd_yg: 0.01
+   epd_yg_acc: 36
+   epd_yg_pr: 24
+   epd_cw: 30
+   epd_cw_acc: 48
+   epd_cw_pr: 23
+   epd_rea: 0.59
+   epd_rea_acc: 43
+   epd_rea_pr: 4
+   epd_fat: 0.04
+   epd_fat_acc: 36
+   epd_fat_pr: 89
+   sire_reg#: 3555188
+   sire_name: 9 MILE FRANCHISE 6305
+   dam_reg#: 3603772
+   dam_bdate: 02-22-2016
+   dam_name: PIE PRIMETTE 6023
+   ss_reg: 3469042
+   ss_name: SPUR FRANCHISE OF GARTON
+   sd_reg: 1430755
+   sd_name: C-BAR ABIGRACE Y11
+   ds_reg: 1724196
+   ds_name: PIE LEGEND 468
+   dd_reg: 1280567
+   dd_name: PIE PRIMETTE 884
+   sss_reg: 3318198
+   sss_name: SPUR FRANCHISE 7070
+   ssd_reg: 3469041
+   ssd_name: H & H IRENE LASS 0135
+   sds_reg: 1240434
+   sds_name: TR COLT 45 UT806
+   sdd_reg: 1186433
+   sdd_name: C-BAR & BROWN ABIGRACE T712
+   dss_reg: 1445368
+   dss_name: LSF SAGA 1040Y
+   dsd_reg: 1575307
+   dsd_name: PIE POTEET 2372
+   dds_reg: 993330
+   dds_name: HXC MAGNUM 4464P
+   ddd_reg: 1137723
+   ddd_name: PIE PRIMETTE 6194
+   owner_name: LOOSLI FARMS
+   
+-
+   Reg_num: 3482168
+   Reg Type: R
+   Prefix: 5L4L
+   Animal_ID: 03C
+   Name: 5L ULTIMATUM 1893-03C
+   Sex: B
+   Birth_Date: 01-24-2015
+   ProS: 145
+   ProS_pct: 15
+   HerdBuilder: 92
+   HerdBuilder_pct: 23
+   GridMaster: 54
+   GridMaster_pct: 24
+   CED: 11
+   CED_Acc: 67
+   CED_pct: 67
+   BW: -0.5
+   BW_Acc: 80
+   BW_pct: 71
+   WW: 93
+   WW_Acc: 78
+   WW_pct: 1
+   YW: 141
+   YW_Acc: 79
+   YW_pct: 2
+   ADG: 0.3
+   ADG_Acc: 79
+   ADG_pct: 11
+   DMI: 2.57
+   DMI_Acc: 37
+   DMI_pct: 99
+   Milk: 24
+   Milk_Acc: 40
+   Milk_pct: 58
+   ME: 2
+   ME_Acc: 67
+   ME_pct: 57
+   HPG: 20
+   HPG_Acc: 27
+   HPG_pct: 1
+   CEM: 4
+   CEM_Acc: 46
+   CEM_pct: 92
+   Stay: 14
+   Stay_Acc: 32
+   Stay_pct: 67
+   Marb: 0.9
+   Marb_Acc: 61
+   Marb_pct: 1
+   YG: 0.29
+   YG_Acc: 50
+   YG_pct: 99
+   CW: 41
+   CW_Acc: 66
+   CW_pct: 7
+   RE: 0.2
+   RE_Acc: 64
+   RE_pct: 29
+   BF: 0.09
+   BF_Acc: 53
+   BF_pct: 99
+   name: 5L ULTIMATUM 1893-03C
+   sex_a: B
+   bday4: 01-24-2015
+   id: 03C
+   pfx: 5L4L
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 66
+   bw_a: 74
+   bw_r: 97
+   ww_a: 731
+   ww_r: 121
+   yw_a: 1245
+   yw_r: 114
+   adg: 3.2
+   adg_r: 105
+   wda: 3.17
+   wda_r: 113
+   hip:
+   frm:
+   scr:
+   scr_a:
+   mppa:
+   dmppa: 103
+   us_mb_a: 7.5
+   us_mb_r: 149
+   us_rea_a: 14.44
+   us_rea_r: 114
+   us_bf_a: 0.39
+   us_bf_r: 149
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData: GGP
+   ProS: 145
+   ProS_pct: 15
+   herdbuilder: 92
+   herdbuilder_pr: 23
+   gridmaster: 54
+   gridmaster_pr: 24
+   epd_ced: 11
+   epd_ced_acc: 67
+   epd_ced_pr: 67
+   epd_bw: -0.5
+   epd_bw_acc: 80
+   epd_bw_pr: 71
+   epd_ww: 93
+   epd_ww_acc: 78
+   epd_ww_pr: 1
+   epd_yw: 141
+   epd_yw_acc: 79
+   epd_yw_pr: 2
+   epd_adg: 0.3
+   epd_adg_acc: 79
+   epd_adg_pr: 11
+   epd_dmi: 2.57
+   epd_dmi_acc: 37
+   epd_dmi_pr: 99
+   epd_milk: 24
+   epd_milk_acc: 40
+   epd_milk_pr: 58
+   epd_me: 2
+   epd_me_acc: 67
+   epd_me_pr: 57
+   epd_hpg: 20
+   epd_hpg_acc: 27
+   epd_hpg_pr: 1
+   epd_cem: 4
+   epd_cem_acc: 46
+   epd_cem_pr: 92
+   epd_stay: 14
+   epd_stay_acc: 32
+   epd_stay_pr: 67
+   epd_marb: 0.9
+   epd_marb_acc: 61
+   epd_marb_pr: 1
+   epd_yg: 0.29
+   epd_yg_acc: 50
+   epd_yg_pr: 99
+   epd_cw: 41
+   epd_cw_acc: 66
+   epd_cw_pr: 7
+   epd_rea: 0.2
+   epd_rea_acc: 64
+   epd_rea_pr: 29
+   epd_fat: 0.09
+   epd_fat_acc: 53
+   epd_fat_pr: 99
+   sire_reg#: 1627789
+   sire_name: 5L BOURNE 117-48A
+   dam_reg#: 1620102
+   dam_bdate: 02-25-2013
+   dam_name: 5L PRETTY GUN 1300-1893
+   ss_reg: 1450210
+   ss_name: 5L ADVANTAGE 3267-221Y
+   sd_reg: 1187248
+   sd_name: 5L ROXIE 854-117
+   ds_reg: 1450177
+   ds_name: 5L PRECISE 2777-248Y
+   dd_reg: 1379964
+   dd_name: 5L SYBILLI 1728-1300
+   sss_reg: 1260155
+   sss_name: BUF CRK THE RIGHT KIND U199
+   ssd_reg: 1187800
+   ssd_name: 5L ADINA 195-3267
+   sds_reg: 1047725
+   sds_name: 5L SIGNATURE 5615
+   sdd_reg: 612767
+   sdd_name: XXX ROXIE 854 MR
+   dss_reg: 1260155
+   dss_name: BUF CRK THE RIGHT KIND U199
+   dsd_reg: 1187604
+   dsd_name: 5L REDBIRD 135-2777
+   dds_reg: 1187423
+   dds_name: 5L TRADESMAN 1715-6237
+   ddd_reg: 1261721
+   ddd_name: 5L SYBILLI 1593-1728
+   owner_name: MEHLHOFF
+    LARINDA
+-
+   Reg_num: 3964923
+   Reg Type: R
+   Prefix: CPH
+   Animal_ID: 802
+   Name: GLACIER SHADE 802
+   Sex: B
+   Birth_Date: 02-11-2018
+   ProS: 99
+   ProS_pct: 73
+   HerdBuilder: 68
+   HerdBuilder_pct: 68
+   GridMaster: 31
+   GridMaster_pct: 62
+   CED: 17
+   CED_Acc: 47
+   CED_pct: 8
+   BW: -6.7
+   BW_Acc: 56
+   BW_pct: 2
+   WW: 57
+   WW_Acc: 53
+   WW_pct: 65
+   YW: 87
+   YW_Acc: 54
+   YW_pct: 70
+   ADG: 0.19
+   ADG_Acc: 54
+   ADG_pct: 73
+   DMI: 1.2
+   DMI_Acc: 17
+   DMI_pct: 30
+   Milk: 35
+   Milk_Acc: 26
+   Milk_pct: 2
+   ME: 1
+   ME_Acc: 23
+   ME_pct: 53
+   HPG: 7
+   HPG_Acc: 19
+   HPG_pct: 94
+   CEM: 10
+   CEM_Acc: 29
+   CEM_pct: 12
+   Stay: 14
+   Stay_Acc: 19
+   Stay_pct: 60
+   Marb: 0.47
+   Marb_Acc: 39
+   Marb_pct: 35
+   YG: 0.09
+   YG_Acc: 35
+   YG_pct: 64
+   CW: 11
+   CW_Acc: 46
+   CW_pct: 76
+   RE: -0.25
+   RE_Acc: 43
+   RE_pct: 96
+   BF: 0
+   BF_Acc: 35
+   BF_pct: 18
+   name: GLACIER SHADE 802
+   sex_a: B
+   bday4: 02-11-2018
+   id: 802
+   pfx: CPH
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 70
+   bw_a: 70
+   bw_r: 109
+   ww_a: 715
+   ww_r: 103
+   yw_a: 1179
+   yw_r: 103
+   adg: 2.9
+   adg_r: 102
+   wda: 3.23
+   wda_r: 102
+   hip:
+   frm:
+   scr:
+   scr_a:
+   mppa:
+   dmppa: 104
+   us_mb_a:
+   us_mb_r:
+   us_rea_a:
+   us_rea_r:
+   us_bf_a:
+   us_bf_r:
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData:
+   ProS: 99
+   ProS_pct: 73
+   herdbuilder: 68
+   herdbuilder_pr: 68
+   gridmaster: 31
+   gridmaster_pr: 62
+   epd_ced: 17
+   epd_ced_acc: 47
+   epd_ced_pr: 8
+   epd_bw: -6.7
+   epd_bw_acc: 56
+   epd_bw_pr: 2
+   epd_ww: 57
+   epd_ww_acc: 53
+   epd_ww_pr: 65
+   epd_yw: 87
+   epd_yw_acc: 54
+   epd_yw_pr: 70
+   epd_adg: 0.19
+   epd_adg_acc: 54
+   epd_adg_pr: 73
+   epd_dmi: 1.2
+   epd_dmi_acc: 17
+   epd_dmi_pr: 30
+   epd_milk: 35
+   epd_milk_acc: 26
+   epd_milk_pr: 2
+   epd_me: 1
+   epd_me_acc: 23
+   epd_me_pr: 53
+   epd_hpg: 7
+   epd_hpg_acc: 19
+   epd_hpg_pr: 94
+   epd_cem: 10
+   epd_cem_acc: 29
+   epd_cem_pr: 12
+   epd_stay: 14
+   epd_stay_acc: 19
+   epd_stay_pr: 60
+   epd_marb: 0.47
+   epd_marb_acc: 39
+   epd_marb_pr: 35
+   epd_yg: 0.09
+   epd_yg_acc: 35
+   epd_yg_pr: 64
+   epd_cw: 11
+   epd_cw_acc: 46
+   epd_cw_pr: 76
+   epd_rea: -0.25
+   epd_rea_acc: 43
+   epd_rea_pr: 96
+   epd_fat: 0
+   epd_fat_acc: 35
+   epd_fat_pr: 18
+   sire_reg#: 1628086
+   sire_name: WFL MERLIN 018A
+   dam_reg#: 1373580
+   dam_bdate: 02-16-2010
+   dam_name: GLACIER HI-RB-LSTA 013
+   ss_reg: 1176927
+   ss_name: LJC MERLIN T179
+   sd_reg: 1443573
+   sd_name: WFL COMMITMENT 042Y
+   ds_reg: 119274
+   ds_name: LEACHMAN EBV 3531
+   dd_reg: 700292
+   dd_name: GLACIER HI-RB-LSTA 9114
+   sss_reg: 960383
+   sss_name: LJC MISSION STATEMENT P27
+   ssd_reg: 922265
+   ssd_name: BUF CRK REDPRIDE N179
+   sds_reg: 1120008
+   sds_name: BROWN COMMITMENT S7206
+   sdd_reg: 1321705
+   sdd_name: WFL JEWELMAKER 9024
+   dss_reg: 70973
+   dss_name: PBC D0202 6M H3554
+   dsd_reg: 228608
+   dsd_name: JHL A R PHILLIPE 325
+   dds_reg: 499294
+   dds_name: TASSEL ROBIN HOOD 78E
+   ddd_reg: 152930
+   ddd_name: GLACIER HI-RB-LS
+   owner_name:
+   
+-
+   Reg_num: 3907215
+   Reg Type: R
+   Prefix: LBLF
+   Animal_ID: 804
+   Name: LOOSLI RIVERSIDE 804
+   Sex: B
+   Birth_Date: 01-16-2018
+   ProS: 104
+   ProS_pct: 66
+   HerdBuilder: 94
+   HerdBuilder_pct: 20
+   GridMaster: 10
+   GridMaster_pct: 92
+   CED: 15
+   CED_Acc: 41
+   CED_pct: 19
+   BW: -0.7
+   BW_Acc: 48
+   BW_pct: 68
+   WW: 79
+   WW_Acc: 47
+   WW_pct: 6
+   YW: 127
+   YW_Acc: 48
+   YW_pct: 7
+   ADG: 0.3
+   ADG_Acc: 48
+   ADG_pct: 11
+   DMI: 2.38
+   DMI_Acc: 18
+   DMI_pct: 98
+   Milk: 31
+   Milk_Acc: 16
+   Milk_pct: 10
+   ME: 3
+   ME_Acc: 54
+   ME_pct: 66
+   HPG: 15
+   HPG_Acc: 21
+   HPG_pct: 13
+   CEM: 8
+   CEM_Acc: 19
+   CEM_pct: 27
+   Stay: 15
+   Stay_Acc: 22
+   Stay_pct: 56
+   Marb: 0.18
+   Marb_Acc: 40
+   Marb_pct: 91
+   YG: 0.07
+   YG_Acc: 33
+   YG_pct: 53
+   CW: 21
+   CW_Acc: 42
+   CW_pct: 45
+   RE: 0.2
+   RE_Acc: 38
+   RE_pct: 29
+   BF: 0.03
+   BF_Acc: 35
+   BF_pct: 78
+   name: LOOSLI RIVERSIDE 804
+   sex_a: B
+   bday4: 01-16-2018
+   id: 804
+   pfx: LBLF
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 75
+   bw_a: 83
+   bw_r: 100
+   ww_a: 714
+   ww_r: 114
+   yw_a: 1257
+   yw_r: 112
+   adg: 3.38
+   adg_r: 109
+   wda: 3.21
+   wda_r: 103
+   hip:
+   frm:
+   scr:
+   scr_a:
+   mppa:
+   dmppa: 108
+   us_mb_a: 3.61
+   us_mb_r: 89
+   us_rea_a: 13.92
+   us_rea_r: 109
+   us_bf_a: 0.29
+   us_bf_r: 110
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData: GGP
+   ProS: 104
+   ProS_pct: 66
+   herdbuilder: 94
+   herdbuilder_pr: 20
+   gridmaster: 10
+   gridmaster_pr: 92
+   epd_ced: 15
+   epd_ced_acc: 41
+   epd_ced_pr: 19
+   epd_bw: -0.7
+   epd_bw_acc: 48
+   epd_bw_pr: 68
+   epd_ww: 79
+   epd_ww_acc: 47
+   epd_ww_pr: 6
+   epd_yw: 127
+   epd_yw_acc: 48
+   epd_yw_pr: 7
+   epd_adg: 0.3
+   epd_adg_acc: 48
+   epd_adg_pr: 11
+   epd_dmi: 2.38
+   epd_dmi_acc: 18
+   epd_dmi_pr: 98
+   epd_milk: 31
+   epd_milk_acc: 16
+   epd_milk_pr: 10
+   epd_me: 3
+   epd_me_acc: 54
+   epd_me_pr: 66
+   epd_hpg: 15
+   epd_hpg_acc: 21
+   epd_hpg_pr: 13
+   epd_cem: 8
+   epd_cem_acc: 19
+   epd_cem_pr: 27
+   epd_stay: 15
+   epd_stay_acc: 22
+   epd_stay_pr: 56
+   epd_marb: 0.18
+   epd_marb_acc: 40
+   epd_marb_pr: 91
+   epd_yg: 0.07
+   epd_yg_acc: 33
+   epd_yg_pr: 53
+   epd_cw: 21
+   epd_cw_acc: 42
+   epd_cw_pr: 45
+   epd_rea: 0.2
+   epd_rea_acc: 38
+   epd_rea_pr: 29
+   epd_fat: 0.03
+   epd_fat_acc: 35
+   epd_fat_pr: 78
+   sire_reg#: 1714259
+   sire_name: LOOSLI RIVERSIDE 414
+   dam_reg#: 3571532
+   dam_bdate: 02-11-2016
+   dam_name: MISS LOOSLI FRONTIER 648
+   ss_reg: 1441805
+   ss_name: BROWN JYJ REDEMPTION Y1334
+   sd_reg: 1528146
+   sd_name: MISS LOOSLI HANNAH 2116
+   ds_reg: 1671573
+   ds_name: ANDRAS FRONTIER A084
+   dd_reg: 1386687
+   dd_name: MISS LL CAMELOT 0117
+   sss_reg: 979031
+   sss_name: BECKTON NEBULA P P707
+   ssd_reg: 1327069
+   ssd_name: JYJ MS JOLENE W16
+   sds_reg: 1191523
+   sds_name: LOOSLI CONRAD 724
+   sdd_reg: 1319905
+   sdd_name: MISS LL DESIGN 927
+   dss_reg: 1506922
+   dss_name: ANDRAS NEW DIRECTION R240
+   dsd_reg: 1375260
+   dsd_name: ANDRAS DEEDEE 0001
+   dds_reg: 1241443
+   dds_name: LARSON CAMELOT 809
+   ddd_reg: 655071
+   ddd_name: MISS LL 507 909
+   owner_name:
+   
+-
+   Reg_num: 1749754
+   Reg Type: R
+   Prefix: KRN
+   Animal_ID: 5509C
+   Name: LSF RSL SPECIAL FORCES 5509C
+   Sex: B
+   Birth_Date: 01-14-2015
+   ProS: 125
+   ProS_pct: 36
+   HerdBuilder: 109
+   HerdBuilder_pct: 5
+   GridMaster: 16
+   GridMaster_pct: 85
+   CED: 14
+   CED_Acc: 58
+   CED_pct: 37
+   BW: -3.8
+   BW_Acc: 75
+   BW_pct: 18
+   WW: 62
+   WW_Acc: 71
+   WW_pct: 43
+   YW: 92
+   YW_Acc: 72
+   YW_pct: 60
+   ADG: 0.19
+   ADG_Acc: 72
+   ADG_pct: 76
+   DMI: 0.98
+   DMI_Acc: 42
+   DMI_pct: 17
+   Milk: 23
+   Milk_Acc: 41
+   Milk_pct: 65
+   ME: -3
+   ME_Acc: 67
+   ME_pct: 29
+   HPG: 10
+   HPG_Acc: 30
+   HPG_pct: 62
+   CEM: 6
+   CEM_Acc: 42
+   CEM_pct: 59
+   Stay: 21
+   Stay_Acc: 23
+   Stay_pct: 3
+   Marb: 0.38
+   Marb_Acc: 49
+   Marb_pct: 52
+   YG: 0.07
+   YG_Acc: 42
+   YG_pct: 52
+   CW: 4
+   CW_Acc: 55
+   CW_pct: 90
+   RE: -0.03
+   RE_Acc: 53
+   RE_pct: 72
+   BF: 0.03
+   BF_Acc: 41
+   BF_pct: 75
+   name: LSF RSL SPECIAL FORCES 5509C
+   sex_a: B
+   bday4: 01-14-2015
+   id: 5509C
+   pfx: KRN
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: AI
+   bw: 78
+   bw_a: 79
+   bw_r: 93
+   ww_a: 764
+   ww_r: 104
+   yw_a: 1368
+   yw_r: 103
+   adg: 3.75
+   adg_r: 101
+   wda: 3.65
+   wda_r: 100
+   hip: 49
+   frm: 4.79
+   scr: 35.48
+   scr_a: 35.48
+   mppa:
+   dmppa: 104
+   us_mb_a: 5.87
+   us_mb_r: 116
+   us_rea_a: 13.87
+   us_rea_r: 102
+   us_bf_a: 0.4
+   us_bf_r: 122
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData:
+   ProS: 125
+   ProS_pct: 36
+   herdbuilder: 109
+   herdbuilder_pr: 5
+   gridmaster: 16
+   gridmaster_pr: 85
+   epd_ced: 14
+   epd_ced_acc: 58
+   epd_ced_pr: 37
+   epd_bw: -3.8
+   epd_bw_acc: 75
+   epd_bw_pr: 18
+   epd_ww: 62
+   epd_ww_acc: 71
+   epd_ww_pr: 43
+   epd_yw: 92
+   epd_yw_acc: 72
+   epd_yw_pr: 60
+   epd_adg: 0.19
+   epd_adg_acc: 72
+   epd_adg_pr: 76
+   epd_dmi: 0.98
+   epd_dmi_acc: 42
+   epd_dmi_pr: 17
+   epd_milk: 23
+   epd_milk_acc: 41
+   epd_milk_pr: 65
+   epd_me: -3
+   epd_me_acc: 67
+   epd_me_pr: 29
+   epd_hpg: 10
+   epd_hpg_acc: 30
+   epd_hpg_pr: 62
+   epd_cem: 6
+   epd_cem_acc: 42
+   epd_cem_pr: 59
+   epd_stay: 21
+   epd_stay_acc: 23
+   epd_stay_pr: 3
+   epd_marb: 0.38
+   epd_marb_acc: 49
+   epd_marb_pr: 52
+   epd_yg: 0.07
+   epd_yg_acc: 42
+   epd_yg_pr: 52
+   epd_cw: 4
+   epd_cw_acc: 55
+   epd_cw_pr: 90
+   epd_rea: -0.03
+   epd_rea_acc: 53
+   epd_rea_pr: 72
+   epd_fat: 0.03
+   epd_fat_acc: 41
+   epd_fat_pr: 75
+   sire_reg#: 1566470
+   sire_name: LSF RHO TITONKA Z721
+   dam_reg#: 958127
+   dam_bdate: 02-26-2004
+   dam_name: RAISLAND REBELLA 429-502
+   ss_reg: 1260155
+   ss_name: BUF CRK THE RIGHT KIND U199
+   sd_reg: 1284813
+   sd_name: MONTVUE 10K RACHILLE U393
+   ds_reg: 560498
+   ds_name: LCHMN BULLSEYE 1379G
+   dd_reg: 475841
+   dd_name: 'KRN REBA''S ROBIN'
+   sss_reg: 1050008
+   sss_name: BUF CRK LANCER R017
+   ssd_reg: 1050016
+   ssd_name: BUF CRK SHOSHONE R353
+   sds_reg: 794957
+   sds_name: STALBURN KINDLE 10K
+   sdd_reg: 1011324
+   sdd_name: MONTVUE B221L RACHILLE P144
+   dss_reg: 492433
+   dss_name: LCHMN ON TARGET 1016E
+   dsd_reg: 404500
+   dsd_name: LEACHMAN DINA C1001
+   dds_reg: 385484
+   dds_name: LMAN ROBIN HOOD 1174B
+   ddd_reg: 404379
+   ddd_name: KRN REBELLA 805/314
+   owner_name:
+   
+-
+   Reg_num: 1725734
+   Reg Type: R
+   Prefix: FLR
+   Animal_ID: 492B
+   Name: 5L FRONTLINES 2871-492B
+   Sex: B
+   Birth_Date: 04-01-2014
+   ProS: 117
+   ProS_pct: 47
+   HerdBuilder: 61
+   HerdBuilder_pct: 80
+   GridMaster: 56
+   GridMaster_pct: 21
+   CED: 16
+   CED_Acc: 54
+   CED_pct: 18
+   BW: -3.9
+   BW_Acc: 77
+   BW_pct: 17
+   WW: 64
+   WW_Acc: 73
+   WW_pct: 38
+   YW: 103
+   YW_Acc: 75
+   YW_pct: 37
+   ADG: 0.24
+   ADG_Acc: 75
+   ADG_pct: 38
+   DMI: 1.62
+   DMI_Acc: 32
+   DMI_pct: 66
+   Milk: 18
+   Milk_Acc: 37
+   Milk_pct: 90
+   ME: 5
+   ME_Acc: 67
+   ME_pct: 78
+   HPG: 7
+   HPG_Acc: 38
+   HPG_pct: 94
+   CEM: 11
+   CEM_Acc: 34
+   CEM_pct: 3
+   Stay: 12
+   Stay_Acc: 29
+   Stay_pct: 84
+   Marb: 0.67
+   Marb_Acc: 46
+   Marb_pct: 11
+   YG: 0.08
+   YG_Acc: 36
+   YG_pct: 57
+   CW: 23
+   CW_Acc: 44
+   CW_pct: 39
+   RE: 0.34
+   RE_Acc: 45
+   RE_pct: 14
+   BF: 0.05
+   BF_Acc: 36
+   BF_pct: 94
+   name: 5L FRONTLINES 2871-492B
+   sex_a: B
+   bday4: 04-01-2014
+   id: 492B
+   pfx: FLR
+   Cat: A
+   pct_b1: 100% AR
+   clr: 1
+   hps: P
+   mating: NATURAL
+   bw: 68
+   bw_a: 72
+   bw_r: 84
+   ww_a: 641
+   ww_r: 97
+   yw_a: 1033
+   yw_r: 100
+   adg: 2.44
+   adg_r: 104
+   wda: 2.67
+   wda_r: 100
+   hip:
+   frm:
+   scr:
+   scr_a:
+   mppa:
+   dmppa: 100
+   us_mb_a: 3.77
+   us_mb_r: 92
+   us_rea_a: 12.4
+   us_rea_r: 105
+   us_bf_a: 0.08
+   us_bf_r: 50
+   Parentage: Sire qualifies; dam not on file.
+   GenomicData: GGP
+   ProS: 117
+   ProS_pct: 47
+   herdbuilder: 61
+   herdbuilder_pr: 80
+   gridmaster: 56
+   gridmaster_pr: 21
+   epd_ced: 16
+   epd_ced_acc: 54
+   epd_ced_pr: 18
+   epd_bw: -3.9
+   epd_bw_acc: 77
+   epd_bw_pr: 17
+   epd_ww: 64
+   epd_ww_acc: 73
+   epd_ww_pr: 38
+   epd_yw: 103
+   epd_yw_acc: 75
+   epd_yw_pr: 37
+   epd_adg: 0.24
+   epd_adg_acc: 75
+   epd_adg_pr: 38
+   epd_dmi: 1.62
+   epd_dmi_acc: 32
+   epd_dmi_pr: 66
+   epd_milk: 18
+   epd_milk_acc: 37
+   epd_milk_pr: 90
+   epd_me: 5
+   epd_me_acc: 67
+   epd_me_pr: 78
+   epd_hpg: 7
+   epd_hpg_acc: 38
+   epd_hpg_pr: 94
+   epd_cem: 11
+   epd_cem_acc: 34
+   epd_cem_pr: 3
+   epd_stay: 12
+   epd_stay_acc: 29
+   epd_stay_pr: 84
+   epd_marb: 0.67
+   epd_marb_acc: 46
+   epd_marb_pr: 11
+   epd_yg: 0.08
+   epd_yg_acc: 36
+   epd_yg_pr: 57
+   epd_cw: 23
+   epd_cw_acc: 44
+   epd_cw_pr: 39
+   epd_rea: 0.34
+   epd_rea_acc: 45
+   epd_rea_pr: 14
+   epd_fat: 0.05
+   epd_fat_acc: 36
+   epd_fat_pr: 94
+   sire_reg#: 1426142
+   sire_name: C-T THE QUEST 1103
+   dam_reg#: 1449958
+   dam_bdate: 03-05-2011
+   dam_name: 5L LAKOTA 3749-2871
+   ss_reg: 975924
+   ss_name: HXC CONQUEST 4405P
+   sd_reg: 1309253
+   sd_name: C-T TINA 0972
+   ds_reg: 1260155
+   ds_name: BUF CRK THE RIGHT KIND U199
+   dd_reg: 1314296
+   dd_name: 5L LAKOTA 1523-3749
+   sss_reg: 387580
+   sss_name: BECKTON JULIAN GG B571
+   ssd_reg: 845501
+   ssd_name: HXC ELLIE MAY MA638
+   sds_reg: 806707
+   sds_name: 5L NORSEMAN KING 2291
+   sdd_reg: 1163093
+   sdd_name: C-T TINA 0706
+   dss_reg: 1050008
+   dss_name: BUF CRK LANCER R017
+   dsd_reg: 1050016
+   dsd_name: BUF CRK SHOSHONE R353
+   dds_reg: 1115955
+   dds_name: 5L EXPEDITION 0052-5746
+   ddd_reg: 921136
+   ddd_name: 5L LAKOTA 41C-1523
+   owner_name: LOOSLI FARMS
+   

@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="{{ $.Site.LanguageCode | default " en-US" }}">
+{{ block "head" . }}
 {{- partial "head.html" . -}}
+{{ end }}
 <body>
 <div class="wrapper">
   {{ block "preloader" . }}
