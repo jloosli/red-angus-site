@@ -1,0 +1,35 @@
+{{ define "main" }}
+<main class="">
+  <div class="banner container-fluid">
+    <div class="Logo" >
+      <img src="/images/Loosli-Red-Angus-Logo.svg" alt="Loosli Red Angus Logo">
+    </div>
+  </div>
+  <div class="banner-bottom container-fluid py-4">
+    <div class="col-md-8 offset-md-2 text-center call-to-action">
+      {{ .Content }}
+      <a class="btn btn-primary" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
+    </div>
+  </div>
+  <!--    <div class="media">-->
+  <!--      {{ $slideshow_page := .Site.GetPage "/sales/2021/bulls/images" }}-->
+  <!--      {{ $resource := $slideshow_page.Resources.ByType "image"  }}-->
+  <!--      {{ partial "components/slideshow-page" $resource }}-->
+  <!--    </div>-->
+  </div>
+  <!--  <div class="widgets">-->
+  <!--    {{ range $.Site.Params.widgets.home }}-->
+  <!--    <a href="{{.link}}">-->
+  <!--      <div class="widget cloud">-->
+  <!--        <h3 class="title">{{ .title }}</h3>-->
+  <!--        <img src="{{ .image | absURL }}" alt="{{ .title}}"/>-->
+  <!--      </div>-->
+  <!--    </a>-->
+  <!--    {{ end }}-->
+  <!--  </div>-->
+</main>
+{{ end }}
+
+{{ define "breadcrumb" }}
+<!--No Breadcrumb on home-->
+{{ end }}
