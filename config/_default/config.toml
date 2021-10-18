@@ -1,0 +1,12 @@
+baseURL = "https://loosliredangus.com"
+languageCode = "en-us"
+title = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
+description = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
+disableKinds = ["taxonomy", "term"]
+googleAnalytics = "UA-38806192-1"
+theme="red-angus-original"
+
+
+[markup.goldmark.renderer]
+unsafe = true
+enableInlineShortcodes = true

@@ -1,117 +1,53 @@
-baseURL = "https://loosliredangus.com"
-languageCode = "en-us"
-title = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
-description = "Loosli Red Angus - Red Angus Bulls, Red Angus Heifers, and Red Angus Cows for Sale"
-disableKinds = ["taxonomy", "term"]
-googleAnalytics = "UA-38806192-1"
-
-############################## navigation ###############################
-[menu]
-
-# main menu
-[[menu.main]]
-name = "Home"
-URL = "/"
-weight = 1
-
-[[menu.main]]
-name = "Sale Bulls"
-URL = "sales/2021/bulls/"
-weight = 2
-
-[[menu.main]]
-name = "Sale Heifers"
-URL = "sales/2021/heifers/"
-weight = 3
-
-[[menu.main]]
-name = "Herd Bulls"
-URL = "herd-bulls"
-weight = 4
-
-[[menu.main]]
-name = "Sales"
-URL = "sales"
-weight = 5
-
-[[menu.main]]
-name = "Watch and Bid Live"
-URL = "watch-and-bid-live"
-weight = 6
-
-[[menu.main]]
-name = "Contact Us"
-URL = "contact-us"
-weight = 7
-
-# footer menu
-[[menu.footer]]
-name = "About"
-URL = "about"
-weight = 1
-
-[[menu.footer]]
-name = "Post"
-URL = "blog"
-weight = 2
-
-[[menu.footer]]
-name = "Contact"
-URL = "contact"
-weight = 3
-
-
-[params]
 logo = "images/Loosli-Red-Angus-Logo.svg"
 home_slideshow_path = "2020.bulls_images"
 google_maps_key = "AIzaSyD80IS57_0KNnxpc1OYrXFVhVitLur35Ls"
 sale_year = 2021
 # Contacts address with go through the markdown parser, so email links will get generated
-[[params.contacts]]
+[[contacts]]
 name = "Brian Loosli"
 address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
-[[params.contacts]]
+[[contacts]]
 name = "Sale Barn"
 address = ["3310 US 20", "Ashton, ID 83420", "(208) 652-7878", "22 miles north of Rexburg, ID"]
 
-[[params.sale_reps]]
+[[sale_reps]]
 name = "Curt Cox"
 contact = ["WY Livestock Round-Up", "(307) 234-2700 (Office)", "(307) 630-4604 (Cell)"]
-[[params.sale_reps]]
+[[sale_reps]]
 name = "Pete Crow"
 contact = ["Western Livestock Journal", "(303) 810-8831"]
-[[params.sale_reps]]
+[[sale_reps]]
 name = "Mark Frisbie"
 contact = ["Western Ag Reporter", "(208) 890-4517"]
-[[params.sale_reps]]
+[[sale_reps]]
 name = "Devin Murrin"
 contact = ["Western Livestock Journal", "(406) 696-1502"]
-[[params.sale_reps]]
+[[sale_reps]]
 name = "Katie Ochsner"
 contact = ["Red Angus Association", "(307) 575-6802"]
 
-[[params.airports]]
+[[airports]]
 name = "Idaho Falls Regional Airport"
 identifier = "IDA"
 details = ["50 miles south of the ranch"]
-[[params.airports]]
+[[airports]]
 name = "Pocatello Regional Airport"
 identifier = "PIH"
 details = ["100 miles south of the ranch"]
-[[params.airports]]
+[[airports]]
 name = "Jackson Hole Airport"
 identifier = "JAC"
 details = ["81 miles east of the ranch"]
-[[params.airports]]
+[[airports]]
 name = "St. Anthony, ID"
 identifier = ""
 details = ["12 miles south of ranch.", "4966 elevation, 4500′ x 50′ runway, Unicom 122.9"]
-[[params.airports]]
+[[airports]]
 name = "Rexburg, ID"
 identifier = ""
 details = ["25 miles south of ranch.", "4858 elevation, 4200′ x 75′ runway, Unicom 122.8"]
 
-[[params.motels]]
+[[motels]]
 name = "AmericInn"
 url = "https://www.americinn.com/hotels/id/rexburg"
 details = [
@@ -119,7 +55,7 @@ details = [
     "Rexburg, ID 83440",
     "208-356-5333"
 ]
-[[params.motels]]
+[[motels]]
 name = "Super 8 Motel"
 url = "https://www.wyndhamhotels.com/super-8/rexburg-idaho/super-8-rexburg/overview"
 details = [
@@ -127,7 +63,7 @@ details = [
     "Rexburg, ID 83440",
     "208-356-8888",
 ]
-[[params.motels]]
+[[motels]]
 name = "Marriott Spring Hill Suites"
 url = "http://www.marriott.com/hotels/travel/idarx-springhill-suites-rexburg/"
 details = [
@@ -135,7 +71,7 @@ details = [
     "Rexburg, ID 83440",
     "208 356-3003",
 ]
-[[params.motels]]
+[[motels]]
 name = "Hampton Inn & Suites"
 url = "https://hamptoninn3.hilton.com/en/hotels/idaho/hampton-inn-and-suites-rexburg-IDARXHX/index.html"
 details = [
@@ -144,7 +80,7 @@ details = [
     "208-497-0424",
 ]
 
-[[params.motels]]
+[[motels]]
 name = "Henry’s Fork Inn"
 url = "http://www.henrysforkinn.com/"
 details = [
@@ -153,20 +89,16 @@ details = [
     "208-624-3711",
 ]
 
-[params.widgets]
-[[params.widgets.home]]
+[widgets]
+[[widgets.home]]
 title = "Sale Bulls"
 image = "sales/2021/bulls/images/001_IMG_0578.jpg"
 link = "sales/2021/bulls/"
-[[params.widgets.home]]
+[[widgets.home]]
 title = "Sale Heifers"
 image = "images/cattle/females-resized.jpg"
 link = "sales/2021/heifers/"
-[[params.widgets.home]]
+[[widgets.home]]
 title = "Herd Bulls"
 image = "images/cattle/new-frontier-600x430.jpg"
 link = "herd-bulls"
-
-[markup.goldmark.renderer]
-unsafe = true
-enableInlineShortcodes = true
