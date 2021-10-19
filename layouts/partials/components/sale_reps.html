@@ -1,8 +1,0 @@
-{{ range site.Params.sale_reps }}
-<div class="sale_rep">
-  <strong>{{ .name }}</strong>
-  {{ range .contact }}
-  <span>{{ . }}</span>
-  {{ end }}
-</div>
-{{ end }}

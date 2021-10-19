@@ -1,0 +1,46 @@
+.landing {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-areas:
+    " hero "
+    " widgets ";
+  gap: 1rem;
+
+
+  .hero {
+    grid-area: hero;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    align-items: center;
+
+    .call-to-action {
+      text-align: center;
+    }
+  }
+
+  .widgets {
+    grid-area: widgets;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    a {
+      text-decoration: none;
+    }
+
+    .widget {
+      .title {
+        text-align: center;
+      }
+
+      img {
+        width: 100%;
+        object-fit: cover;
+        height: 200px;
+      }
+    }
+  }
+
+}

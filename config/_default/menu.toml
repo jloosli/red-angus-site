@@ -1,0 +1,51 @@
+# main menu
+[[main]]
+name = "Home"
+URL = "/"
+weight = 1
+
+[[main]]
+name = "Sale Bulls"
+URL = "sales/2021/bulls/"
+weight = 2
+
+[[main]]
+name = "Sale Heifers"
+URL = "sales/2021/heifers/"
+weight = 3
+
+[[main]]
+name = "Herd Bulls"
+URL = "herd-bulls"
+weight = 4
+
+[[main]]
+name = "Sales"
+URL = "sales"
+weight = 5
+
+[[main]]
+name = "Watch and Bid Live"
+URL = "watch-and-bid-live"
+weight = 6
+
+[[main]]
+name = "Contact Us"
+URL = "contact-us"
+weight = 7
+
+# footer menu
+[[footer]]
+name = "About"
+URL = "about"
+weight = 1
+
+[[footer]]
+name = "Post"
+URL = "blog"
+weight = 2
+
+[[footer]]
+name = "Contact"
+URL = "contact"
+weight = 3

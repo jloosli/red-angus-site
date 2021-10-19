@@ -1,0 +1,17 @@
+.herd-bulls {
+  .bull-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 1rem;
+
+    .bull {
+      background: white;
+      padding: 1rem;
+      margin: 0;
+      display: flex;
+      flex-flow: column;
+      align-items: center;
+      min-width: 0;
+    }
+  }
+}

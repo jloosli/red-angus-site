@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="{{ $.Site.LanguageCode | default " en-US" }}">
+{{ block "head" . }}
+{{- partial "head.html" . -}}
+{{ end }}
+<body>
+<div class="wrapper">
+  {{ block "preloader" . }}
+  {{- partial "preloader.html" . -}}
+  {{ end }}
+
+  {{ block "header" . }}
+  {{- partial "header/header.html" . -}}
+  {{ end }}
+
+  {{ block "breadcrumb" . }}
+  {{- partial "breadcrumb.html" . -}}
+  {{ end }}
+
+  {{- block "main" . }}{{- end }}
+
+  {{ block "footer" . }}
+  {{- partial "footer.html" . -}}
+  {{ end }}
+</div>
+</body>
+</html>

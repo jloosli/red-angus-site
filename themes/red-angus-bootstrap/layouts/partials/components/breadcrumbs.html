@@ -1,0 +1,31 @@
+<div class="container-fluid breadcrumb-container mb-4">
+  <div class="container">
+    <div class="row align-items-baseline">
+      <div class="col">
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb">
+            {{ template "breadcrumbnav" (dict "p1" . "p2" .) }}
+          </ol>
+        </nav>
+      </div>
+      <div class="col text-end"><h1>{{.Title}}</h1></div>
+    </div>
+  </div>
+</div>
+{{ define "breadcrumbnav" }}
+{{ if .p1.Parent }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Parent "p2" .p2 )  }}
+{{ else if not .p1.IsHome }}
+{{ template "breadcrumbnav" (dict "p1" .p1.Site.Home "p2" .p2 )  }}
+{{ end }}
+{{ $active := eq .p1 .p2}}
+<li class="{{ if $active }} active{{ end }} breadcrumb-item">
+  {{ if not $active }}
+  <a href="{{ .p1.Permalink }}">
+    {{ end }}
+    {{ .p1.Title }}
+  {{ if not $active }}
+  </a>
+  {{ end }}
+</li>
+{{ end }}

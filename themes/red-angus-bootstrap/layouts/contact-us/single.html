@@ -1,0 +1,42 @@
+{{ define "main" }}
+<main class="container contact-us cloud">
+  <div class="contact-pods row">
+    <div class="contacts col">
+      <h2>Contacts</h2>
+      {{ partial "components/contacts" . }}
+    </div>
+    <div class="sale-representatives col">
+      <h2>Sale Representatives</h2>
+      {{ partial "components/sale_reps" . }}
+    </div>
+    <div class="travel-recommendations col">
+      <h2>Travel</h2>
+
+      <div class="airports">
+        <h3>Airports</h3>
+        {{ range site.Params.airports }}
+        <div class="airport">
+          <strong>{{ .name}}</strong> ({{ .identifier}})
+          {{ delimit .details "<br>" }}
+        </div>
+        {{ end }}
+      </div>
+
+      <div class="motels">
+        <h3>Motels</h3>
+        {{ range site.Params.motels }}
+        <div class="motel">
+          <a target="_blank" href="{{.url}}"><strong>{{ .name}}</strong></a>
+          {{ delimit .details "<br>" }}
+        </div>
+        {{ end }}
+      </div>
+
+    </div>
+  </div>
+  <div class="row">
+    {{ partial "components/contactForm" . }}
+  </div>
+</main>
+
+{{ end }}

@@ -1,0 +1,30 @@
+<button class="hamburger hamburger--elastic" type="button"
+        aria-label="Menu" aria-controls="navigation">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+
+<nav class="nav-header">
+  <ul class="navbar-nav">
+    {{ range .Site.Menus.main }}
+    {{ if .HasChildren }}
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+         aria-expanded="false">
+        {{ .Name }}
+      </a>
+      <div class="dropdown-menu">
+        {{ range .Children }}
+        <a class="dropdown-item" href="{{ .URL | absURL }}">{{ .Name }}</a>
+        {{ end }}
+      </div>
+    </li>
+    {{ else }}
+    <li class="nav-item">
+      <a class="nav-link" href="{{ .URL | absURL }}">{{ .Name }}</a>
+    </li>
+    {{ end }}
+    {{ end }}
+  </ul>
+</nav>

@@ -1,0 +1,104 @@
+logo = "images/Loosli-Red-Angus-Logo.svg"
+home_slideshow_path = "2020.bulls_images"
+google_maps_key = "AIzaSyD80IS57_0KNnxpc1OYrXFVhVitLur35Ls"
+sale_year = 2021
+# Contacts address with go through the markdown parser, so email links will get generated
+[[contacts]]
+name = "Brian Loosli"
+address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
+[[contacts]]
+name = "Sale Barn"
+address = ["3310 US 20", "Ashton, ID 83420", "(208) 652-7878", "22 miles north of Rexburg, ID"]
+
+[[sale_reps]]
+name = "Curt Cox"
+contact = ["WY Livestock Round-Up", "(307) 234-2700 (Office)", "(307) 630-4604 (Cell)"]
+[[sale_reps]]
+name = "Pete Crow"
+contact = ["Western Livestock Journal", "(303) 810-8831"]
+[[sale_reps]]
+name = "Mark Frisbie"
+contact = ["Western Ag Reporter", "(208) 890-4517"]
+[[sale_reps]]
+name = "Devin Murrin"
+contact = ["Western Livestock Journal", "(406) 696-1502"]
+[[sale_reps]]
+name = "Katie Ochsner"
+contact = ["Red Angus Association", "(307) 575-6802"]
+
+[[airports]]
+name = "Idaho Falls Regional Airport"
+identifier = "IDA"
+details = ["50 miles south of the ranch"]
+[[airports]]
+name = "Pocatello Regional Airport"
+identifier = "PIH"
+details = ["100 miles south of the ranch"]
+[[airports]]
+name = "Jackson Hole Airport"
+identifier = "JAC"
+details = ["81 miles east of the ranch"]
+[[airports]]
+name = "St. Anthony, ID"
+identifier = ""
+details = ["12 miles south of ranch.", "4966 elevation, 4500′ x 50′ runway, Unicom 122.9"]
+[[airports]]
+name = "Rexburg, ID"
+identifier = ""
+details = ["25 miles south of ranch.", "4858 elevation, 4200′ x 75′ runway, Unicom 122.8"]
+
+[[motels]]
+name = "AmericInn"
+url = "https://www.americinn.com/hotels/id/rexburg"
+details = [
+    "1098 Golden Beauty Drive",
+    "Rexburg, ID 83440",
+    "208-356-5333"
+]
+[[motels]]
+name = "Super 8 Motel"
+url = "https://www.wyndhamhotels.com/super-8/rexburg-idaho/super-8-rexburg/overview"
+details = [
+    "215 W Main St",
+    "Rexburg, ID 83440",
+    "208-356-8888",
+]
+[[motels]]
+name = "Marriott Spring Hill Suites"
+url = "http://www.marriott.com/hotels/travel/idarx-springhill-suites-rexburg/"
+details = [
+    "1177 S Hwy 191",
+    "Rexburg, ID 83440",
+    "208 356-3003",
+]
+[[motels]]
+name = "Hampton Inn & Suites"
+url = "https://hamptoninn3.hilton.com/en/hotels/idaho/hampton-inn-and-suites-rexburg-IDARXHX/index.html"
+details = [
+    "1195 South Yellowstone Hwy",
+    "Rexburg, ID 83440",
+    "208-497-0424",
+]
+
+[[motels]]
+name = "Henry’s Fork Inn"
+url = "http://www.henrysforkinn.com/"
+details = [
+    "115 S. Bridge St.",
+    "St. Anthony, ID 83445",
+    "208-624-3711",
+]
+
+[widgets]
+[[widgets.home]]
+title = "Sale Bulls"
+image = "sales/2021/bulls/images/001_IMG_0578.jpg"
+link = "sales/2021/bulls/"
+[[widgets.home]]
+title = "Sale Heifers"
+image = "images/cattle/females-resized.jpg"
+link = "sales/2021/heifers/"
+[[widgets.home]]
+title = "Herd Bulls"
+image = "images/cattle/new-frontier-600x430.jpg"
+link = "herd-bulls"

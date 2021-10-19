@@ -1,0 +1,16 @@
+{{ define "main" }}
+<main class="content herd-bulls cloud">
+  <h1>{{ .Title}}</h1>
+  <section class="bull-grid">
+    {{ $bulls_list := index site.Data .Params.bulls_list }}
+    {{ range $bulls_list }}
+    <figure class="bull">
+      <img src="{{ .img_path }}" />
+      <figcaption>{{.name}}</figcaption>
+    </figure>
+    {{ end }}
+  </section>
+  {{ .Content }}
+</main>
+
+{{ end }}

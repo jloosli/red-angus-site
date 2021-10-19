@@ -1,0 +1,19 @@
+{{- $pc := .Page.Site.Config.Privacy.YouTube -}}
+{{- if not $pc.Disable -}}
+{{- $ytHost := cond $pc.PrivacyEnhanced  "www.youtube-nocookie.com" "www.youtube.com" -}}
+{{- $id := .Get "id" | default (.Get 0) -}}
+
+{{- $options := slice -}}
+{{- if .Get "autoplay" }}{{ $options = $options | append "autoplay=1" }}{{end -}}
+{{- if .Get "list" -}}
+{{- $id = "videoseries" -}}
+{{ $options = $options | append (printf "%s=%s" "list" (.Get "list")) }}
+{{- end -}}
+{{ $optionsString := delimit ($options) "&" }}
+
+{{- $class := .Get "class" | default (.Get 1) }}
+<div {{ with $class }}class="{{ . }}"{{ else }}style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;"{{ end }}>
+  <iframe src="https://{{ $ytHost }}/embed/{{ $id }}?{{ $optionsString | safeURL }}" {{ if not $class }}style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" {{ end }}allowfullscreen title="YouTube Video" allow="autoplay; encrypted-media"></iframe>
+</div>
+{{ end -}}
+<!-- https://support.google.com/youtube/answer/171780?hl=en -->
