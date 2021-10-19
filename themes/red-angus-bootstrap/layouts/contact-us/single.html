@@ -1,16 +1,15 @@
 {{ define "main" }}
-<main class="content contact-us cloud">
-  <h1>{{ .Title}}</h1>
-  <div class="contact-pods">
-    <div class="contacts">
+<main class="container contact-us cloud">
+  <div class="contact-pods row">
+    <div class="contacts col">
       <h2>Contacts</h2>
       {{ partial "components/contacts" . }}
     </div>
-    <div class="sale-representatives">
+    <div class="sale-representatives col">
       <h2>Sale Representatives</h2>
       {{ partial "components/sale_reps" . }}
     </div>
-    <div class="travel-recommendations">
+    <div class="travel-recommendations col">
       <h2>Travel</h2>
 
       <div class="airports">
@@ -34,6 +33,9 @@
       </div>
 
     </div>
+  </div>
+  <div class="row">
+    {{ partial "components/contactForm" . }}
   </div>
 </main>
 
