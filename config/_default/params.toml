@@ -96,9 +96,9 @@ image = "sales/2021/bulls/images/001_IMG_0578.jpg"
 link = "sales/2021/bulls/"
 [[widgets.home]]
 title = "Sale Heifers"
-image = "images/cattle/females-resized.jpg"
+image = "images/females-resized.jpg"
 link = "sales/2021/heifers/"
 [[widgets.home]]
 title = "Herd Bulls"
-image = "images/cattle/new-frontier-600x430.jpg"
+image = "images/new-frontier-600x430.jpg"
 link = "herd-bulls"
