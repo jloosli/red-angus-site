@@ -1,9 +1,12 @@
 .banner {
   background: url("/images/tetons_1920.jpg") no-repeat center 20% ;
   background-size: cover;
-  min-height: 470px;
+  min-height: 200x;
   display: grid;
   place-content: center;
+  &.home {
+    min-height: 470px;
+  }
 }
 
 .breadcrumb-container {

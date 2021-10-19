@@ -5,7 +5,7 @@
 @import "bootstrap/scss/functions";
 // 2. Include any default variable overrides here
 
-@import "bootstrap/colors";
+//@import "bootstrap/colors";
 
 // 3. Include remainder of required Bootstrap stylesheets
 @import "bootstrap/scss/variables";
@@ -22,6 +22,11 @@
 @import "bootstrap/scss/helpers";
 @import "bootstrap/scss/buttons";
 @import "bootstrap/scss/breadcrumb";
+@import "bootstrap/scss/carousel";
+@import "bootstrap/scss/navbar";
+@import "bootstrap/scss/nav";
+@import "bootstrap/scss/transitions";
+
 
 // 5. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
 @import "bootstrap/scss/utilities/api";

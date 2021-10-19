@@ -1,54 +1,13 @@
-{{- if default true .includeJs }}
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<style>
-    :root {
-        --swiper-navigation-color: var(--primary-color);
-    }
-</style>
-{{- end -}}
 {{ with .data_path }}
 {{ $path := . }}
-<!-- Slider main container -->
-<div class="swiper-container">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
+
+<div class="carousel slide">
+  <div class="carousel-inner">
     {{ range index site.Data.sales (split $path "." ) }}
     {{ $filename := index ((split (index (split . "/" | last 1) 0) ".") | first 1 ) 0 }}
-    <div class="swiper-slide">
-      <img
-          src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-          data-src="{{  . | absURL }}"
-          alt="{{ $filename }}"
-          class="swiper-lazy"
-      >
-      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-    </div>
+    <div class="carousel-item"><img src="{{ . | absURL}}" alt="{{$filename}}" class="d-block w-100"></div>
     {{ end }}
-
   </div>
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
 </div>
 
-<script>
-  const mySwiper = new Swiper('.swiper-container', {
-    // Optional parameters
-    loop: true,
-    lazy: {
-      loadPrevNext: true,
-    },
-    preloadImages: false,
-
-    // Navigation arrows
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    autoplay: true,
-  });
-</script>
 {{ end }}

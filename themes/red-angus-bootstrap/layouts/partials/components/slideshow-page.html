@@ -1,72 +1,22 @@
-<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
-<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
-<style>
-    :root {
-        --swiper-navigation-color: var(--primary-color);
-    }
-
-    .swiper-slide {
-        display: grid;
-        place-items: center;
-        position: relative;
-    }
-    .slide-text {
-        background: var(--primary-color);
-        color: white;
-        position: absolute;
-        bottom: 0;
-        margin: 0 auto;
-        width: 100%;
-        min-height: 50px;
-        text-align: center;
-        padding: 0.25em;
-        font-size: 1.5em;
-    }
-
-</style>
 {{ with . }}
-<!-- Slider main container -->
-<div class="swiper-container">
-  <!-- Additional required wrapper -->
-  <div class="swiper-wrapper">
-    <!-- Slides -->
-    {{ range sort . "Name" }}
-    {{ $image := .Resize "1200x" }}
+<div id="page-carousel" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    {{ range $index, $pic := sort . "Name" }}
+    {{ $image := $pic.Resize "1200x" }}
     {{ $filename := $image.RelPermalink }}
-    <div class="swiper-slide">
-      <img
-        src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///yH5BAEAAAAALAAAAAABAAEAAAIBRAA7"
-        data-src="{{  $filename }}"
-        alt="{{ $image.Title }}"
-        class="swiper-lazy"
-      >
-      <div class="swiper-lazy-preloader swiper-lazy-preloader-white"></div>
-      <div class="slide-text">{{ $image.Title }}</div>
+    <div class="carousel-item {{ if eq $index 0 }}active{{end}}">
+      <img src="{{ $filename }}" alt="{{$image.Title}}" class="d-block w-100" loading="lazy">
+      <div class="carousel-caption ">{{ $image.Title }}</div>
     </div>
     {{ end }}
-
   </div>
-  <!-- If we need navigation buttons -->
-  <div class="swiper-button-prev"></div>
-  <div class="swiper-button-next"></div>
-
+  <button class="carousel-control-prev" type="button" data-bs-target="#page-carousel" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#page-carousel" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
 </div>
-
-<script>
-    const mySwiper = new Swiper('.swiper-container', {
-        // Optional parameters
-        loop: true,
-        lazy: {
-            loadPrevNext: true,
-        },
-        preloadImages: false,
-
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },
-        autoplay: true,
-    });
-</script>
 {{ end }}
