@@ -1,0 +1,26 @@
+{{ define "main" }}
+<main class="container section">
+  <ul class="contents">
+    <!-- Sort by title, then by weight -->
+    {{ range (sort .Pages.ByTitle.Reverse "Weight" )}}
+    <li><a href="{{  .Permalink | absURL }}" class="btn btn-outline-primary">{{.Title}}</a>
+      <div>
+        {{/* partial "summary.html" . */}}
+      </div>
+    </li>
+    {{ end }}
+  </ul>
+  {{ with .Resources.GetMatch "*.xlsx" }}
+  {{ partial "components/excel-download" . }}
+  {{ end }}
+
+  {{ with .Resources.ByType "image" }}
+  {{ partial "components/slideshow-page" . }}
+  {{ end }}
+  {{ .Content }}
+  {{ template "_internal/pagination.html" . }}
+</main>
+{{ with .Resources.GetMatch "*.csv" }}
+<div class="container-flex"> {{ partial "components/dataTable" . }}</div>
+{{ end }}
+{{ end }}
