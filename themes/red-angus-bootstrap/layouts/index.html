@@ -1,10 +1,6 @@
 {{ define "main" }}
 <main class="">
-  <div class="banner container-fluid">
-    <div class="Logo" >
-      <img src="/images/Loosli-Red-Angus-Logo.svg" alt="Loosli Red Angus Logo">
-    </div>
-  </div>
+
   <div class="banner-bottom container-fluid py-4">
     <div class="col-md-8 offset-md-2 text-center call-to-action">
       {{ .Content }}
@@ -14,22 +10,27 @@
   <!--    <div class="media">-->
   <!--      {{ $slideshow_page := .Site.GetPage "/sales/2021/bulls/images" }}-->
   <!--      {{ $resource := $slideshow_page.Resources.ByType "image"  }}-->
-  <!--      {{ partial "components/slideshow-page" $resource }}-->
+  <!--      {{/* partial "components/slideshow-page" $resource */}}-->
   <!--    </div>-->
   </div>
-  <!--  <div class="widgets">-->
-  <!--    {{ range $.Site.Params.widgets.home }}-->
-  <!--    <a href="{{.link}}">-->
-  <!--      <div class="widget cloud">-->
-  <!--        <h3 class="title">{{ .title }}</h3>-->
-  <!--        <img src="{{ .image | absURL }}" alt="{{ .title}}"/>-->
-  <!--      </div>-->
-  <!--    </a>-->
-  <!--    {{ end }}-->
-  <!--  </div>-->
+  <div class="container widgets mt-3">
+    <div class="row">
+      {{ range $.Site.Params.widgets.home }}
+      <div class="col">
+        <a href="{{.link}}">
+          <div class="widget ">
+            <img src="{{ .image | absURL }}" alt="{{ .title}}" class=""/>
+            <h3 class="title">{{ .title }}</h3>
+          </div>
+        </a>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+
 </main>
 {{ end }}
 
-{{ define "breadcrumb" }}
+{{ define "breadcrumbs" }}
 <!--No Breadcrumb on home-->
 {{ end }}

@@ -3,6 +3,9 @@
     {{- partial "head.html" . -}}
     <body>
         {{- partial "header.html" . -}}
+        {{- block "breadcrumbs" . -}}
+        {{- partial "components/breadcrumbs.html" . -}}
+        {{- end -}}
         <div id="content">
         {{- block "main" . }}{{- end }}
         </div>
