@@ -1,0 +1,8 @@
+<div class="contacts">
+  {{ range $.Site.Params.contacts }}
+  <div class="contact">
+    <strong>{{ .name }}</strong><br>
+    {{ delimit (apply .address "markdownify" ".") "<br>" }}
+  </div>
+  {{end}}
+</div>
