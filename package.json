@@ -7,8 +7,6 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "start": "./bash-scripts/start.sh",
-    "end": "nps end"
   },
   "devDependencies": {
     "autoprefixer": "^10.0.1",
