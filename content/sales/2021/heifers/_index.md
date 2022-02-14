@@ -1,5 +1,5 @@
 +++
-title = "2021 Heifers"
+title = "Heifers"
 weight = 100
 type = "full"
 +++

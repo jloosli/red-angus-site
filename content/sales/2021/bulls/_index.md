@@ -1,5 +1,5 @@
 +++
-title = "2021 Bulls"
+title = "Bulls"
 weight = 100
 type = "full"
 +++

@@ -4,7 +4,6 @@ cta_text = "2021 Sale Catalog"
 cta_link = "/sales/2021/catalog/"
 embed= ""
 +++
-# Thank you!
-## We appreciate all of our customers
-
-### We'll see you in the spring of 2022
+# Annual Production Sale
+## Monday, March 8th, 2022
+### At the Auction Barn
