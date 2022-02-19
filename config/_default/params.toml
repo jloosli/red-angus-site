@@ -1,7 +1,7 @@
 logo = "images/Loosli-Red-Angus-Logo.svg"
 home_slideshow_path = "2020.bulls_images"
 google_maps_key = "AIzaSyD80IS57_0KNnxpc1OYrXFVhVitLur35Ls"
-sale_year = 2021
+sale_year = 2022
 # Contacts address with go through the markdown parser, so email links will get generated
 [[contacts]]
 name = "Brian Loosli"
