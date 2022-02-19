@@ -1,7 +1,7 @@
 +++
 title = "Home"
-cta_text = "2022 Bull Images"
-cta_link = "/sales/2022/bulls/images"
+cta_text = "Check out our 2022 Catalog"
+cta_link = "/sales/2022/catalog/"
 embed= ""
 +++
 # Annual Production Sale
