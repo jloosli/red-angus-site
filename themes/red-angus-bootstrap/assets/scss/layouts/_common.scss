@@ -14,12 +14,6 @@ ul.contents {
 }
 
 
-.carousel-caption {
-  background: $west-coast;
-  @include media-breakpoint-up(md) {
-    font-size: 2em;
-  }
-}
 
 .asterisk {
   color: $warning;
