@@ -6,8 +6,8 @@
   //background: $west-coast;
   background-image: linear-gradient(
                   0deg,
-                  $west-coast 0%,
-                  lighten($west-coast, 45%) 100%
+                  $tertiary 0%,
+                  lighten($tertiary, 45%) 100%
   );
   @include media-breakpoint-up(md) {
     font-size: 2em;

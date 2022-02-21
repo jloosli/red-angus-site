@@ -1,8 +1,12 @@
 footer {
   .footer {
-    background: $mine-shaft;
-    color: $green-white;
+    background: $background-dark;
+    color: $text-color-light;
     min-height: 400px;
+
+    a {
+      color: $text-color-light-link;
+    }
   }
 
   .contacts {
