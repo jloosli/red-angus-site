@@ -10,10 +10,17 @@ footer {
   }
 
   .contacts {
+    display: flex;
+    gap: 3em;
+    flex-flow: row wrap;
+
     .contact {
       margin-bottom: 1rem;
     }
   }
+
+  //background: $west-coast;
+
 
   .map-container {
     width: 100%;
