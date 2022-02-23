@@ -1,3 +1,10 @@
+.carousel-wrapper {
+  min-height: 400px;
+  @include media-breakpoint-up(lg) {
+   min-height: 940px;
+  }
+}
+
 .carousel {
   filter: drop-shadow(4px 4px 5px rgba(50, 50, 50, 0.50));
 }
