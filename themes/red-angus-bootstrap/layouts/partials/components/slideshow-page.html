@@ -1,8 +1,8 @@
 {{ with . }}
 <div id="page-carousel" class="carousel slide" data-bs-ride="carousel">
   <div class="carousel-inner">
-    {{ range $index, $pic := sort . "Name" }}
-    {{ $image := $pic.Resize "1200x" }}
+    {{ range $index, $pic := sort . "Params.lot" }}
+    {{ $image := $pic.Resize "1200x webp" }}
     {{ $filename := $image.RelPermalink }}
     <div class="carousel-item {{ if eq $index 0 }}active{{end}}">
       <img src="{{ $filename }}" alt="{{$image.Title}}" class="d-block w-100" loading="lazy">
