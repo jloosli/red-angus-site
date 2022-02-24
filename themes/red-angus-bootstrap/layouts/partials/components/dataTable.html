@@ -25,11 +25,17 @@ Creates a DataTable on the page. Call it with: {{/*
         color: var(--body-color);
     }
 </style>
-{{ with .Content }}
-{{ $id := default "data-table" }}
-{{ $class := default "" }}
-{{ $data := . | transform.Unmarshal }}
-<table id="{{ $id }}" class="display cell-border hover compact dataTable{{ $class }}" style="width: 100%">
+{{- with .Content -}}
+{{- $id := default "data-table" -}}
+{{- $class := default "" -}}
+{{- $data := . | transform.Unmarshal -}}
+{{- $regFieldIdx := 1 -}}
+{{- range $i, $key := index $data 0 -}}
+{{ if in  $key "Reg" }}
+  {{- $regFieldIdx = $i -}}
+{{ end -}}
+{{- end -}}
+<table id="{{ $id }}" class="display cell-border hover compact dataTable{{ $class }} w-100" style="width: 100%">
 
   <thead>
   <tr>
@@ -43,7 +49,7 @@ Creates a DataTable on the page. Call it with: {{/*
   <tr>
     {{- range $index, $item:= $row -}}
     {{ $val := $item | markdownify }}
-    {{ if eq $index 1 }}
+    {{ if eq $index $regFieldIdx }}
     <td>{{- partial "components/regLink" $val -}}</td>
     {{ else }}
     <td>{{- $val -}}</td>
