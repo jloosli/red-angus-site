@@ -38,7 +38,7 @@ jobs:
       - name: Build and Publish Site
         uses: chabad360/hugo-gh-pages@master
         env:
-          AIRTABLE_BASE: JUNO
+          AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
           AIRTABLE_KEY: $${{ secrets.AIRTABLE_KEY }}
         with:
           githubToken: ${{ secrets.BUILD_TOKEN }}
