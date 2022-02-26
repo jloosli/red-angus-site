@@ -1,0 +1,140 @@
+{{ define "main" }}
+{{ $urlPre := printf "%s%s" "https://api.airtable.com/v0/" (getenv "AIRTABLE_BASE") }}
+{{ $base := "?view=Grid%20view&maxRecords=500" }}
+{{ $key := getenv "AIRTABLE_KEY" }}
+{{ $data := newScratch }}
+{{ $more := true }}
+{{ $offset := "" }}
+{{ $params := "" }}
+{{ $res := "" }}
+{{ range seq 10 }}
+{{ if $more }}
+{{ $params = printf "%s%s" $base $offset }}
+{{ $res = getJSON $urlPre $params (dict "Authorization" (printf "Bearer %s" $key))}}
+{{ if isset $res "records" }}
+{{ $data.Add "records" $res.records }}
+{{ end }}
+{{ if isset $res "offset" }}
+{{ $offset = printf "&offset=%s" $res.offset }}
+{{ else }}
+{{ $more = false }}
+{{ end }}
+{{ end }}
+{{ end }}
+<pre>
+</pre>
+<main class="container animal" id="app">
+  <header>
+    <div class="back-to-sale"><a :href="saleLink">Back to Sale</a></div>
+    <h1 class="title">Lot ${ fields['Lot #'] } - ${ fields.Name }</h1>
+    <nav>
+      <a v-if="prev" class="btn btn-outline-primary" :href="prevLink">Previous Lot</a>
+      <span class="spacer"></span>
+      <a v-if="next" class="btn btn-outline-primary" :href="nextLink">Next Lot</a>
+    </nav>
+  </header>
+  <div class="video-container" v-if="fields['vimeo_id']">
+    <iframe :src="videoURL" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  </div>
+  <div v-if="!fields['vimeo_id']">No video available.</div>
+  <h2>EPDs</h2>
+  <section class="epds">
+    <div class="epd" v-for="display in displayFields">
+      <div class="head">${ display.title }</div>
+      <div class="value">${ fields[display.field || display.title] }&nbsp;</div>
+    </div>
+  </section>
+
+  <h2>Explore Lots</h2>
+  <div class="lot-list">
+    <a class="btn" v-for="lot in lots" :href="lot.link" :class="{'btn-outline-primary':lot.current, 'btn-primary': !lot.current}">${ lot.lot }</a>
+  </div>
+</main>
+
+
+<script src="https://unpkg.com/vue@3"></script>
+<script>
+    const records = {{ $data.Get "records" | jsonify | safeJS }};
+    const urlParams = new URLSearchParams(window.location.search)
+    const reg = urlParams.get('reg')
+    const record = records.find(r => r.fields['Reg #'] == +reg)
+    const prev = records.find(r => r.fields['Lot #'] == record.fields['Lot #'] - 1)
+    const next = records.find(r => r.fields['Lot #'] == record.fields['Lot #'] + 1)
+    console.log(prev, next);
+
+    const displayFields = [
+        {title: 'Lot #', field: 'Lot #'},
+        {title: 'Tag', field: 'Animal ID'},
+        {title: 'Registration #', field: 'Reg #'},
+        {title: 'Sex', field: 'Sex'},
+        {title: 'Birthdate', field: 'Birth Date'},
+        {title: 'ProS'},
+        {title: 'HB'},
+        {title: 'GM'},
+        {title: 'CED'},
+        {title: 'BW'},
+        {title: 'WW'},
+        {title: 'YW'},
+        {title: 'ADG'},
+        {title: 'DMI'},
+        {title: 'Milk'},
+        {title: 'ME'},
+        {title: 'HPG'},
+        {title: 'CEM'},
+        {title: 'Stay'},
+        {title: 'Marb'},
+        {title: 'YG'},
+        {title: 'CW'},
+        {title: 'RE'},
+        {title: 'BF'},
+    ]
+
+    const app = Vue.createApp({
+        data() {
+            console.log(record);
+            return {fields: record.fields, displayFields, prev, next, records}
+        },
+        computed: {
+            prevLink() {
+                if (!this.prev) return '';
+                const url = new URL(window.location)
+                url.searchParams.set('reg', this.prev.fields['Reg #'])
+                return url.toString();
+            },
+            nextLink() {
+                if (!this.next) return '';
+                const url = new URL(window.location)
+                url.searchParams.set('reg', this.next.fields['Reg #'])
+                return url.toString();
+            },
+            videoURL() {
+                const video_id = this.fields['vimeo_id'];
+                return 'https://player.vimeo.com/video/' + video_id;
+            },
+            saleLink() {
+                const endpoint = this.fields.Sex === 'C' ? 'heifers' : 'bulls';
+                return `/sales/2022/${endpoint}`
+            },
+            lots() {
+                return records.filter(r => r.fields['Lot #']).sort(r => r.fields['Lot #'])
+                    .map(r => {
+                        const url = new URL(window.location)
+                        url.searchParams.set('reg', r.fields['Reg #'])
+                        return ({
+                            lot: r.fields['Lot #'],
+                            current: r.id === record.id,
+                            link: url.toString()
+                        });
+                    })
+            }
+        },
+        compilerOptions: {
+            delimiters: ['${', '}']
+        }
+    }).mount('#app');
+
+</script>
+<script>
+
+</script>
+{{ end }}

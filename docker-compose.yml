@@ -8,8 +8,22 @@ services:
       - ".:/src"
     ports:
       - "1313:1313"
+    env_file:
+      - .env
 
   build:
     image: klakegg/hugo:ext
     volumes:
       - ".:/src"
+
+  zscaler:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    command: server
+    volumes:
+      - ".:/src"
+    ports:
+      - "1313:1313"
+    env_file:
+      - .env

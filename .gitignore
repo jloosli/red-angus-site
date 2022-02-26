@@ -7,3 +7,5 @@ resources/_gen/**
 public/
 assets/jsconfig.json
 /.hugo_build.lock
+/.env
+*.crt

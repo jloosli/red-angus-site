@@ -1,0 +1,18 @@
+enableInlineShortcodes: true
+exec:
+  allow:
+    - ^dart-sass-embedded$
+    - ^go$
+    - ^npx$
+    - ^postcss$
+  osEnv:
+    - (?i)^(PATH|PATHEXT|APPDATA|TMP|TEMP|TERM)$
+funcs:
+  getenv:
+    - ^HUGO_
+    - ^AIRTABLE_
+http:
+  methods:
+    - (?i)GET|POST
+  urls:
+    - .*
