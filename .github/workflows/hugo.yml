@@ -42,4 +42,4 @@ jobs:
           AIRTABLE_KEY: $${{ secrets.AIRTABLE_KEY }}
         with:
           githubToken: ${{ secrets.BUILD_TOKEN }}
-          args: --gc --minify --cleanDestinationDir
+          args: --gc --minify --cleanDestinationDir --verbose --debug
