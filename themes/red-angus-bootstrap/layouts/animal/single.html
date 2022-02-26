@@ -1,26 +1,6 @@
 {{ define "main" }}
-{{ $urlPre := printf "%s%s" "https://api.airtable.com/v0/" (getenv "AIRTABLE_BASE") }}
-{{ $base := "?view=Grid%20view&maxRecords=500" }}
-{{ $key := getenv "AIRTABLE_KEY" }}
 {{ $data := newScratch }}
-{{ $more := true }}
-{{ $offset := "" }}
-{{ $params := "" }}
-{{ $res := "" }}
-{{ range seq 10 }}
-{{ if $more }}
-{{ $params = printf "%s%s" $base $offset }}
-{{ $res = getJSON $urlPre $params (dict "Authorization" (printf "Bearer %s" $key))}}
-{{ if isset $res "records" }}
-{{ $data.Add "records" $res.records }}
-{{ end }}
-{{ if isset $res "offset" }}
-{{ $offset = printf "&offset=%s" $res.offset }}
-{{ else }}
-{{ $more = false }}
-{{ end }}
-{{ end }}
-{{ end }}
+{{ $data.Set "records" $.Site.Data.allData }}
 <pre>
 </pre>
 <main class="container animal" id="app">
