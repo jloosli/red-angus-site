@@ -1,5 +1,10 @@
 $baseURL: "{{ .Site.BaseURL }}";
+
 @import "colors";
 @import "./bootstrap";
 @import "layouts";
 @import "components";
+
+:root {
+  --bs-dark-rgb: 101, 45, 2;
+}

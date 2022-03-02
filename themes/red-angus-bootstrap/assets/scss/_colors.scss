@@ -46,22 +46,26 @@ $santas-gray: #9c9ca4;
 
 :root {
   /* SCSS RGB */
-  --espresso: rgba(101,45,24,1);
-  --sycamore: rgba(130,140,63,1);
-  --catskill-white: rgba(244,248,250,1);
-  --onion: rgba(41,29,13,1);
-  --old-copper: rgba(115,76,43,1);
-  --sorrell-brown: rgba(202,170,137,1);
-  --mongoose: rgba(175,158,126,1);
-  --pine-glade: rgba(188,204,133,1);
-  --santas-gray: rgba(156,156,164,1);
+  --espresso: rgba(101, 45, 24, 1);
+  --sycamore: rgba(130, 140, 63, 1);
+  --catskill-white: rgba(244, 248, 250, 1);
+  --onion: rgba(41, 29, 13, 1);
+  --old-copper: rgba(115, 76, 43, 1);
+  --sorrell-brown: rgba(202, 170, 137, 1);
+  --mongoose: rgba(175, 158, 126, 1);
+  --pine-glade: rgba(188, 204, 133, 1);
+  --santas-gray: rgba(156, 156, 164, 1);
+  --bs-dark-rgb: 101, 45, 24;
+
 }
 
-$primary:    $espresso;
-$secondary:  $sycamore;
-$tertiary:   $old-copper;
-$success:    $burnt-umber;
+$primary: $espresso;
+$secondary: $sycamore;
+$tertiary: $old-copper;
+$success: $burnt-umber;
 $text-color-light: $green-white;
 $text-color-light-link: $sorrell-brown;
 $background-dark: $mine-shaft;
+$navbar-dark-color: #e3e3e3;
+$navbar-dark: red;
 

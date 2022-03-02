@@ -39,7 +39,7 @@ Creates a DataTable on the page. Call it with: {{/*
 
   <thead>
   <tr>
-    <th>Video</th>
+    <th>Details</th>
     {{- range index $data 0 -}}
     <th>{{ . }}</th>
     {{- end -}}
@@ -48,7 +48,7 @@ Creates a DataTable on the page. Call it with: {{/*
   <tbody>
   {{- range $row := after 1 $data -}}
   <tr>
-    <td><a href="/animal/?reg={{ index $row $regFieldIdx }}">Video</a></td>
+    <td><a href="/animal/?reg={{ index $row $regFieldIdx }}" class="btn btn-primary">Details ≫</a></td>
     {{- range $index, $item:= $row -}}
     {{ $val := $item | markdownify }}
     {{ if eq $index $regFieldIdx }}
