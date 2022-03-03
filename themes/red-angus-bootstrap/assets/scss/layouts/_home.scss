@@ -3,6 +3,17 @@
   background-color: $periwinkle-gray;
 }
 
+.home .media {
+  margin: 3em auto 0;
+  max-width: 1200px;
+
+  @media (min-width: 992px) {
+    .carousel-wrapper {
+      min-height: 640px;
+    }
+  }
+}
+
 .widgets {
   a {
     text-decoration: none;

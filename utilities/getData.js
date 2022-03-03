@@ -21,7 +21,7 @@ base('Animals').select({
     writeData(res);
 });
 
-const writeData = async (data) => {
+const writeData = (data) => {
     const fs = require('fs')
     fs.writeFile('../data/allData.json', JSON.stringify(data), (err) => {
         if (err) throw err;

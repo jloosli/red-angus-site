@@ -1,16 +1,15 @@
 {{ define "main" }}
-<main class="">
+<main class="home">
   <div class="banner-bottom container-fluid py-4">
     <div class="col-md-8 offset-md-2 text-center call-to-action">
       {{ .Content }}
       <a class="btn btn-primary btn-lg" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
     </div>
   </div>
-  <!--    <div class="media">-->
-  <!--      {{ $slideshow_page := .Site.GetPage "/sales/2021/bulls/images" }}-->
-  <!--      {{ $resource := $slideshow_page.Resources.ByType "image"  }}-->
-  <!--      {{/* partial "components/slideshow-page" $resource */}}-->
-  <!--    </div>-->
+  <div class="media">
+    {{ $slideshow_page := .Site.GetPage "/sales/2022/bulls/images" }}
+    {{ $resource := $slideshow_page.Resources.ByType "image" }}
+    {{ partial "components/slideshow-page" $resource }}
   </div>
   <div class="container widgets mt-3">
     <div class="row row-cols-1 row-cols-md-3">
