@@ -6,11 +6,13 @@
       <a class="btn btn-primary btn-lg" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
     </div>
   </div>
+  {{ with .Params.imagesPath }}
   <div class="media">
-    {{ $slideshow_page := .Site.GetPage "/sales/2022/bulls/images" }}
-    {{ $resource := $slideshow_page.Resources.ByType "image" }}
-    {{ partial "components/slideshow-page" $resource }}
+    {{ $slideshow_page := site.GetPage . }}
+    {{ $resources := $slideshow_page.Resources.ByType "image" }}
+    {{ partial "components/slideshow-page" $resources }}
   </div>
+  {{ end }}
   <div class="container widgets mt-3">
     <div class="row row-cols-1 row-cols-md-3">
       {{ range $.Site.Params.widgets.home }}
