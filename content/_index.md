@@ -5,7 +5,7 @@ cta_link: "/sales/2022/catalog/"
 embed: ""
 imagesPath: "/sales/2022/bulls/images"
 ---
-
-# Thank you for a great sale!
-
-## We'll see you in March of 2023
+# Annual Production Sale
+## Tuesday, March 14th, 2023
+### At the Auction Barn
+2023 Catalog coming soon 
