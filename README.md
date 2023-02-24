@@ -1,6 +1,14 @@
 # Loosli Red Angus Website
 ![Hugo](https://github.com/jloosli/red-angus-site/workflows/Hugo/badge.svg)
 
+## New Sale Year Steps
+
+1. Update message on [main sale page](content/_index.md)
+2. Create a new sale year by duplicating folder structure in [sales](content/sales)
+3. Delete old images, excel files, csv, etc. in new sale year folder
+4. Update liveauction.com links in [watch and bid live](content/watch-and-bid-live.md)
+5. 
+
 ## Datatables
 
 1. Add data to `data` directory in json format with three fields: `headings`,
@@ -22,6 +30,9 @@
 1. `find static/images/cattle/2020/bulls/*.webp -maxdepth 1 -type f > bulls-images.txt`
 1. Edit into a json list
 1. Place in `data` directory
+
+#### Supplemental Sheets
+1. 
 
 ### Scratchpad
 [Hugo Example](https://gitlab.com/lego2018/hugo-template-musterprojekt/-/tree/develop/)
