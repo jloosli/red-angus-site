@@ -13,8 +13,6 @@ ul.contents {
 
 }
 
-
-
 .asterisk {
   color: $warning;
 }
@@ -23,3 +21,6 @@ ul.contents {
   flex: 1;
 }
 
+#content {
+  min-height: #{'min(50vw, 500px)'};
+}

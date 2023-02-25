@@ -7,7 +7,7 @@
 2. Create a new sale year by duplicating folder structure in [sales](content/sales)
 3. Delete old images, excel files, csv, etc. in new sale year folder
 4. Update liveauction.com links in [watch and bid live](content/watch-and-bid-live.md)
-5. 
+5. Update Sale Year in [config/params](config/_default/params.toml)
 
 ## Datatables
 
@@ -32,7 +32,7 @@
 1. Place in `data` directory
 
 #### Supplemental Sheets
-1. 
+1. Add data to [data/supplemental/data.{yml|json}](data/supplemental)
 
 ### Scratchpad
 [Hugo Example](https://gitlab.com/lego2018/hugo-template-musterprojekt/-/tree/develop/)

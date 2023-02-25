@@ -6,13 +6,17 @@
 <main class="container animal" id="app">
   <header>
     <div class="back-to-sale"><a :href="saleLink">Back to Sale</a></div>
+    <template v-if="hasRecord">
     <h1 class="title">Lot ${ fields['Lot #'] } - ${ fields.Name }</h1>
     <nav>
       <a v-if="prev" class="btn btn-outline-primary" :href="prevLink">Previous Lot</a>
       <span class="spacer"></span>
       <a v-if="next" class="btn btn-outline-primary" :href="nextLink">Next Lot</a>
     </nav>
+    </template>
+    <h1 class="title" v-else>No Animal Found</h1>
   </header>
+  <template v-if="hasRecord">
   <div class="video-container" v-if="fields['vimeo_id']">
     <iframe :src="videoURL" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
@@ -29,6 +33,7 @@
   <div class="lot-list">
     <a class="btn" v-for="lot in lots" :href="lot.link" :class="{'btn-outline-primary':lot.current, 'btn-primary': !lot.current}">${ lot.lot }</a>
   </div>
+  </template>
 </main>
 
 
@@ -37,9 +42,10 @@
     const records = {{ $data.Get "records" | jsonify | safeJS }};
     const urlParams = new URLSearchParams(window.location.search)
     const reg = urlParams.get('reg')
-    const record = records.find(r => r.fields['Reg #'] == +reg)
-    const prev = records.find(r => r.fields['Lot #'] == record.fields['Lot #'] - 1)
-    const next = records.find(r => r.fields['Lot #'] == record.fields['Lot #'] + 1)
+    const record = records.find(r => r?.fields['Reg #'] == +reg)
+    const prev = records.find(r => r?.fields['Lot #'] == record?.fields['Lot #'] - 1) || {}
+    const next = records.find(r => r?.fields['Lot #'] == record?.fields['Lot #'] + 1) || {}
+    const saleYear = '{{ $.Site.Params.sale_year }}';
     console.log(prev, next);
 
     const displayFields = [
@@ -71,31 +77,33 @@
 
     const app = Vue.createApp({
         data() {
-            console.log(record);
-            return {fields: record.fields, displayFields, prev, next, records}
+            return {hasRecord: !!record, fields: record?.fields, displayFields, prev, next, records}
         },
         computed: {
             prevLink() {
-                if (!this.prev) return '';
+                if (!this.prev?.fields) return '';
                 const url = new URL(window.location)
                 url.searchParams.set('reg', this.prev.fields['Reg #'])
                 return url.toString();
             },
             nextLink() {
-                if (!this.next) return '';
+                if (!this.next?.fields) return '';
                 const url = new URL(window.location)
-                url.searchParams.set('reg', this.next.fields['Reg #'])
+                url.searchParams.set('reg', this.next?.fields['Reg #'])
                 return url.toString();
             },
             videoURL() {
+                if (!this.fields?.['vimeo_id']) return '';
                 const video_id = this.fields['vimeo_id'];
                 return 'https://player.vimeo.com/video/' + video_id;
             },
             saleLink() {
-                const endpoint = this.fields.Sex === 'C' ? 'heifers' : 'bulls';
-                return `/sales/2022/${endpoint}`
+                const endpoint = this.fields?.Sex === 'C' ? 'heifers' : 'bulls';
+                return `/sales/${saleYear}/${endpoint}`
             },
             lots() {
+                if(!records) return [];
+                console.log(records,'*****')
                 return records.filter(r => r.fields['Lot #']).sort(r => r.fields['Lot #'])
                     .map(r => {
                         const url = new URL(window.location)
