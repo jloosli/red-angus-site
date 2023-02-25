@@ -9,6 +9,16 @@
 4. Update liveauction.com links in [watch and bid live](content/watch-and-bid-live.md)
 5. Update Sale Year in [config/params](config/_default/params.toml)
 
+### Bulls/Cows Pages
+
+1. Drop Excel version in directory...download button will be automatically created
+2. Drop CSV in directory...datatable will be automatically created. Note: make sure csv
+   version has `Lot #` and `Reg #` columns.
+3. Images/videos: 
+   1. Drop Images into images directory
+   2. Edit and then Run [set_image_resource_metadata](utilities/set_image_resource_metadata.py)
+      to set the image information in the associated `_index.md` file. 
+
 ## Datatables
 
 1. Add data to `data` directory in json format with three fields: `headings`,
