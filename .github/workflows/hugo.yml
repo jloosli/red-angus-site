@@ -15,11 +15,6 @@ jobs:
       - name: Check out
         uses: actions/checkout@v3
 
-#      - name: Use Node.js
-#        uses: actions/setup-node@v1
-#        with:
-#          node-version: '14.x'
-
       - name: Get yarn cache directory path
         id: yarn-cache-dir-path
         run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
@@ -39,7 +34,7 @@ jobs:
         run: yarn run getData
         env:
           AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
-          AIRTABLE_KEY: $${{ secrets.AIRTABLE_KEY }}
+          AIRTABLE_KEY: ${{ secrets.AIRTABLE_KEY }}
 
       - name: Build and Publish Site
         uses: chabad360/hugo-gh-pages@master
