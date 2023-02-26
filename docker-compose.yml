@@ -28,8 +28,8 @@ services:
 
   pull_data:
     build: ./docker/js
-    working_dir: /src/utilities
-    command: node ./getData.js
+    working_dir: /src
+    command: npm run getData:loc
     volumes:
       - ".:/src"
     env_file:
