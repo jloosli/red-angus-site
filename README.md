@@ -8,6 +8,9 @@
 3. Delete old images, excel files, csv, etc. in new sale year folder
 4. Update liveauction.com links in [watch and bid live](content/watch-and-bid-live.md)
 5. Update Sale Year in [config/params](config/_default/params.toml)
+6. Upload EPDs for bulls and Cows into [Animals Airtable](https://airtable.com/appWcrcGmDLkeV4KM/tblHGU0zKnhfV0Zwy/viwTzlLwWTlPP7P4P?blocks=hide)
+7. Run `npm run getData:loc` to generate the [data/allData](data/allData.json) file
+
 
 ### Bulls/Cows Pages
 

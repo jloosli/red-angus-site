@@ -17,13 +17,20 @@ services:
       - ".:/src"
 
   zscaler:
-    build:
-      context: .
-      dockerfile: Dockerfile
+    build: ./docker/hugo
     command: server
     volumes:
       - ".:/src"
     ports:
       - "1313:1313"
+    env_file:
+      - .env
+
+  pull_data:
+    build: ./docker/js
+    working_dir: /src/utilities
+    command: node ./getData.js
+    volumes:
+      - ".:/src"
     env_file:
       - .env
