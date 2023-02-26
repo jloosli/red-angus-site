@@ -39,13 +39,14 @@
 
 <script src="https://unpkg.com/vue@3"></script>
 <script>
-    const records = {{ $data.Get "records" | jsonify | safeJS }};
-    const urlParams = new URLSearchParams(window.location.search)
-    const reg = urlParams.get('reg')
-    const record = records.find(r => r?.fields['Reg #'] == +reg)
-    const prev = records.find(r => r?.fields['Lot #'] == record?.fields['Lot #'] - 1) || {}
-    const next = records.find(r => r?.fields['Lot #'] == record?.fields['Lot #'] + 1) || {}
-    const saleYear = '{{ $.Site.Params.sale_year }}';
+    const allRecords = {{ $data.Get "records" | jsonify | safeJS }};
+    const urlParams = new URLSearchParams(window.location.search);
+    const reg = urlParams.get('reg');
+    const record = allRecords.find(r => r?.fields['Reg #'] === +reg);
+    const saleYear = record?.fields['Sale Year'] || urlParams.get('sale_year') || '{{ $.Site.Params.sale_year }}';
+    const records = allRecords.filter(r=> +r?.fields['Sale Year'] === +saleYear);
+    const prev = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] - 1) || {};
+    const next = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] + 1) || {}
     console.log(prev, next);
 
     const displayFields = [
