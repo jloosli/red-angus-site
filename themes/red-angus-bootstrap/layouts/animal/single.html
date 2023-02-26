@@ -94,8 +94,8 @@
                 return url.toString();
             },
             videoURL() {
-                if (!this.fields?.['vimeo_id']) return '';
-                const video_id = this.fields['vimeo_id'];
+                if (!this.fields?.vimeo_id) return '';
+                const video_id = this.fields.vimeo_id;
                 return 'https://player.vimeo.com/video/' + video_id;
             },
             saleLink() {
