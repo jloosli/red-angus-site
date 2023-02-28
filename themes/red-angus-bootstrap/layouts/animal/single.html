@@ -5,7 +5,7 @@
 </pre>
 <main class="container animal" id="app">
   <header>
-    <div class="back-to-sale"><a :href="saleLink">Back to Sale</a></div>
+    <div class="back-to-sale"><a :href="saleLink">Back to ${saleYear} Sale</a></div>
     <template v-if="hasRecord">
     <h1 class="title">Lot ${ fields['Lot #'] } - ${ fields.Name }</h1>
     <nav>
@@ -45,9 +45,8 @@
     const record = allRecords.find(r => r?.fields['Reg #'] === +reg);
     const saleYear = record?.fields['Sale Year'] || urlParams.get('sale_year') || '{{ $.Site.Params.sale_year }}';
     const records = allRecords.filter(r=> +r?.fields['Sale Year'] === +saleYear);
-    const prev = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] - 1) || {};
-    const next = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] + 1) || {}
-    console.log(prev, next);
+    const prev = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] - 1);
+    const next = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] + 1);
 
     const displayFields = [
         {title: 'Lot #', field: 'Lot #'},
@@ -78,7 +77,7 @@
 
     const app = Vue.createApp({
         data() {
-            return {hasRecord: !!record, fields: record?.fields, displayFields, prev, next, records}
+            return {hasRecord: !!record, fields: record?.fields, displayFields, prev, next, records, saleYear}
         },
         computed: {
             prevLink() {

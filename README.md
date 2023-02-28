@@ -9,6 +9,8 @@
 4. Update liveauction.com links in [watch and bid live](content/watch-and-bid-live.md)
 5. Update Sale Year in [config/params](config/_default/params.toml)
 6. Update the bull and heifer links in [config/menu](config/_default/menu.toml)
+6. Update the bull and heifer links in [config/params](config/_default/params.toml)
+6. Update where to point to for the homepage bulls in [content/_index](content/_index.md)
 6. Upload EPDs for bulls and Cows into [Animals Airtable](https://airtable.com/appWcrcGmDLkeV4KM/tblHGU0zKnhfV0Zwy/viwTzlLwWTlPP7P4P?blocks=hide)
 7. Run `npm run getData:loc` to generate the [data/allData](data/allData.json) file
 
