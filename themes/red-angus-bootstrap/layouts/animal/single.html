@@ -17,10 +17,10 @@
     <h1 class="title" v-else>No Animal Found</h1>
   </header>
   <template v-if="hasRecord">
-  <div class="video-container" v-if="fields['vimeo_id']">
-    <iframe :src="videoURL" title="vimeo video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
+  <div class="video-container" v-if="fields['video_id']">
+    <iframe :src="videoURL" title="vimeo/youtube video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
   </div>
-  <div v-if="!fields['vimeo_id']">No video available.</div>
+  <div v-else>No video available.</div>
   <h2>EPDs</h2>
   <section class="epds">
     <div class="epd" v-for="display in displayFields">
@@ -44,7 +44,9 @@
     const reg = urlParams.get('reg');
     const record = allRecords.find(r => r?.fields['Reg #'] === +reg);
     const saleYear = record?.fields['Sale Year'] || urlParams.get('sale_year') || '{{ $.Site.Params.sale_year }}';
-    const records = allRecords.filter(r=> +r?.fields['Sale Year'] === +saleYear);
+    const records = allRecords.filter(r=> +r?.fields['Sale Year'] === +saleYear && r?.fields['Lot #']);
+    const lotCompare =(a,b) => +a.fields['Lot #'] - +b.fields['Lot #'];
+    records.sort(lotCompare);
     const prev = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] - 1);
     const next = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] + 1);
 
@@ -75,6 +77,11 @@
         {title: 'BF'},
     ]
 
+    const videoURLs ={
+        vimeo: 'https://player.vimeo.com/video/{}',
+        youtube: 'https://www.youtube.com/embed/{}?autoplay=1'
+    };
+
     const app = Vue.createApp({
         data() {
             return {hasRecord: !!record, fields: record?.fields, displayFields, prev, next, records, saleYear}
@@ -93,9 +100,10 @@
                 return url.toString();
             },
             videoURL() {
-                if (!this.fields?.vimeo_id) return '';
-                const video_id = this.fields.vimeo_id;
-                return 'https://player.vimeo.com/video/' + video_id;
+                if (!this.fields?.video_id && !this.fields?.video_type) return '';
+                const video_id = this.fields.video_id;
+                const url = videoURLs[this.fields.video_type];
+                return url.replace('{}',video_id);
             },
             saleLink() {
                 const endpoint = this.fields?.Sex === 'C' ? 'heifers' : 'bulls';
@@ -104,8 +112,10 @@
             lots() {
                 if(!records) return [];
                 console.log(records,'*****')
-                return records.filter(r => r.fields['Lot #']).sort(r => r.fields['Lot #'])
+                console.log(records[0].fields['Lot #'])
+                return records.filter(r => !!r.fields['Lot #'])
                     .map(r => {
+                        // console.log(r);
                         const url = new URL(window.location)
                         url.searchParams.set('reg', r.fields['Reg #'])
                         return ({
