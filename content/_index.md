@@ -9,4 +9,3 @@ imagesPath: "/sales/2023/bulls/images"
 ## Tuesday, March 14th, 2023
 ### At the Auction Barn
 
-Images for 2023 bulls coming soon
