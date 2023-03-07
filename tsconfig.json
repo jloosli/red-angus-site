@@ -1,0 +1,8 @@
+{
+  "compilerOptions": {
+    "outDir": "./utilities/build",
+    "allowJs": true,
+    "target": "es6",
+    "moduleResolution": "Node"
+  }
+}
