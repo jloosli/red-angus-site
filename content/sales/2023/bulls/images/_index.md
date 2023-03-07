@@ -1,5 +1,5 @@
 ---
-title: 2023 Bulls Images
+title: Bulls Images
 resources:
   - name: LOOSLI TRIAD 287
     params:

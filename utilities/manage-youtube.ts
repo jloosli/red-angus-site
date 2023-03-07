@@ -18,8 +18,51 @@ const CLIENT_SECRET_PATH = './utilities/client_secret.json';
 const ALLDATA_PATH = './data/allData.json';
 const SALE_YEAR = 2023;
 const OUTPUT_PATH = './utilities/output.json';
+const PLAYLIST_ID = 'PLfXb0giCItxl_W-X3AHiV5jsxywNzCKiC';
 
-const main = async () => {
+const addAllVideosToPlaylist = async () => {
+  const data = JSON.parse(fs.readFileSync(ALLDATA_PATH).toString());
+  const toUpdate = [];
+  data.forEach(d => {
+    if (d.fields['Sale Year'] === SALE_YEAR && !!d.fields?.video_id) {
+      toUpdate.push({
+        lot:d.fields['Lot #'],
+        snippet: {
+          playlistId: PLAYLIST_ID,
+          // position: d.fields['Lot #']-1,
+          resourceId: {
+            kind: 'youtube#video',
+            videoId: d.fields.video_id,
+          },
+        },
+      });
+    }
+  });
+  toUpdate.sort((a, b) => a.lot - b.lot);
+  const withoutLot=toUpdate.map(item=>({snippet:item.snippet}));
+  try {
+    const service = google.youtube('v3');
+    const auth = await getAuth();
+    for(const item in withoutLot){
+      if(+item >2) {
+        console.log(`Inserting #${item}: ${withoutLot[item].snippet.resourceId.videoId}`);
+        const res = await service.playlistItems.insert({
+          auth,
+          part: ['snippet'],
+          requestBody: toUpdate[item],
+        });
+      }
+    }
+
+    // console.log(res);
+  } catch (e) {
+    console.error(e);
+  }
+};
+
+addAllVideosToPlaylist();
+
+const consolidateAirTableAndYoutubeInformation = async () => {
   try {
     const auth = await getAuth();
     const uploads_id = await getUploadsID(auth);
@@ -50,23 +93,15 @@ const main = async () => {
           upload: yt?.snippet.publishedAt,
         };
         informationPerLot[d.fields['Lot #']] = consolidated;
-        // {
-        //   airtable: d.fields,
-        //   yt,
-        //   consolidated,
-        // };
       }
     });
     console.log(informationPerLot);
     fs.writeFileSync(OUTPUT_PATH, JSON.stringify(informationPerLot));
-    // console.log(`Found ${thisYear.length}/${uploadedVideos.length} this year. `);
-    // console.log('ID: Name');
-    // thisYear.forEach(v => console.log(`${v.contentDetails.videoId}: ${v.snippet.title}`));
   } catch (e) {
     console.error(e);
   }
 };
-main();
+// consolidateAirTableAndYoutubeInformation();
 
 const updateYouTubeTitles = async (auth, idsAndTitles) => {
   const service = google.youtube('v3');
@@ -97,7 +132,7 @@ async function videoUpdates() {
   const idsAndTitles = {};
   for (const d in data) {
     const {ytId, lot, name} = data[d];
-    if(ytId){
+    if (ytId) {
       idsAndTitles[ytId] = {title: `Lot ${lot}: ${name}`};
     }
   }
@@ -107,15 +142,15 @@ async function videoUpdates() {
 
 // videoUpdates();
 
-function getAuth() {
-  return new Promise((resolve, reject) => {
-    fs.readFile(CLIENT_SECRET_PATH, function processClientSecrets(err, content) {
+function getAuth():Promise<OAuth2Client> {
+  return new Promise( (resolve, reject) => {
+    fs.readFile(CLIENT_SECRET_PATH, async function processClientSecrets(err, content) {
       if (err) {
         console.log('Error loading client secret file: ' + err);
         reject(err);
       }
       // Authorize a client with the loaded credentials
-      const auth = authorizeNoCB(JSON.parse(content.toString()));
+      const auth = await authorizeNoCB(JSON.parse(content.toString()));
       resolve(auth);
     });
   });
