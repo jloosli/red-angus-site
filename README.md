@@ -1,6 +1,10 @@
 # Loosli Red Angus Website
 ![Hugo](https://github.com/jloosli/red-angus-site/workflows/Hugo/badge.svg)
 
+## Website Development
+
+`docker compose up server`
+
 ## New Sale Year Steps
 
 1. Update message on [main sale page](content/_index.md)
