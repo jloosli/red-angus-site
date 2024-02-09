@@ -2,19 +2,22 @@ version: '3.8'
 
 services:
   server:
-    image: klakegg/hugo:ext
-    command: server
+    image: hugomods/hugo:exts
+    command: hugo server --bind 0.0.0.0
     volumes:
       - .:/src
     ports:
-      - "1313:1313"
+      - "1314:1313"
     env_file:
       - .env
 
   build:
-    image: klakegg/hugo:ext
+    image: hugomods/hugo:exts
+    command: hugo --gc
     volumes:
       - ".:/src"
+    env_file: 
+      - .env
 
   pull_data:
     build: ./docker/js
@@ -22,5 +25,7 @@ services:
     command: npm run getData:loc
     volumes:
       - ".:/src"
+    environment:
+      - NODE_EXTRA_CA_CERTS=/usr/local/share/ca-certificates/zscaler.crt
     env_file:
       - .env
