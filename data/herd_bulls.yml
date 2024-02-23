@@ -1,4 +1,20 @@
 ---
+# 2024
+- name: Agent
+  img_path: images/herd_bulls/Agent 23.JPG
+- name: Collusion
+  img_path: images/herd_bulls/Collusion 23.JPG
+- name: Delegate
+  img_path: images/herd_bulls/DSC_0201 Delegate.JPG
+- name: Mission
+  img_path: images/herd_bulls/DSC_0291 Mission.JPG
+- name: Perseverance
+  img_path: images/herd_bulls/DSC_0633 Perseverance.JPG
+- name: Profiteer
+  img_path: images/herd_bulls/Profiteer 23.JPG
+- name: Supremacy
+  img_path: images/herd_bulls/Supremacy 23.JPG
+# prior
 - name: Andras Frontier
   img_path: images/herd_bulls/new-frontier.jpg
 - name: LSF RSL Special
@@ -17,18 +33,3 @@
   img_path: images/herd_bulls/TriAdd.jpg
 - name: Stillwater
   img_path: images/herd_bulls/stillwater.jpg
-# 2024
-- name: Agent
-  img_path: images/herd_bulls/Agent 23.JPG
-- name: Collusion
-  img_path: images/herd_bulls/Collusion 23.JPG
-- name: Delegate
-  img_path: images/herd_bulls/DSC_0201 Delegate.JPG
-- name: Mission
-  img_path: images/herd_bulls/DSC_0291 Mission.JPG
-- name: Perseverance
-  img_path: images/herd_bulls/DSC_0633 Perseverance.JPG
-- name: Profiteer
-  img_path: images/herd_bulls/Profiteer 23.JPG
-- name: Supremacy
-  img_path: images/herd_bulls/Supremacy 23.JPG
