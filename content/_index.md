@@ -1,7 +1,7 @@
 ---
 title: Home
-cta_text: "Check out our 2023 Catalog"
-cta_link: "/sales/2023/catalog/"
+cta_text: "Check out our 2024 Catalog"
+cta_link: "/sales/2024/catalog/"
 embed: ""
 imagesPath: "/sales/2024/bulls/images"
 ---

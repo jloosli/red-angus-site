@@ -10,7 +10,7 @@ We have put together a very solid set of bulls this year with genetics from bree
 
 See these outstanding traits for yourself as we run the bulls & heifers through the sale ring. Come view the cattle before the sale or watch the online videos on our website, www.Loosliredangus.com. You can also preview the bulls at VeltKamp Livestock in Manhattan, MT. We are extremely proud of our sale selection this year and welcome your calls to discuss your cattle needs. We have people to assist you and thank our hard-working employees. Please look through the catalog and visit our website to view pictures, videos, and current EPDs. 
 
-We invite you to our ranch in Ashton, Idaho, on Tuesday, March 12, 2024, to have a delicious lunch and be part of this great 50th celebration. You can also watch/bid online through [LiveAuctions.TV](https://liveauctions.tv). Thanks again for these 50 wonderful years!
+We invite you to our ranch in Ashton, Idaho, on Tuesday, March 12, 2024, to have a delicious lunch and be part of this great 50th celebration. You can also watch/bid online through [LiveAuctions.TV](https://liveauctions.tv/auction/3632/detail). Thanks again for these 50 wonderful years!
 
 Thank you,
 
