@@ -6,6 +6,6 @@ resources:
       lot: 1
       tag: '372'
     src: 372.jpg
-    title: 'Lot 1: Loosli 372'
+    title: 'Lot 2: Loosli Foreman 372'
  
 ---

@@ -6,12 +6,12 @@ weight = 1
 
 [[main]]
 name = "Sale Bulls"
-URL = "sales/2023/bulls/"
+URL = "sales/2024/bulls/"
 weight = 2
 
 [[main]]
 name = "Sale Heifers"
-URL = "sales/2023/heifers/"
+URL = "sales/2024/heifers/"
 weight = 3
 
 [[main]]
