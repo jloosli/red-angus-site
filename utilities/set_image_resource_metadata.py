@@ -5,11 +5,12 @@ Used to set Image resource information in _index.md files
 import re
 import csv
 from os import listdir
-from os.path import isfile, join
+from os.path import isfile, join, dirname
 import yaml
 
-BULLS_PATH = '../content/sales/2023/bulls/'
-IMAGES_PATH = join(BULLS_PATH + '/images/')
+FILE_PATH = dirname(__file__)
+BULLS_PATH = join(FILE_PATH, '..','content','sales','2023','bulls')
+IMAGES_PATH = join(BULLS_PATH , 'images')
 EPD_FILE = '2023 Bull EPD\'s Feb 12.xlsx - Sheet1.csv'
 
 def find_in_list(l, target):

@@ -9,5 +9,6 @@ assets/jsconfig.json
 /.hugo_build.lock
 /.env
 *.crt
+.venv
 
 data/allData.json
