@@ -92,12 +92,12 @@ details = [
 [widgets]
 [[widgets.home]]
 title = "Sale Bulls"
-image = "sales/2023/bulls/images/200_IMG_8962.jpg"
-link = "sales/2023/bulls/"
+image = "sales/2024/bulls/images/372.jpg"
+link = "sales/2024/bulls/"
 [[widgets.home]]
 title = "Sale Heifers"
 image = "images/females-resized.jpg"
-link = "sales/2023/heifers/"
+link = "sales/2024/heifers/"
 [[widgets.home]]
 title = "Herd Bulls"
 image = "images/new-frontier-600x430.jpg"
