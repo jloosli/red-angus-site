@@ -3,7 +3,8 @@
 
 ## Website Development
 
-`docker compose up server`
+`docker compose up server -d`
+`zsh: dcupd server`
 
 ## New Sale Year Steps
 
