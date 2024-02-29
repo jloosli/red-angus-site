@@ -2,7 +2,7 @@ version: '3.8'
 
 services:
   server:
-    image: hugomods/hugo:exts
+    image: hugomods/hugo:exts-0.111.3
     command: hugo server --bind 0.0.0.0
     volumes:
       - .:/src
@@ -12,7 +12,7 @@ services:
       - .env
 
   build:
-    image: hugomods/hugo:exts
+    image: hugomods/hugo:exts-0.123.4
     command: hugo --gc
     volumes:
       - ".:/src"

@@ -2,7 +2,7 @@
 <div class="carousel-wrapper">
   <div id="page-carousel" class="carousel slide" data-bs-ride="carousel">
     <div class="carousel-inner">
-      {{ range $index, $pic := sort . "Params.lot" }}
+      {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
       {{ $image := $pic.Resize "1200x webp" }}
       {{ $filename := $image.RelPermalink }}
       <div class="carousel-item {{ if eq $index 0 }}active{{end}}">

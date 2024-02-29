@@ -2,9 +2,10 @@
 title: Bulls Images
 resources:
 - params:
-    lot: 2
+    lot: 0
     tag: '372'
     title: 'Lot 2: Loosli Foreman 372'
+  title: 'Lot 2: Loosli Foreman 372'
   src: 372.jpg
 - params:
     lot: 0
