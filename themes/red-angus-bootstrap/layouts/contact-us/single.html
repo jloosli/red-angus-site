@@ -16,7 +16,7 @@
         <h3>Airports</h3>
         {{ range site.Params.airports }}
         <div class="airport">
-          <strong>{{ .name}}</strong> ({{ .identifier}})
+          <strong>{{ .name}}</strong> ({{ .identifier}})<br/>
           {{ delimit .details "<br>" | safeHTML }}
         </div>
         {{ end }}
@@ -26,7 +26,7 @@
         <h3>Motels</h3>
         {{ range site.Params.motels }}
         <div class="motel">
-          <a target="_blank" href="{{.url}}"><strong>{{ .name}}</strong></a>
+          <a target="_blank" href="{{.url}}"><strong>{{ .name}}</strong></a><br/>
           {{ delimit .details "<br>" | safeHTML }}
         </div>
         {{ end }}
