@@ -2,7 +2,8 @@ version: '3.8'
 
 services:
   server:
-    image: hugomods/hugo:exts-0.111.3
+    image: hugomods/hugo:exts-0.120.0 # Latest: 0.123.6. See https://github.com/gohugoio/hugo/releases
+    platform: linux/amd64 # Added to fix issue with running on Mac Silicon
     command: hugo server --bind 0.0.0.0
     volumes:
       - .:/src

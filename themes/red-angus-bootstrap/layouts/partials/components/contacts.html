@@ -2,7 +2,7 @@
   {{ range $.Site.Params.contacts }}
   <div class="contact">
     <strong>{{ .name }}</strong><br>
-    {{ delimit (apply .address "markdownify" ".") "<br>" }}
+    {{ delimit (apply .address "markdownify" ".") "<br>" | safeHTML }}
   </div>
   {{end}}
 </div>
