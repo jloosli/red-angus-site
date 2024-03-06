@@ -13,7 +13,7 @@ services:
       - .env
 
   build:
-    image: hugomods/hugo:exts-0.123.4
+    image: hugomods/hugo:exts-0.123.6
     command: hugo --gc
     volumes:
       - ".:/src"
