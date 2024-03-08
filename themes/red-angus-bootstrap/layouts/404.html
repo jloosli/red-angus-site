@@ -1,8 +1,10 @@
 {{ define "main"}}
 <main id="main">
-  <div class="container-fluid">
+  <div class="container">
     <h1 id="title">Oh no! Who left the fence open!</h1>
-    <a href="{{ "/" | relURL }}">Go Home</a>
+    <p>We're sorry. The page you were looking for isn't available. <a href="{{ " /" | relURL }}">Go Home</a>
+    </p>
+    <img class="img-fluid" src="{{ "images/ric-matkowski-ty5SLrqgMRY-unsplash.jpg" | relURL }}" alt="404" id="404">
   </div>
 </main>
 {{ end }}
