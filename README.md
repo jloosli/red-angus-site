@@ -8,6 +8,7 @@
 
 ## New Sale Year Steps
 
+1. Update hugo version in [.env](.env)
 1. Update message on [main sale page](content/_index.md)
 2. Create a new sale year by duplicating folder structure in [sales](content/sales)
 3. Delete old images, excel files, csv, etc. in new sale year folder

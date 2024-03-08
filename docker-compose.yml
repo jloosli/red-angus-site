@@ -2,23 +2,23 @@ version: '3.8'
 
 services:
   server:
-    image: hugomods/hugo:exts-0.122.0 # Latest: 0.123.7. See https://github.com/gohugoio/hugo/releases
+    image: hugomods/hugo:exts-${HUGO_VERSION} # Latest: 0.123.7. See https://github.com/gohugoio/hugo/releases
     platform: linux/amd64 # Added to fix issue with running on Mac Silicon
-    command: hugo server --bind 0.0.0.0 --debug
+    command: hugo server --bind 0.0.0.0 --logLevel debug
     volumes:
       - .:/src
     ports:
       - "1313:1313"
     env_file:
-      - .env
+      - .env.local
 
   build:
-    image: hugomods/hugo:exts-0.123.7
+    image: hugomods/hugo:exts-${HUGO_VERSION}
     command: hugo --gc
     volumes:
       - ".:/src"
     env_file: 
-      - .env
+      - .env.local
 
   pull_data:
     build: ./docker/js
@@ -29,4 +29,4 @@ services:
     environment:
       - NODE_EXTRA_CA_CERTS=/usr/local/share/ca-certificates/zscaler.crt
     env_file:
-      - .env
+      - .env.local
