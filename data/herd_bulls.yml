@@ -1,12 +1,10 @@
----
-- name: 5L Foreman 2174-370E
-  reg: 3744501
 - name: Loosli Brennix 130
+  img_path: images/herd_bulls/Brennix 130.jpg
   reg: 4504757
 - name: VGE Agent 124
   img_path: images/herd_bulls/Agent 23.JPG
   reg: 4428819
-- name: C-Bar Fortune 2631 (Collusion)
+- name: C-Bar Fortune 2631
   img_path: images/herd_bulls/Collusion 23.JPG
   reg: 4534673
 - name: Loosli Delegate 102
@@ -25,5 +23,7 @@
   img_path: images/herd_bulls/Supremacy 23.JPG
   reg: 4527725
 - name: BB Propulsion 9096
+  img_path: images/herd_bulls/Propulsion.jpg
   reg: 4169122
----
+- name: 5L Foreman 2174-370E
+  reg: 3744501
