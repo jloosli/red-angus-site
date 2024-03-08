@@ -1,35 +1,29 @@
 ---
 # 2024
-- name: Agent
+- name: VGE Agent 124
   img_path: images/herd_bulls/Agent 23.JPG
-- name: Collusion
+- name: C-Bar Fortune 2631 (Collusion)
   img_path: images/herd_bulls/Collusion 23.JPG
-- name: Delegate
+- name: Loosli Delegate 102
   img_path: images/herd_bulls/DSC_0201 Delegate.JPG
-- name: Mission
+- name: 5L On A Mission 1307-33H
   img_path: images/herd_bulls/DSC_0291 Mission.JPG
-- name: Perseverance
+- name: Loosli Perseverance 019
   img_path: images/herd_bulls/DSC_0633 Perseverance.JPG
-- name: Profiteer
+- name: 5L Profiteer 1117-15G
   img_path: images/herd_bulls/Profiteer 23.JPG
-- name: Supremacy
+- name: 5L Supremacy 459-76J
   img_path: images/herd_bulls/Supremacy 23.JPG
 # prior
 - name: Andras Frontier
   img_path: images/herd_bulls/new-frontier.jpg
-- name: LSF RSL Special
-  img_path: images/herd_bulls/LSF-RSL-SPECIAL-FORCES.jpg
-- name: 5L Country Roads
-  img_path: images/herd_bulls/5L-COUNTRY-ROADS.jpg
-- name: Pie Red Label 202
-  img_path: images/herd_bulls/DSC_0122.jpg
-- name: 5L Hobo Destination
-  img_path: images/herd_bulls/5l_hobo_destination.jpg
 - name: Right Kind
   img_path: images/herd_bulls/Right-Kind-DSC_2982.jpg
 - name: Profiteer
   img_path: images/herd_bulls/profiteer.jpg
-- name: TriAdd
-  img_path: images/herd_bulls/TriAdd.jpg
 - name: Stillwater
   img_path: images/herd_bulls/stillwater.jpg
+
+# 5L Foreman 2174-370E
+# Loosli Brennix 130
+# BB Propulsion 9096
