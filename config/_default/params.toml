@@ -20,17 +20,14 @@ address = ["(435) 705-4301"]
 name = "Curt Cox"
 contact = ["WY Livestock Round-Up", "(307) 234-2700 (Office)", "(307) 630-4604 (Cell)"]
 [[sale_reps]]
-name = "Pete Crow"
-contact = ["Western Livestock Journal", "(303) 810-8831"]
-[[sale_reps]]
-name = "Mark Frisbie"
-contact = ["Western Ag Reporter", "(208) 890-4517"]
+name = "Jared Patterson"
+contact = ["Western Livestock Journal", "(208) 312-2386"]
 [[sale_reps]]
 name = "Devin Murrin"
 contact = ["Western Livestock Journal", "(406) 696-1502"]
 [[sale_reps]]
-name = "Katie Ochsner"
-contact = ["Red Angus Association", "(307) 575-6802"]
+name = "Rachel Oliver"
+contact = ["Red Angus Association", "(406) 480-1569"]
 
 [[airports]]
 name = "Idaho Falls Regional Airport"
