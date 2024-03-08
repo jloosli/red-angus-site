@@ -22,6 +22,8 @@ jobs:
     steps:
       - name: Load .env file
         uses: xom9ikk/dotenv@v2
+        with: 
+          path: ./
       - name: Install Hugo CLI
         run: |
           wget -O ${{ runner.temp }}/hugo.deb https://github.com/gohugoio/hugo/releases/download/v${env.HUGO_VERSION}/hugo_extended_${env.HUGO_VERSION}_linux-amd64.deb \
