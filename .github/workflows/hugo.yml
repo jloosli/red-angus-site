@@ -20,6 +20,12 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
+      - name: Check out
+        uses: actions/checkout@v4
+        with:
+          lfs: true
+          submodules: recursive
+          fetch-depth: 0   
       - name: Load .env file
         uses: xom9ikk/dotenv@v2.3.0
         with: 
@@ -30,12 +36,6 @@ jobs:
           && sudo dpkg -i ${{ runner.temp }}/hugo.deb          
       - name: Install Dart Sass
         run: sudo snap install dart-sass
-      - name: Check out
-        uses: actions/checkout@v4
-        with:
-          lfs: true
-          submodules: recursive
-          fetch-depth: 0
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
