@@ -1,5 +1,9 @@
 {{ define "main" }}
 <main class="container contact-us cloud">
+  <div class="row">
+    {{ partial "components/contactForm" . }}
+  </div>
+  <hr />
   <div class="contact-pods row">
     <div class="contacts col">
       <h2>Contacts</h2>
@@ -9,34 +13,33 @@
       <h2>Sale Representatives</h2>
       {{ partial "components/sale_reps" . }}
     </div>
-    <div class="travel-recommendations col">
-      <h2>Travel</h2>
-
-      <div class="airports">
-        <h3>Airports</h3>
-        {{ range site.Params.airports }}
-        <div class="airport">
-          <strong>{{ .name}}</strong> ({{ .identifier}})<br/>
-          {{ delimit .details "<br>" | safeHTML }}
-        </div>
-        {{ end }}
+  </div>
+  <div class="travel-recommendations mt-5">
+    <h2>Travel</h2>
+<div class="row">
+    <div class="airports col">
+      <h3>Airports</h3>
+      {{ range site.Params.airports }}
+      <div class="airport">
+        <strong>{{ .name}}</strong> ({{ .identifier}})<br />
+        {{ delimit .details "<br>" | safeHTML }}
       </div>
-
-      <div class="motels">
-        <h3>Motels</h3>
-        {{ range site.Params.motels }}
-        <div class="motel">
-          <a target="_blank" href="{{.url}}"><strong>{{ .name}}</strong></a><br/>
-          {{ delimit .details "<br>" | safeHTML }}
-        </div>
-        {{ end }}
-      </div>
-
+      {{ end }}
     </div>
+
+    <div class="motels col">
+      <h3>Motels</h3>
+      {{ range site.Params.motels }}
+      <div class="motel">
+        <a target="_blank" href="{{.url}}"><strong>{{ .name}}</strong></a><br />
+        {{ delimit .details "<br>" | safeHTML }}
+      </div>
+      {{ end }}
+    </div>
+
   </div>
-  <div class="row">
-    {{ partial "components/contactForm" . }}
   </div>
+
 </main>
 
 {{ end }}
