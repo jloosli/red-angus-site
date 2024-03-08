@@ -1,29 +1,29 @@
 ---
-# 2024
+- name: 5L Foreman 2174-370E
+  reg: 3744501
+- name: Loosli Brennix 130
+  reg: 4504757
 - name: VGE Agent 124
   img_path: images/herd_bulls/Agent 23.JPG
+  reg: 4428819
 - name: C-Bar Fortune 2631 (Collusion)
   img_path: images/herd_bulls/Collusion 23.JPG
+  reg: 4534673
 - name: Loosli Delegate 102
   img_path: images/herd_bulls/DSC_0201 Delegate.JPG
+  reg: 4504701
 - name: 5L On A Mission 1307-33H
   img_path: images/herd_bulls/DSC_0291 Mission.JPG
+  reg: 4298175
 - name: Loosli Perseverance 019
   img_path: images/herd_bulls/DSC_0633 Perseverance.JPG
+  reg: 4281185
 - name: 5L Profiteer 1117-15G
   img_path: images/herd_bulls/Profiteer 23.JPG
+  reg: 4175072
 - name: 5L Supremacy 459-76J
   img_path: images/herd_bulls/Supremacy 23.JPG
-# prior
-- name: Andras Frontier
-  img_path: images/herd_bulls/new-frontier.jpg
-- name: Right Kind
-  img_path: images/herd_bulls/Right-Kind-DSC_2982.jpg
-- name: Profiteer
-  img_path: images/herd_bulls/profiteer.jpg
-- name: Stillwater
-  img_path: images/herd_bulls/stillwater.jpg
-
-# 5L Foreman 2174-370E
-# Loosli Brennix 130
-# BB Propulsion 9096
+  reg: 4527725
+- name: BB Propulsion 9096
+  reg: 4169122
+---

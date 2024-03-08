@@ -1,16 +1,34 @@
 {{ define "main" }}
-<main class="container herd-bulls cloud">
-  <div class="row row-cols-1 row-cols-md-2 g-4">
+<main class="container-fluid herd-bulls cloud">
+  <div class="row row g-2">
     {{ $bulls_list := index site.Data .Params.bulls_list }}
     {{ range $bulls_list }}
-    {{ $image := resources.Get .img_path }}
-    {{ $resized := $image.Resize "600x400"}}
     <div class="col">
       <div class="card">
+        {{ if .img_path }}
+        {{ $image := resources.Get .img_path }}
+        {{ $resized := $image.Resize "600x400"}}
         <img src="{{ $resized.Permalink }}" alt="{{.name}}" class="card-img-top">
+        {{ else }}
+        <div style="width: 600px; height: 400px; position: relative;">
+          <span style="position: relative; top: 50%; left: 35%;">Image not available</span>
+
+          <svg class="bd-placeholder-img card-img-top" width="100%" height="90%" xmlns="http://www.w3.org/2000/svg"
+            role="img" aria-label="Placeholder" preserveAspectRatio="xMidYMid slice" focusable="false">
+            <title>Placeholder</title>
+            <rect width="100%" height="100%" fill="#d3d3d3"></rect>
+          </svg>
+        </div>
+        {{ end }}
         <div class="card-body">
           <h5 class="card-title">
             {{.name}}
+
+            {{ if .reg }}
+            <a class="card-link" target="_blank"
+              href="https://zebu.redangus.org:8443/redspro/redspro/action/animalSearch.AnimalSearchAction?eventSubmit_displayAnimal=T&animalNumber={{ .reg }}">
+              RA# {{ .reg }}</a>
+            {{ end }}
           </h5>
         </div>
       </div>
