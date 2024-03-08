@@ -1,4 +1,4 @@
-{{ $inServerMode := .Site.IsServer }}
+{{ $inServerMode := hugo.IsServer }}
 {{ $sass         := resources.Get "scss/styles.scss" }}
 {{ $sassIncludes := (slice "node_modules") }}
 {{ $cssTarget    := "css/styles.css" }}
