@@ -14,13 +14,13 @@ permissions:
 
 concurrency:
   group: "pages"
-  cancel-in-progress: true
+  cancel-in-progress: false
 
 jobs:
   build:
     runs-on: ubuntu-latest
     env: 
-      HUGO_VERSION: 0.123.6 # @todo: Change to ENV variable
+      HUGO_VERSION: 0.123.7 # @todo: Change to ENV variable
     steps:
       - name: Install Hugo CLI
         run: |
@@ -39,29 +39,13 @@ jobs:
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v4
-
-      # - name: Get yarn cache directory path
-      #   id: yarn-cache-dir-path
-      #   run: echo "dir=$(yarn cache dir)" >> $GITHUB_OUTPUT
-
-      # - uses: actions/cache@v4
-      #   id: yarn-cache # use this to check for `cache-hit` (`steps.yarn-cache.outputs.cache-hit != 'true'`)
-      #   with:
-      #     path: ${{ steps.yarn-cache-dir-path.outputs.dir }}
-      #     key: ${{ runner.os }}-yarn-${{ hashFiles('**/yarn.lock') }}
-      #     restore-keys: |
-      #       ${{ runner.os }}-yarn-
-
       - name: Install Node.js dependencies
-        # run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
         run: "[[ -f yarn.lock ]] && yarn install --frozen-lockfile || true"
-
       - name: getData
         run: yarn run getData
         env:
           AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
           AIRTABLE_KEY: ${{ secrets.AIRTABLE_KEY }}
-
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules
@@ -71,6 +55,8 @@ jobs:
           hugo \
             --gc \
             --minify \
+            --verbose \
+            --debug \
             --baseURL "${{ steps.pages.outputs.base_url }}/"          
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
