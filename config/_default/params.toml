@@ -7,8 +7,14 @@ sale_year = 2024
 name = "Brian Loosli"
 address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
 [[contacts]]
-name = "Sale Barn"
-address = ["3310 US 20", "Ashton, ID 83420", "(208) 652-7878", "22 miles north of Rexburg, ID"]
+name = "Jonathan Meek"
+address = ["(208) 227-3779"]
+[[contacts]]
+name = "Brett Beutler"
+address = ["(303) 709-4267"]
+[[contacts]]
+name = "Jared Loosli"
+address = ["(435) 705-4301"]
 
 [[sale_reps]]
 name = "Curt Cox"
