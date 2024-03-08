@@ -1,9 +1,11 @@
 const Airtable = require('airtable');
 const base = new Airtable({apiKey: process.env.AIRTABLE_KEY}).base('appWcrcGmDLkeV4KM');
 
-const res = []
+const res = [];
+let page = 1;
 base('Animals').select({})
-    .eachPage(function page(records, fetchNextPage) {
+    .eachPage((records, fetchNextPage) => {
+        console.log(`Fetched page ${page++}`);
         records.forEach(function (record) {
             const id = record.getId();
             const fields = record.fields;
