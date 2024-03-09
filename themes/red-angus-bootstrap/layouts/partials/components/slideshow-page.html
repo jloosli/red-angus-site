@@ -20,12 +20,12 @@
       <span class="visually-hidden">Next</span>
     </button>
 
-    <div class="slideButtons">
-      <h5>Go to lot:</h5>
-      {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
-      <button type="button" class="btn btn-primary m-1" data-bs-slide-to="{{ $index }}">{{ .Params.lot }}</button>
-      {{ end }}
-    </div>
+  </div>
+  <div class="slideButtons">
+    <h5>Go to lot:</h5>
+    {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
+    <button type="button" class="btn btn-primary m-1" data-bs-slide-to="{{ $index }}">{{ .Params.lot }}</button>
+    {{ end }}
   </div>
 </div>
 <script>
