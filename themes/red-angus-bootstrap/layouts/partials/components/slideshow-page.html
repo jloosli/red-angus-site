@@ -19,6 +19,22 @@
       <span class="carousel-control-next-icon" aria-hidden="true"></span>
       <span class="visually-hidden">Next</span>
     </button>
+
+    <div class="slideButtons">
+      <h5>Go to lot:</h5>
+      {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
+      <button type="button" class="btn btn-primary m-1" data-bs-slide-to="{{ $index }}">{{ .Params.lot }}</button>
+      {{ end }}
+    </div>
   </div>
 </div>
+<script>
+  const slideButtons = document.querySelectorAll('.slideButtons button');
+  const carousel = bootstrap.Carousel.getOrCreateInstance(document.getElementById('page-carousel'));
+  slideButtons.forEach((button, index) => {
+    button.addEventListener('click', () => {
+      carousel.to(index);
+    });
+  });
+</script>
 {{ end }}
