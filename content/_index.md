@@ -5,8 +5,4 @@ cta_link: "/sales/2024/"
 embed: ""
 imagesPath: "/sales/2024/bulls/images"
 ---
-# Annual Production Sale
-## Tuesday, March 12th, 2024
-### At the Auction Barn
-
-
+# Thank you for a great sale!
