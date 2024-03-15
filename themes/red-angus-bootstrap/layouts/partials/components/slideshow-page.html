@@ -6,8 +6,8 @@
       {{ $image := $pic.Resize "1200x webp" }}
       {{ $filename := $image.RelPermalink }}
       <div class="carousel-item {{ if eq $index 0 }}active{{end}}">
-        <img src="{{ $filename }}" alt="{{$image.Title}}" class="d-block w-100" loading="lazy">
-        <div class="carousel-caption ">{{ $image.Title }}</div>
+        <img src="{{ $filename }}" alt="{{$pic.Title}}" class="d-block w-100" loading="lazy">
+        <div class="carousel-caption ">{{ $pic.Title }}</div>
       </div>
       {{ end }}
     </div>
