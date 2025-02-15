@@ -46,6 +46,7 @@ jobs:
         env:
           AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
           AIRTABLE_KEY: ${{ secrets.AIRTABLE_KEY }}
+          HUGO_ADOBE_CLIENT_ID: ${{ secrets.HUGO_ADOBE_CLIENT_ID }}
       - name: Build with Hugo
         env:
           # For maximum backward compatibility with Hugo modules

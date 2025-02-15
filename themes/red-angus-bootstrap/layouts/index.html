@@ -3,7 +3,9 @@
   <div class="banner-bottom container-fluid py-4">
     <div class="col-md-8 offset-md-2 text-center call-to-action">
       {{ .Content }}
+      {{ if not .Params.hide_cta }}
       <a class="btn btn-primary btn-lg" href="{{ .Params.cta_link }}">{{ .Params.cta_text }}</a>
+      {{ end }}
     </div>
   </div>
   {{ with .Params.imagesPath }}
