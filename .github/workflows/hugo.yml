@@ -53,6 +53,7 @@ jobs:
           HUGO_ENVIRONMENT: production
           HUGO_ENV: production
           HUGO_ADOBE_CLIENT_ID: ${{ secrets.HUGO_ADOBE_CLIENT_ID }}
+          HUGO_GOOGLE_MAPS_KEY: ${{ secrets.HUGO_GOOGLE_MAPS_KEY }}
         run: |
           hugo \
             --gc \

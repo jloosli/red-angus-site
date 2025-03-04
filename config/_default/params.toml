@@ -1,6 +1,5 @@
 logo = "images/Loosli-Red-Angus-Logo.svg"
 home_slideshow_path = "2020.bulls_images"
-google_maps_key = "AIzaSyD80IS57_0KNnxpc1OYrXFVhVitLur35Ls"
 sale_year = 2025
 # Contacts address with go through the markdown parser, so email links will get generated
 [[contacts]]
@@ -43,11 +42,11 @@ identifier = "JAC"
 details = ["81 miles east of the ranch"]
 [[airports]]
 name = "St. Anthony, ID"
-identifier = ""
+identifier = "U12"
 details = ["12 miles south of ranch.", "4966 elevation, 4500′ x 50′ runway, Unicom 122.9"]
 [[airports]]
 name = "Rexburg, ID"
-identifier = ""
+identifier = "KRXE"
 details = ["25 miles south of ranch.", "4858 elevation, 4200′ x 75′ runway, Unicom 122.8"]
 
 [[motels]]
