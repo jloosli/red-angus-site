@@ -8,7 +8,7 @@
   "private": true,
   "scripts": {
     "getData": "node utilities/getData.js",
-    "getData:loc": "node -r dotenv/config utilities/getData.js",
+    "getData:loc": "node -r dotenv/config utilities/getData.js dotenv_config_path=.env.local",
     "renameVideoFiles": "node utilities/rename-video-files.js"
   },
   "devDependencies": {

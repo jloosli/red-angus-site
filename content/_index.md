@@ -9,5 +9,3 @@ imagesPath: ""
 # Annual Production Sale
 ## Tuesday, March 11th, 2025
 ### At the Auction Barn
-
-{{< embed-pdf >}}

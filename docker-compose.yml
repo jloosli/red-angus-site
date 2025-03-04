@@ -1,5 +1,3 @@
-version: '3.8'
-
 services:
   server:
     image: hugomods/hugo:exts-${HUGO_VERSION} # Latest: 0.123.7. See https://github.com/gohugoio/hugo/releases
