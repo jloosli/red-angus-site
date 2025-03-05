@@ -41,11 +41,12 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
-      - name: getData
-        run: npm run getData
-        env:
-          AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
-          AIRTABLE_KEY: ${{ secrets.AIRTABLE_KEY }}
+      # - name: getData
+      #   run: npm run getData
+      #   env:
+      #     AIRTABLE_BASE: ${{ secrets.AIRTABLE_BASE }}
+      #     AIRTABLE_KEY: ${{ secrets.AIRTABLE_KEY }}
+      #     HUGO_GOOGLE_SHEETS_KEY: ${{ secrets.HUGO_GOOGLE_SHEETS_KEY }}
           
       - name: Build with Hugo
         env:
@@ -54,6 +55,7 @@ jobs:
           HUGO_ENV: production
           HUGO_ADOBE_CLIENT_ID: ${{ secrets.HUGO_ADOBE_CLIENT_ID }}
           HUGO_GOOGLE_MAPS_KEY: ${{ secrets.HUGO_GOOGLE_MAPS_KEY }}
+          HUGO_GOOGLE_SHEETS_KEY: ${{ secrets.HUGO_GOOGLE_SHEETS_KEY }}
         run: |
           hugo \
             --gc \

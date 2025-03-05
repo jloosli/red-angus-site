@@ -11,4 +11,5 @@ assets/jsconfig.json
 *.crt
 .venv
 
-data/allData.json
+# data/allData.json
+utilities/token.json

@@ -1,80 +1,99 @@
 {{ define "main" }}
-{{ $data := newScratch }}
-{{ $data.Set "records" $.Site.Data.allData }}
-<pre>
-</pre>
-<main class="container animal" id="app">
-  <header>
-    <div class="back-to-sale"><a :href="saleLink">Back to ${saleYear} Sale</a></div>
+  {{ $data := newScratch }}
+  {{ $data.Set "records" $.Site.Data.allData }}
+  <pre></pre>
+  <main class="container animal" id="app">
+    <header>
+      <div class="back-to-sale">
+        <a :href="saleLink">Back to ${saleYear} Sale</a>
+      </div>
+      <template v-if="hasRecord">
+        <h1 class="title">Lot ${ fields.lot } - ${ fields.name }</h1>
+        <nav>
+          <a v-if="prev" class="btn btn-outline-primary" :href="prevLink"
+            >Previous Lot</a
+          >
+          <span class="spacer"></span>
+          <a v-if="next" class="btn btn-outline-primary" :href="nextLink"
+            >Next Lot</a
+          >
+        </nav>
+      </template>
+      <h1 class="title" v-else>No Animal Found</h1>
+    </header>
     <template v-if="hasRecord">
-    <h1 class="title">Lot ${ fields['Lot #'] } - ${ fields.Name }</h1>
-    <nav>
-      <a v-if="prev" class="btn btn-outline-primary" :href="prevLink">Previous Lot</a>
-      <span class="spacer"></span>
-      <a v-if="next" class="btn btn-outline-primary" :href="nextLink">Next Lot</a>
-    </nav>
+      <div class="video-container" v-if="fields['video_id']">
+        <iframe
+          :src="videoURL"
+          title="vimeo/youtube video"
+          webkitallowfullscreen
+          mozallowfullscreen
+          allowfullscreen
+        ></iframe>
+      </div>
+      <div v-else>No video available.</div>
+      <h2>EPDs</h2>
+      <section class="epds">
+        <div class="epd" v-for="display in displayFields">
+          <div class="head">${ display.title }</div>
+          <div class="value">
+            ${ fields[display.field || display.title] }&nbsp;
+          </div>
+        </div>
+      </section>
+
+      <h2>Explore Lots</h2>
+      <div class="lot-list">
+        <a
+          class="btn"
+          v-for="lot in lots"
+          :href="lot.link"
+          :class="{'btn-outline-primary':lot.current, 'btn-primary': !lot.current}"
+          >${ lot.lot }</a
+        >
+      </div>
     </template>
-    <h1 class="title" v-else>No Animal Found</h1>
-  </header>
-  <template v-if="hasRecord">
-  <div class="video-container" v-if="fields['video_id']">
-    <iframe :src="videoURL" title="vimeo/youtube video" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-  </div>
-  <div v-else>No video available.</div>
-  <h2>EPDs</h2>
-  <section class="epds">
-    <div class="epd" v-for="display in displayFields">
-      <div class="head">${ display.title }</div>
-      <div class="value">${ fields[display.field || display.title] }&nbsp;</div>
-    </div>
-  </section>
+  </main>
 
-  <h2>Explore Lots</h2>
-  <div class="lot-list">
-    <a class="btn" v-for="lot in lots" :href="lot.link" :class="{'btn-outline-primary':lot.current, 'btn-primary': !lot.current}">${ lot.lot }</a>
-  </div>
-  </template>
-</main>
-
-
-<script src="https://unpkg.com/vue@3"></script>
+  <script src="https://unpkg.com/vue@3"></script>
 <script>
+    // eslint-disable-next-line
     const allRecords = {{ $data.Get "records" | jsonify | safeJS }};
     const urlParams = new URLSearchParams(window.location.search);
     const reg = urlParams.get('reg');
-    const record = allRecords.find(r => r?.fields['Reg #'] === +reg);
-    const saleYear = record?.fields['Sale Year'] || urlParams.get('sale_year') || '{{ $.Site.Params.sale_year }}';
-    const records = allRecords.filter(r=> +r?.fields['Sale Year'] === +saleYear && r?.fields['Lot #']);
-    const lotCompare =(a,b) => +a.fields['Lot #'] - +b.fields['Lot #'];
+    const record = allRecords[reg]; //.find(r => r?.fields['Reg #'] === +reg);
+    const saleYear = record?.['sale_year'] || urlParams.get('sale_year') || '{{ $.Site.Params.sale_year }}';
+    const records = Object.keys(allRecords).map(key => allRecords[key]).filter(r => +r?.['sale_year'] === +saleYear && r?.['lot']);
+    const lotCompare = (a,b) => +a['lot'] - +b['lot'];
     records.sort(lotCompare);
-    const prev = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] - 1);
-    const next = records.find(r => r?.fields['Lot #'] === record?.fields['Lot #'] + 1);
+    const prev = records.find(r => r?.['lot'] === record?.['lot'] - 1);
+    const next = records.find(r => r?.['lot'] === record?.['lot'] + 1);
 
     const displayFields = [
-        {title: 'Lot #', field: 'Lot #'},
-        {title: 'Tag', field: 'Animal ID'},
-        {title: 'Registration #', field: 'Reg #'},
-        {title: 'Sex', field: 'Sex'},
-        {title: 'Birthdate', field: 'Birth Date'},
-        {title: 'ProS'},
-        {title: 'HB'},
-        {title: 'GM'},
-        {title: 'CED'},
-        {title: 'BW'},
-        {title: 'WW'},
-        {title: 'YW'},
-        {title: 'ADG'},
-        {title: 'DMI'},
-        {title: 'Milk'},
-        {title: 'ME'},
-        {title: 'HPG'},
-        {title: 'CEM'},
-        {title: 'Stay'},
-        {title: 'Marb'},
-        {title: 'YG'},
-        {title: 'CW'},
-        {title: 'RE'},
-        {title: 'BF'},
+        {title: 'Lot #', field: 'lot'},
+        {title: 'Tag', field: 'animal_id'},
+        {title: 'Registration #', field: 'reg'},
+        {title: 'Sex', field: 'sex'},
+        {title: 'Birthdate', field: 'birth_date'},
+        {title: 'ProS', field: 'pro_s'},
+        {title: 'HB', field: 'hb'},
+        {title: 'GM', field: 'gm'},
+        {title: 'CED', field: 'ced'},
+        {title: 'BW', field: 'bw'},
+        {title: 'WW', field: 'ww'},
+        {title: 'YW', field: 'yw'},
+        {title: 'ADG', field: 'adg'},
+        {title: 'DMI', field: 'dmi'},
+        {title: 'Milk', field: 'milk'},
+        {title: 'ME', field: 'me'},
+        {title: 'HPG', field: 'hpg'},
+        {title: 'CEM', field: 'cem'},
+        {title: 'Stay', field: 'stay'},
+        {title: 'Marb', field: 'marb'},
+        {title: 'YG', field: 'yg'},
+        {title: 'CW', field: 'cw'},
+        {title: 'RE', field: 're'},
+        {title: 'BF', field: 'bf'},
     ]
 
     const videoURLs ={
@@ -84,43 +103,42 @@
 
     const app = Vue.createApp({
         data() {
-            return {hasRecord: !!record, fields: record?.fields, displayFields, prev, next, records, saleYear}
+            return {hasRecord: !!record, fields: record, displayFields, prev, next, records, saleYear}
         },
         computed: {
             prevLink() {
-                if (!this.prev?.fields) return '';
+                if (!this.prev) return '';
                 const url = new URL(window.location)
-                url.searchParams.set('reg', this.prev.fields['Reg #'])
+                url.searchParams.set('reg', this.prev.reg)
                 return url.toString();
             },
             nextLink() {
-                if (!this.next?.fields) return '';
+                if (!this.next) return '';
                 const url = new URL(window.location)
-                url.searchParams.set('reg', this.next?.fields['Reg #'])
+                url.searchParams.set('reg', this.next?.reg)
                 return url.toString();
             },
             videoURL() {
-                if (!this.fields?.video_id && !this.fields?.video_type) return '';
-                const video_id = this.fields.video_id;
-                const url = videoURLs[this.fields.video_type];
+                if (!this.video_id && !this.video_type) return '';
+                const video_id = this.video_id;
+                const url = videoURLs[this.video_type];
                 return url.replace('{}',video_id);
             },
             saleLink() {
-                const endpoint = this.fields?.Sex === 'C' ? 'heifers' : 'bulls';
+                const endpoint = this.fields.sex === 'C' ? 'heifers' : 'bulls';
                 return `/sales/${saleYear}/${endpoint}`
             },
             lots() {
                 if(!records) return [];
                 console.log(records,'*****')
-                console.log(records[0].fields['Lot #'])
-                return records.filter(r => !!r.fields['Lot #'])
+                console.log(records[0].lot)
+                return records.filter(r => !!r.lot)
                     .map(r => {
-                        // console.log(r);
                         const url = new URL(window.location)
-                        url.searchParams.set('reg', r.fields['Reg #'])
+                        url.searchParams.set('reg', r.reg)
                         return ({
-                            lot: r.fields['Lot #'],
-                            current: r.id === record.id,
+                            lot: r.lot,
+                            current: r.reg === record.reg,
                             link: url.toString()
                         });
                     })
@@ -132,7 +150,5 @@
     }).mount('#app');
 
 </script>
-<script>
-
-</script>
+  <script></script>
 {{ end }}
