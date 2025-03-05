@@ -26,7 +26,7 @@
 
             {{ if .reg }}
             <a class="card-link" target="_blank"
-              href="https://zebu.redangus.org:8443/redspro/redspro/action/animalSearch.AnimalSearchAction?eventSubmit_displayAnimal=T&animalNumber={{ .reg }}">
+              href="https://vm-zebu.redangus.org/redspro/redspro/template/animalSearch%2CAnimalSearch.vm/action/animalSearch.AnimalSearchAction?eventSubmit_performAnimalSearch=exact&animalNumbers={{ .reg }}">
               RA# {{ .reg }}</a>
             {{ end }}
           </h5>
