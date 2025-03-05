@@ -61,7 +61,7 @@
     const allRecords = {{ $data.Get "records" | jsonify | safeJS }};
     const urlParams = new URLSearchParams(window.location.search);
     const reg = urlParams.get('reg');
-    const record = allRecords[reg]; //.find(r => r?.fields['Reg #'] === +reg);
+    const record = allRecords[reg];
     const saleYear = record?.sale_year || urlParams.get('sale_year') || '{{ $.Site.Params.sale_year }}';
     const records = Object.keys(allRecords).map(key => allRecords[key]).filter(r => +r?.sale_year === +saleYear && r?.lot);
     const lotCompare = (a,b) => +a['lot'] - +b['lot'];
@@ -119,9 +119,9 @@
                 return url.toString();
             },
             videoURL() {
-                if (!this.video_id && !this.video_type) return '';
-                const video_id = this.video_id;
-                const url = videoURLs[this.video_type];
+                if (!this.fields?.video_id || !this.fields?.video_type) return '';
+                const video_id = this.fields.video_id;
+                const url = videoURLs[this.fields.video_type];
                 return url.replace('{}',video_id);
             },
             saleLink() {
