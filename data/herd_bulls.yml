@@ -1,6 +1,3 @@
-- name: Loosli Brennix 130
-  img_path: images/herd_bulls/Brennix 130.jpg
-  reg: 4504757
 - name: VGE Agent 124
   img_path: images/herd_bulls/Agent 23.JPG
   reg: 4428819
@@ -25,5 +22,10 @@
 - name: BB Propulsion 9096
   img_path: images/herd_bulls/Propulsion.jpg
   reg: 4169122
-- name: 5L Foreman 2174-370E
-  reg: 3744501
+- name: Complete
+  img_path: images/herd_bulls/Complete_24-4.JPG
+  reg: 
+- name: Jumpstart
+  img_path: images/herd_bulls/Bieber-Jumpstart-J137.jpg
+  reg: 
+
