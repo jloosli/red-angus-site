@@ -1,5 +1,5 @@
 +++
-title = "2025 Heifers"
+title = "Heifers"
 weight = 200
 +++
 
