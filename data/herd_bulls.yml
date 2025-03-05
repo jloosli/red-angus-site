@@ -22,10 +22,10 @@
 - name: BB Propulsion 9096
   img_path: images/herd_bulls/Propulsion.jpg
   reg: 4169122
-- name: Complete
+- name: TKP Complete
   img_path: images/herd_bulls/Complete_24-4.JPG
-  reg: 
-- name: Jumpstart
+  reg: 4543551
+- name: Beiber Jumpstart
   img_path: images/herd_bulls/Bieber-Jumpstart-J137.jpg
-  reg: 
+  reg: 4463653
 
