@@ -1,0 +1,43 @@
+<!-- 
+{{/* Usage:
+  {{< vimeo-complete id="727145223" type="showcase|video(default)" embedType="embed(default)|embed2"
+>}}
+
+       
+*/}}
+-->
+{{- $id := string (.Get "id" | default (.Get 0)) -}}
+{{- $type := .Get "type" | default "video" -}}
+{{- $embedType := .Get "embedType" | default "embed" -}}
+{{- $vimeo_url := "" -}}
+
+{{- if eq $type "showcase" -}}
+  {{- $vimeo_url = (printf "https://vimeo.com/showcase/%s/%s" $id $embedType) -}}
+{{- else -}}
+  {{- $vimeo_url = printf "https://player.vimeo.com/video/%d" $id -}}
+{{- end -}}
+
+
+<div class="vimeo-showcase">
+  <iframe src="{{- $vimeo_url -}}" allow="autoplay; encrypted-media" allowfullscreen frameborder="0"></iframe>
+</div>
+
+<style>
+  .vimeo-showcase {
+    aspect-ratio: 1 auto;
+    position: relative;
+    margin: 1rem 0 1rem;
+  }
+  .vimeo-showcase iframe {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+  @media (min-width: 800px) {
+    .vimeo-showcase {
+      aspect-ratio: 16/9;
+    }
+  }
+</style>
