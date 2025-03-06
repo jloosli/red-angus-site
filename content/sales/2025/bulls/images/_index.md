@@ -31,13 +31,6 @@ resources:
 - name: LOOSLI COLLUSION 4300
   params:
     lot: 2
-    tag: '430'
-    title: Tag 430
-  src: 430_IMG_7465 copy.jpg
-  title: 'Lot 2: Loosli Collusion 4300'
-- name: LOOSLI COLLUSION 4300
-  params:
-    lot: 2
     tag: '4300'
     title: Tag 4300
   src: 4300_IMG_7208 copy.jpg
@@ -175,6 +168,13 @@ resources:
     title: Tag 4128
   src: 4128_IMG_8191.jpg
   title: 'Lot 23: Loosli Complete 4128'
+- name: LOOSLI RIVERSIDE 430
+  params:
+    lot: 24
+    tag: '430'
+    title: Tag 430
+  src: 430_IMG_7465 copy.jpg
+  title: 'Lot 24: Loosli Riverside 430'
 - name: LOOSLI COMPLETE 463
   params:
     lot: 25
@@ -273,13 +273,6 @@ resources:
     title: Tag 439
   src: 439_IMG_8493 copy.jpg
   title: 'Lot 39: Loosli Complete 439'
-- name: LOOSLI COMPLETE 4113
-  params:
-    lot: 40
-    tag: '411'
-    title: Tag 411
-  src: 411_IMG_7790.jpg
-  title: 'Lot 40: Loosli Complete 4113'
 - name: LOOSLI HARD DRIVE 4127
   params:
     lot: 41
@@ -364,6 +357,13 @@ resources:
     title: Tag 4102
   src: 4102_IMG_8063 copy.jpg
   title: 'Lot 64: Loosli Propulsion 4102'
+- name: LOOSLI COMPLETE 411
+  params:
+    lot: 66
+    tag: '411'
+    title: Tag 411
+  src: 411_IMG_7790.jpg
+  title: 'Lot 66: Loosli Complete 411'
 - name: LOOSLI JUMP START 406
   params:
     lot: 67
