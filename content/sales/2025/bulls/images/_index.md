@@ -1,5 +1,5 @@
 ---
-title: Bulls Images
+title: Pictures
 resources:
 - params:
     lot: 0
