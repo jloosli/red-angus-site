@@ -44,9 +44,9 @@
       <div class="subhead">
         <div>BD: {{.bday4}}</div>
         <div>Tatoo: {{.id}}</div>
-        <div>REG#: {{string .reg}}</div>
+        <div>REG#: {{string (index . "reg#") }}</div>
         <div>HERD: {{.pfx}}</div>
-        <div>CAT: {{.Cat}} {{.pct_b1}}</div>
+        <div>CAT: {{.Cat}} {{ index . "%b1" }}</div>
       </div>
       <table class="pedigree">
         <tr>
@@ -150,7 +150,7 @@
           <td>{{ .epd_fat}}</td>
         </tr>
         <tr>
-          <td>{{ .ProS_pct }}%</td>
+          <td>{{ index . "ProS%" }}%</td>
           <td>{{ .herdbuilder_pr }}%</td>
           <td>{{ .gridmaster_pr }}%</td>
           <td>{{ .epd_ced_pr }}%</td>

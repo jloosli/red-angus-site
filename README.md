@@ -38,15 +38,11 @@
 1. Select an existing group, or create a `Quick Group` (comma separated reg numbers). Select `SCDE/Pedigree` report.
 1. Click `Generate Report`.
 1. Convert to json (e.g.) [here](https://csvjson.com/csv2json)
-1. Change the following titles:
-    * `reg #` to `reg`
-    * `%b1` to `pct_b1`
-    * `ProS%` to `ProS_pct`
 1. Download and change file name to `data.json`
 1. Add data to [data/supplemental/data.{yml|json}](data/supplemental)
 1. Change title in [content/supplemental](content/supplemental.md)
 
-## Datatables
+## Datatables {deprecated}
 
 1. Add data to `data` directory in json format with three fields: `headings`,
 `options`, and `data`. options are additional [Datatables options](https://datatables.net/reference/option/).
