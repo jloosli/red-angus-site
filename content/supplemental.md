@@ -2,4 +2,4 @@
 type: supplemental
 title: Herd Bulls
 ---
-Content is here
+This won't show. Add data in [data/supplemental](/data/supplemental)

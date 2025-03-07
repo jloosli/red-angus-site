@@ -36,16 +36,16 @@
   }
 </style>
 <main class="supplemental">
-  <h1>Herd Bulls</h1>
+  <h1>{{ .Title }}</h1>
   <div class="grids">
     {{ range $.Site.Data.supplemental.data }}
     <section>
-      <h2>{{ .Name }}</h2>
+      <h2>{{ .name }}</h2>
       <div class="subhead">
-        <div>BD: {{.Birth_Date}}</div>
-        <div>Tatoo: {{.Animal_ID}}</div>
-        <div>REG#: {{.Reg_num}}</div>
-        <div>HERD: {{.Prefix}}</div>
+        <div>BD: {{.bday4}}</div>
+        <div>Tatoo: {{.id}}</div>
+        <div>REG#: {{string .reg}}</div>
+        <div>HERD: {{.pfx}}</div>
         <div>CAT: {{.Cat}} {{.pct_b1}}</div>
       </div>
       <table class="pedigree">
