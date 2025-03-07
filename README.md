@@ -37,9 +37,8 @@
 1. Go to Herd Reports/Downloads -> My Reports
 1. Select an existing group, or create a `Quick Group` (comma separated reg numbers). Select `SCDE/Pedigree` report.
 1. Click `Generate Report`.
-1. Convert to json (e.g.) [here](https://csvjson.com/csv2json)
-1. Download and change file name to `data.json`
-1. Add data to [data/supplemental/data.{yml|json}](data/supplemental)
+1. Download and change file name to `data.csv`
+1. Add data to [assets/supplemental/data.csv](assets/supplemental)
 1. Change title in [content/supplemental](content/supplemental.md)
 
 ## Datatables {deprecated}
