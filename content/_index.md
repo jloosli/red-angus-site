@@ -7,7 +7,7 @@ embed: ""
 imagesPath: ""
 ---
 # Thank you for a great sale!
-## We'll see you at our next sale on Tuesday, March 10th, 2026
+## We'll see you next year on Tuesday, March 10th, 2026
 
 
 {{< vimeo-complete id=11608104 type="showcase" >}}
