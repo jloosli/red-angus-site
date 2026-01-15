@@ -6,11 +6,11 @@ sale_year = 2026
 name = "Brian Loosli"
 address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208) 317-7878 (Cell)", "blloosli@gmail.com"]
 [[contacts]]
-name = "Jonathan Meek"
-address = ["(208) 227-3779"]
-[[contacts]]
 name = "Mark Loosli"
 address = ["(208) 351-3333"]
+[[contacts]]
+name = "Jonathan Meek"
+address = ["(208) 227-3779"]
 [[contacts]]
 name = "Jared Loosli"
 address = ["(435) 705-4301"]
