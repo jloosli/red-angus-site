@@ -1,6 +1,6 @@
 logo = "images/Loosli-Red-Angus-Logo.svg"
 home_slideshow_path = "2020.bulls_images"
-sale_year = 2025
+sale_year = 2026
 # Contacts address with go through the markdown parser, so email links will get generated
 [[contacts]]
 name = "Brian Loosli"
@@ -9,8 +9,8 @@ address = ["3127 E. 1100 N.", "Ashton, ID 83420", "(208) 652-3303 (Home)", "(208
 name = "Jonathan Meek"
 address = ["(208) 227-3779"]
 [[contacts]]
-name = "Brett Beutler"
-address = ["(303) 709-4267"]
+name = "Mark Loosli"
+address = ["(208) 351-3333"]
 [[contacts]]
 name = "Jared Loosli"
 address = ["(435) 705-4301"]
