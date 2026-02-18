@@ -4,8 +4,21 @@
 
 ## Website Development
 
+`npm install`
 `docker compose up server -d`
 `zsh: dcupd server`
+
+### .env file
+
+`cp .env.example .env.local`
+
+```env
+AIRTABLE_KEY: [Personal access token from Airtable. Generate at (/create/tokens)[https://airtable.com/create/tokens]]
+AIRTABLE_BASE: [The base ID from Airtable. Find in the URL when you are on the base.]
+HUGO_ADOBE_CLIENT_ID: [For the (pdf-embed-api)[https://developer.adobe.com/document-services/docs/overview/pdf-embed-api/gettingstarted/]]
+HUGO_GOOGLE_MAPS_KEY: [The API key from Google Maps. Generate at (/create/tokens)[https://console.cloud.google.com/apis/credentials]]
+HUGO_GOOGLE_SHEETS_KEY: [The API key from Google Sheets. Generate at (/create/tokens)[https://console.cloud.google.com/apis/credentials]]
+```
 
 ## New Sale Year Steps
 
