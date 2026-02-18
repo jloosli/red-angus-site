@@ -1,0 +1,8 @@
+# markdownlint configuration
+# https://github.com/DavidAnson/markdownlint
+
+MD025:
+  # Don't treat frontmatter title as an H1 - the title is for the browser tab,
+  # not the page content. This allows one # heading in content without
+  # conflicting with frontmatter, while still warning on multiple # headings.
+  front_matter_title: ""
