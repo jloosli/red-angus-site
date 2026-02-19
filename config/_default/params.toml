@@ -11,9 +11,7 @@ address = ["(208) 351-3333"]
 [[contacts]]
 name = "Jonathan Meek"
 address = ["(208) 227-3779"]
-[[contacts]]
-name = "Jared Loosli"
-address = ["(435) 705-4301"]
+
 
 [[sale_reps]]
 name = "Curt Cox"
@@ -95,11 +93,11 @@ details = [
 [[widgets.home]]
 title = "Sale Bulls"
 image = "sales/2025/bulls/images/407_IMG_7262.jpg"
-link = "sales/2025/bulls/"
+link = "sales/2026/bulls/"
 [[widgets.home]]
 title = "Sale Heifers"
 image = "images/females-resized.jpg"
-link = "sales/2025/heifers/"
+link = "sales/2026/heifers/"
 [[widgets.home]]
 title = "Herd Bulls"
 image = "images/new-frontier-600x430.jpg"

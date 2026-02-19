@@ -1,0 +1,12 @@
+[project]
+name = "red-angus-site"
+version = "0.1.0"
+description = "Utilities for the Loosli Red Angus website"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "pip~=21.1.2",
+    "pyyaml~=6.0",
+    "setuptools~=57.0.0",
+    "wheel~=0.36.2",
+]

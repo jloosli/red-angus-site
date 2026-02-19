@@ -16,7 +16,7 @@ def find_first_csv(directory):
     return None
 
 
-YEAR = "2024"
+YEAR = "2026"
 FILE_PATH = dirname(__file__)
 BULLS_PATH = join(FILE_PATH, "..", "content", "sales", YEAR, "bulls")
 IMAGES_PATH = join(BULLS_PATH, "images")
@@ -40,7 +40,7 @@ for f in onlyfiles:
 
     for row in data:
         if tempFile["params"]["tag"] in row["Name"]:
-            tempFile["params"]["lot"] = int(row["Sale Order"])
+            tempFile["params"]["lot"] = int(row["Lot #"])
             tempFile["name"] = row["Name"]
             tempFile["title"] = "Lot {}: {}".format(
                 tempFile["params"]["lot"], tempFile["name"]
