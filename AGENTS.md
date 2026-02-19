@@ -71,7 +71,7 @@ hugo server
 |---|---|
 | `npm run getData:loc` | Fetch data from Airtable + Google Sheets → writes `data/allData.json` |
 | `docker compose up server -d` | Start Hugo dev server |
-| `docker compose run build` | Production build |
+| `docker compose run build` | Local production-ish build via Docker (runs `hugo --gc`; CI adds `--minify` and other prod flags) |
 | `docker compose run pull_data` | Run data fetch inside Docker |
 | `npm run renameVideoFiles` | Rename video files via utility |
 
