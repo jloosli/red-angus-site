@@ -190,7 +190,7 @@ GitHub Actions workflow (`.github/workflows/hugo.yml`) triggers on push to `main
 4. Builds with `hugo --gc --minify` using secrets for Adobe, Google Maps, and Google Sheets keys
 5. Deploys to GitHub Pages
 
-Secrets required in GitHub repo settings: `ADOBE_CLIENT_ID`, `GOOGLE_MAPS_KEY`, `HUGO_GOOGLE_SHEETS_KEY`.
+Secrets required in GitHub repo settings: `HUGO_ADOBE_CLIENT_ID`, `HUGO_GOOGLE_MAPS_KEY`, `HUGO_GOOGLE_SHEETS_KEY`.
 
 ---
 
