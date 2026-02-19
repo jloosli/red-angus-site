@@ -129,6 +129,8 @@ The script reads the CSV in the bulls directory to match tag numbers to lot numb
 
 ### Video Integration
 
+> **⚠️ Potentially Deprecated/Outdated:** The scripts referenced below (`manage-youtube.ts` and `updateAirtableYoutubeIds.ts`) expect `data/allData.json` to be an array of Airtable-style records (e.g., `[{ id: "...", fields: { ... } }, ...]`). The current data pipeline generates an object keyed by registration number instead. These utilities may require updates or a compatible data format to function properly.
+
 Videos are sourced from YouTube. Workflow:
 
 1. Upload videos to YouTube
