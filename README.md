@@ -31,17 +31,21 @@ HUGO_GOOGLE_SHEETS_KEY: [The API key from Google Sheets. Generate at (/create/to
 1. Update the bull and heifer links in [config/menu](config/_default/menu.toml)
 1. Update the bull and heifer links in [config/params](config/_default/params.toml)
 1. Update where to point to for the homepage bulls in [content/_index](content/_index.md)
-1. Upload EPDs for bulls and Cows into [Animals Airtable](https://airtable.com/appWcrcGmDLkeV4KM/tblHGU0zKnhfV0Zwy/viwTzlLwWTlPP7P4P?blocks=hide)
+1. Add EPDs for bulls and Cows into [Animal Data Spreadsheet](https://docs.google.com/spreadsheets/d/1vRYXaP8pZRlmmoLiNMxUAJu1MxVkKjKr7JAPDB3lMY4/edit?gid=670742932#gid=670742932).
+1. If [utilities/client_secret.json](utilities/client_secret.json) doesn't exist, get it from
+[Google Cloud Console](https://console.cloud.google.com/apis/credentials?project=loosliredangus)
+and put in [utilities](utilities) directory.
 1. Run `npm run getData:loc` to generate the [data/allData](data/allData.json) file
 
 ### Bulls/Cows Pages
 
 1. Drop Excel version in directory...download button will be automatically created
-2. Drop CSV in directory...datatable will be automatically created. Note: make sure csv
-   version has `Lot #` and `Reg #` columns.
-3. Images/videos: 
+2. Drop CSV in directory...datatable will be automatically created. 
+Note: make sure csv version has `Lot #` and `Reg #` columns.
+3. Images/videos:
    1. Drop Images into images directory
-   2. Edit and then Run [set_image_resource_metadata](utilities/set_image_resource_metadata.py)
+   1. (optional) Make sure python virtual environment is set up (`uv venv`)
+   1. Edit and then Run [set_image_resource_metadata](utilities/set_image_resource_metadata.py)
       to set the image information in the associated `_index.md` file.
 
 ### Supplemental Sheets
