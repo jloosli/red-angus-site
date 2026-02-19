@@ -42,10 +42,10 @@ Copy `.env.example` to `.env.local` and fill in:
 | Variable | Purpose | Where to get it |
 |---|---|---|
 | `AIRTABLE_KEY` | Airtable personal access token | https://airtable.com/create/tokens |
-| `AIRTABLE_BASE` | Airtable base ID | Found in the URL when viewing the base |
+| `AIRTABLE_BASE` | Legacy / currently unused Airtable base ID (base ID is hard-coded in utilities) | N/A (not required for current setup) |
 | `HUGO_ADOBE_CLIENT_ID` | PDF Embed API key | https://developer.adobe.com/document-services/docs/overview/pdf-embed-api/gettingstarted/ |
 | `HUGO_GOOGLE_MAPS_KEY` | Google Maps API key | https://console.cloud.google.com/apis/credentials |
-| `HUGO_GOOGLE_SHEETS_KEY` | Google Sheets API key | https://console.cloud.google.com/apis/credentials |
+| `HUGO_GOOGLE_SHEETS_KEY` | Legacy / currently unused Google Sheets API key (Sheets access uses client_secret.json OAuth) | N/A (not required for current setup) |
 
 The `utilities/client_secret.json` file (for Google Sheets OAuth) must also exist. Download it from [Google Cloud Console](https://console.cloud.google.com/apis/credentials?project=loosliredangus) and place it in the `utilities/` directory.
 
@@ -69,7 +69,7 @@ hugo server
 
 | Command | Purpose |
 |---|---|
-| `npm run getData:loc` | Fetch data from Airtable + Google Sheets → writes `data/allData.json` |
+| `npm run getData:loc` | Fetch data from Google Sheets (OAuth) → writes `data/allData.json` |
 | `docker compose up server -d` | Start Hugo dev server |
 | `docker compose run build` | Local production-ish build via Docker (runs `hugo --gc`; CI adds `--minify` and other prod flags) |
 | `docker compose run pull_data` | Run data fetch inside Docker |
