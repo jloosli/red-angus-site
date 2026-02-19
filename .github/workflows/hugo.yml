@@ -41,6 +41,13 @@ jobs:
         uses: actions/configure-pages@v4
       - name: Install Node.js dependencies
         run: "[[ -f package-lock.json || -f npm-shrinkwrap.json ]] && npm ci || true"
+      - name: Cache Hugo resources
+        uses: actions/cache@v4
+        with:
+          path: resources/_gen
+          key: ${{ runner.os }}-hugo-resources-${{ env.HUGO_VERSION }}-${{ hashFiles('content/sales/**', 'themes/**/layouts/partials/components/slideshow-page.html') }}
+          restore-keys: |
+            ${{ runner.os }}-hugo-resources-${{ env.HUGO_VERSION }}-
       # - name: getData
       #   run: npm run getData
       #   env:

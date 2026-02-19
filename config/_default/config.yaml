@@ -22,4 +22,7 @@ caches:
   getjson:
     maxAge: 30
 
-timeout: 120s
+# Increased for CI: slideshow-page resizes many images per section; GitHub Actions
+# has no cached resources and runs on limited CPU. 600s prevents timeout on first
+# build or when images change.
+timeout: 600s

@@ -1,40 +1,62 @@
 {{ with . }}
-<div class="carousel-wrapper">
-  <div id="page-carousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-inner">
-      {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
-      {{ $image := $pic.Resize "1200x webp" }}
-      {{ $filename := $image.RelPermalink }}
-      <div class="carousel-item {{ if eq $index 0 }}active{{end}}">
-        <img src="{{ $filename }}" alt="{{$pic.Title}}" class="d-block w-100" loading="lazy">
-        <div class="carousel-caption ">{{ $pic.Title }}</div>
+  <div class="carousel-wrapper">
+    <div id="page-carousel" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
+          {{ $image := $pic.Resize "1200x webp" }}
+          {{ $filename := $image.RelPermalink }}
+          <div class="carousel-item {{ if eq $index 0 }}active{{ end }}">
+            <img
+              src="{{ $filename }}"
+              alt="{{ $pic.Title }}"
+              class="d-block w-100"
+              loading="lazy"
+            />
+            <div class="carousel-caption ">{{ $pic.Title }}</div>
+          </div>
+        {{ end }}
       </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#page-carousel"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#page-carousel"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <div class="slideButtons">
+      <h5>Go to lot:</h5>
+      {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
+        <button
+          type="button"
+          class="btn btn-primary m-1"
+          data-bs-slide-to="{{ $index }}"
+        >
+          {{ .Params.lot }}
+        </button>
       {{ end }}
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#page-carousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#page-carousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-
   </div>
-  <div class="slideButtons">
-    <h5>Go to lot:</h5>
-    {{ range $index, $pic := sort (where . "Params.lot" "gt" 0) "Params.lot" }}
-    <button type="button" class="btn btn-primary m-1" data-bs-slide-to="{{ $index }}">{{ .Params.lot }}</button>
-    {{ end }}
-  </div>
-</div>
-<script>
-  const slideButtons = document.querySelectorAll('.slideButtons button');
-  const carousel = bootstrap.Carousel.getOrCreateInstance(document.getElementById('page-carousel'));
-  slideButtons.forEach((button, index) => {
-    button.addEventListener('click', () => {
-      carousel.to(index);
+  <script>
+    const slideButtons = document.querySelectorAll(".slideButtons button");
+    const carousel = bootstrap.Carousel.getOrCreateInstance(
+      document.getElementById("page-carousel"),
+    );
+    slideButtons.forEach((button, index) => {
+      button.addEventListener("click", () => {
+        carousel.to(index);
+      });
     });
-  });
-</script>
+  </script>
 {{ end }}
