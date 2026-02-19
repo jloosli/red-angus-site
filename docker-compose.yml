@@ -12,7 +12,7 @@ services:
 
   build:
     image: hugomods/hugo:exts-${HUGO_VERSION}
-    command: hugo --gc
+    command: hugo --gc --minify --logLevel info
     volumes:
       - ".:/src"
     env_file: 
