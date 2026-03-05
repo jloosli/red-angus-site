@@ -52,6 +52,32 @@ async function saveCredentials(client) {
 }
 
 /**
+ * Returns true if the error indicates an expired or revoked OAuth token.
+ *
+ * @param {unknown} err
+ * @return {boolean}
+ */
+function isInvalidGrantError(err) {
+  return (
+    err?.response?.data?.error === "invalid_grant" ||
+    (err?.code === 400 && err?.response?.data?.error === "invalid_grant")
+  );
+}
+
+/**
+ * Removes the saved token so the next run will trigger a fresh auth flow.
+ *
+ * @return {Promise<void>}
+ */
+async function removeStaleToken() {
+  try {
+    await fs.unlink(TOKEN_PATH);
+  } catch (e) {
+    // Ignore if file doesn't exist
+  }
+}
+
+/**
  * Load or request or authorization to call APIs.
  *
  */
@@ -126,4 +152,24 @@ async function getCattleData(auth) {
   return data;
 }
 
-authorize().then(getCattleData).then(writeData).catch(console.error);
+async function run() {
+  try {
+    const auth = await authorize();
+    const data = await getCattleData(auth);
+    await writeData(data);
+  } catch (err) {
+    if (isInvalidGrantError(err)) {
+      console.warn(
+        "Token expired or revoked. Removing token and retrying with fresh authorization..."
+      );
+      await removeStaleToken();
+      const auth = await authorize();
+      const data = await getCattleData(auth);
+      await writeData(data);
+    } else {
+      throw err;
+    }
+  }
+}
+
+run().catch(console.error);
