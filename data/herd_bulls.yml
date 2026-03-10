@@ -1,34 +1,34 @@
+- name: TKP Complete 1595
+  img_path: images/herd_bulls/Complete_24-4.JPG
+  reg: 4543551
+- name: Bieber Flashdrive L179
+  img_path: images/herd_bulls/Flashdrive_L179.jpg
+  reg: 4919901
+- name: Loosli Lead Off 333
+  img_path: images/herd_bulls/Lead_Off_333.jpg
+  reg: 4904845
+- name: C-Bar Fortune 263J
+  img_path: images/herd_bulls/Collusion 23.JPG
+  reg: 4534673
+- name: VGW Advantage 343
+  reg: 4766887
 - name: VGE Agent 124
   img_path: images/herd_bulls/Agent 23.JPG
   reg: 4428819
-- name: C-Bar Fortune 2631 (Collusion)
-  img_path: images/herd_bulls/Collusion 23.JPG
-  reg: 4534673
-- name: Loosli Delegate 102
-  img_path: images/herd_bulls/DSC_0201 Delegate.JPG
-  reg: 4504701
+- name: Pie Hard Drive 2052
+  img_path: images/herd_bulls/Hard_Drive_2052.jpg
+  reg: 4792521
 - name: 5L On A Mission 1307-33H
   img_path: images/herd_bulls/DSC_0291 Mission.JPG
   reg: 4298175
-- name: Loosli Perseverance 019
-  img_path: images/herd_bulls/DSC_0633 Perseverance.JPG
-  reg: 4281185
-- name: 5L Profiteer 1117-15G
-  img_path: images/herd_bulls/Profiteer 23.JPG
-  reg: 4175072
 - name: 5L Supremacy 459-76J
   img_path: images/herd_bulls/Supremacy 23.JPG
-  reg: 4527725
-- name: BB Propulsion 9096
-  img_path: images/herd_bulls/Propulsion.jpg
-  reg: 4169122
-- name: TKP Complete
-  img_path: images/herd_bulls/Complete_24-4.JPG
-  reg: 4543551
-- name: Beiber Jumpstart
-  img_path: images/herd_bulls/Bieber-Jumpstart-J137.jpg
-  reg: 4463653
-- name: Loosli Hard Drive 4125
-  reg: 5005885
-- name: Loosli Portfolio 2153
-  reg: 4598459
+  reg: 4527721
+- name: Loosli Delegate 102
+  img_path: images/herd_bulls/DSC_0201 Delegate.JPG
+  reg: 4504701
+- name: SL Genuine 281-52L
+  reg: 4919961
+- name: Meek Ignite K3
+  img_path: images/herd_bulls/Ignite_K3.jpg
+  reg: 4633941
