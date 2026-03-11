@@ -6,8 +6,4 @@ hide_cta: false
 embed: ""
 imagesPath: ""
 ---
-# Annual Production Sale
-
-## Tuesday, March 10th, 2026
-
-### At the Auction Barn in Ashton, Idaho
+# Thank you for a great sale!
